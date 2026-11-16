@@ -1,0 +1,1027 @@
+fileFormatVersion: 2
+guid: c00636b23ab522346bf4713aa34ff490
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8408426557532077686
+    second: handBoss_0
+  - first:
+      213: 6863782857996523121
+    second: handBoss_1
+  - first:
+      213: 3974923364225238767
+    second: handBoss_2
+  - first:
+      213: 1167647207136678252
+    second: handBoss_3
+  - first:
+      213: 4241033143982985114
+    second: handBoss_4
+  - first:
+      213: -4789066790052629087
+    second: handBoss_5
+  - first:
+      213: 1467427661392399603
+    second: handBoss_6
+  - first:
+      213: -2296901563452926198
+    second: handBoss_7
+  - first:
+      213: 6821001251267561144
+    second: handBoss_8
+  - first:
+      213: 9000792929966358321
+    second: handBoss_9
+  - first:
+      213: -2584773141279433622
+    second: handBoss_10
+  - first:
+      213: 8321006289972314326
+    second: handBoss_11
+  - first:
+      213: -7329932247033846082
+    second: handBoss_12
+  - first:
+      213: 5810922813681479996
+    second: handBoss_13
+  - first:
+      213: 1030519847826994690
+    second: handBoss_14
+  - first:
+      213: -4986275352291709698
+    second: handBoss_15
+  - first:
+      213: -7684499950418126891
+    second: handBoss_16
+  - first:
+      213: 3869123544434566195
+    second: handBoss_17
+  - first:
+      213: -1842115465356694825
+    second: handBoss_18
+  - first:
+      213: 4539411230293466524
+    second: handBoss_19
+  - first:
+      213: 2008240112071481871
+    second: handBoss_20
+  - first:
+      213: 4835633811727104343
+    second: handBoss_21
+  - first:
+      213: 1554782418372697263
+    second: handBoss_22
+  - first:
+      213: 5189223198691168693
+    second: handBoss_23
+  - first:
+      213: 3954255255697328688
+    second: handBoss_24
+  - first:
+      213: 7065755081655179339
+    second: handBoss_25
+  - first:
+      213: -2651433545020813978
+    second: handBoss_26
+  - first:
+      213: -437812782800686924
+    second: handBoss_27
+  - first:
+      213: -9025285335072800233
+    second: handBoss_28
+  - first:
+      213: -5001513695301578950
+    second: handBoss_29
+  - first:
+      213: 1423519782161038187
+    second: handBoss_30
+  - first:
+      213: -4782085875812016385
+    second: handBoss_31
+  - first:
+      213: 8089072476467815410
+    second: handBoss_32
+  - first:
+      213: -4429715348670721288
+    second: handBoss_33
+  - first:
+      213: 5493987090004459992
+    second: handBoss_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 5
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: handBoss_0
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 29
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67ef8a1876bb0b470800000000000000
+      internalID: 8408426557532077686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 29
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1765c4ab42e014f50800000000000000
+      internalID: 6863782857996523121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_2
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 30
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe6cb0e5db3c92730800000000000000
+      internalID: 3974923364225238767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 28
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c61db5cc2f0543010800000000000000
+      internalID: 1167647207136678252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_4
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 29
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f83cbac2d2bda30800000000000000
+      internalID: 4241033143982985114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_5
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 29
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a5fa45c021d98db0800000000000000
+      internalID: -4789066790052629087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_6
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 29
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc40eaeea95d5410800000000000000
+      internalID: 1467427661392399603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_7
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 28
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0759529234cf10e0800000000000000
+      internalID: -2296901563452926198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_8
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 28
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b64c42bf7019ae50800000000000000
+      internalID: 6821001251267561144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_9
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 28
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13ffd774b7d39ec70800000000000000
+      internalID: 9000792929966358321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_10
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 18
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6c9111d58a012cd0800000000000000
+      internalID: -2584773141279433622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_11
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 16
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d0479752272a7370800000000000000
+      internalID: 8321006289972314326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_12
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 15
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb6eddbf479d64a90800000000000000
+      internalID: -7329932247033846082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_13
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 15
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c31b2bee28b84a050800000000000000
+      internalID: 5810922813681479996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_14
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 7
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 206b7b777542d4e00800000000000000
+      internalID: 1030519847826994690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_15
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 9
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efced5a4cf03dcab0800000000000000
+      internalID: -4986275352291709698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_16
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 16
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d712d2620c2b5590800000000000000
+      internalID: -7684499950418126891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_17
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 16
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3346f1a3d53e1b530800000000000000
+      internalID: 3869123544434566195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_18
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 18
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7da29248ebd7f66e0800000000000000
+      internalID: -1842115465356694825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_19
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 19
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9d9f0f867a3ffe30800000000000000
+      internalID: 4539411230293466524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_20
+      rect:
+        serializedVersion: 2
+        x: 1745
+        y: 30
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0a16b7edb3bedb10800000000000000
+      internalID: 2008240112071481871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_21
+      rect:
+        serializedVersion: 2
+        x: 1830
+        y: 30
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 759bcdbd45f9b1340800000000000000
+      internalID: 4835633811727104343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_22
+      rect:
+        serializedVersion: 2
+        x: 1915
+        y: 30
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac90263f52b39510800000000000000
+      internalID: 1554782418372697263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_23
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 31
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b1143a6103d30840800000000000000
+      internalID: 5189223198691168693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_24
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 30
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03a8f0b543650e630800000000000000
+      internalID: 3954255255697328688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_25
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 8
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b48d7ff8fca9e0260800000000000000
+      internalID: 7065755081655179339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_26
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 6
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66dca7b1d37343bd0800000000000000
+      internalID: -2651433545020813978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_27
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 4
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b03a0bf7939ce9f0800000000000000
+      internalID: -437812782800686924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_28
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 4
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71281764ecebfb280800000000000000
+      internalID: -9025285335072800233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_29
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 0
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3f4c441bcd079ab0800000000000000
+      internalID: -5001513695301578950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_30
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 1
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6b337223bb51c310800000000000000
+      internalID: 1423519782161038187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_31
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 5
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffedfc68b3e92adb0800000000000000
+      internalID: -4782085875812016385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_32
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 5
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f3e0424f88224070800000000000000
+      internalID: 8089072476467815410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_33
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 9
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f2d26a2c5d7682c0800000000000000
+      internalID: -4429715348670721288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handBoss_34
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 10
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d14c4466209e3c40800000000000000
+      internalID: 5493987090004459992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      handBoss_0: 8408426557532077686
+      handBoss_1: 6863782857996523121
+      handBoss_10: -2584773141279433622
+      handBoss_11: 8321006289972314326
+      handBoss_12: -7329932247033846082
+      handBoss_13: 5810922813681479996
+      handBoss_14: 1030519847826994690
+      handBoss_15: -4986275352291709698
+      handBoss_16: -7684499950418126891
+      handBoss_17: 3869123544434566195
+      handBoss_18: -1842115465356694825
+      handBoss_19: 4539411230293466524
+      handBoss_2: 3974923364225238767
+      handBoss_20: 2008240112071481871
+      handBoss_21: 4835633811727104343
+      handBoss_22: 1554782418372697263
+      handBoss_23: 5189223198691168693
+      handBoss_24: 3954255255697328688
+      handBoss_25: 7065755081655179339
+      handBoss_26: -2651433545020813978
+      handBoss_27: -437812782800686924
+      handBoss_28: -9025285335072800233
+      handBoss_29: -5001513695301578950
+      handBoss_3: 1167647207136678252
+      handBoss_30: 1423519782161038187
+      handBoss_31: -4782085875812016385
+      handBoss_32: 8089072476467815410
+      handBoss_33: -4429715348670721288
+      handBoss_34: 5493987090004459992
+      handBoss_4: 4241033143982985114
+      handBoss_5: -4789066790052629087
+      handBoss_6: 1467427661392399603
+      handBoss_7: -2296901563452926198
+      handBoss_8: 6821001251267561144
+      handBoss_9: 9000792929966358321
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: c76ba0e27a14f334cbc749394e3834cd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 964883867930400671
+    second: inimo_idel 1_0
+  - first:
+      213: -6300755985966931365
+    second: inimo_idel 1_1
+  - first:
+      213: -4554223592464530180
+    second: inimo_idel 1_2
+  - first:
+      213: -2221453747403168563
+    second: inimo_idel 1_3
+  - first:
+      213: -1028806986716405739
+    second: inimo_idel 1_4
+  - first:
+      213: 9189023942202736641
+    second: inimo_idel 1_5
+  - first:
+      213: 5629963469665705518
+    second: inimo_idel 1_6
+  - first:
+      213: 4390995272886800980
+    second: inimo_idel 1_7
+  - first:
+      213: -8521041775910850966
+    second: inimo_idel 1_8
+  - first:
+      213: 4776501106660035562
+    second: inimo_idel 1_9
+  - first:
+      213: -2181090417739174538
+    second: inimo_idel 1_10
+  - first:
+      213: 2660634715989529945
+    second: inimo_idel 1_11
+  - first:
+      213: -3049682859545568668
+    second: inimo_idel 1_12
+  - first:
+      213: 5915418495415646112
+    second: inimo_idel 1_13
+  - first:
+      213: -3035576485441214464
+    second: inimo_idel 1_14
+  - first:
+      213: -8244669562094106407
+    second: inimo_idel 1_15
+  - first:
+      213: -8086289772579411729
+    second: inimo_idel 1_16
+  - first:
+      213: 20175608126549914
+    second: inimo_idel 1_17
+  - first:
+      213: 5612734039195648008
+    second: inimo_idel 1_18
+  - first:
+      213: -4605105734620225233
+    second: inimo_idel 1_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 35
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: inimo_idel 1_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 26
+        width: 93
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f971f7504c4f36d00800000000000000
+      internalID: 964883867930400671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimo_idel 1_1
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 26
+        width: 94
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b52660840d73f88a0800000000000000
+      internalID: -6300755985966931365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimo_idel 1_2
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 26
+        width: 91
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf4c27f95c52cc0c0800000000000000
+      internalID: -4554223592464530180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimo_idel 1_3
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 26
+        width: 87
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc4e215269fcb21e0800000000000000
+      internalID: -2221453747403168563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimo_idel 1_4
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 26
+        width: 96
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51024561f71f8b1f0800000000000000
+      internalID: -1028806986716405739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimo_idel 1_5
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 27
+        width: 92
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 100cd830798f58f70800000000000000
+      internalID: 9189023942202736641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimo_idel 1_6
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 26
+        width: 91
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2e99d362f5a12e40800000000000000
+      internalID: 5629963469665705518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimo_idel 1_7
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 26
+        width: 91
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45256daafe2ffec30800000000000000
+      internalID: 4390995272886800980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimo_idel 1_8
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 26
+        width: 96
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ee196b6ad2fb980800000000000000
+      internalID: -8521041775910850966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimo_idel 1_9
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 26
+        width: 92
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeb4bb3137a894240800000000000000
+      internalID: 4776501106660035562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimo_idel 1_10
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 25
+        width: 95
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67de5ab22d53bb1e0800000000000000
+      internalID: -2181090417739174538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimo_idel 1_11
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 26
+        width: 106
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 955d0a37d297ce420800000000000000
+      internalID: 2660634715989529945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimo_idel 1_12
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 26
+        width: 87
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46a503fd8995da5d0800000000000000
+      internalID: -3049682859545568668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimo_idel 1_13
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 26
+        width: 96
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a77605c7c9c71250800000000000000
+      internalID: 5915418495415646112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimo_idel 1_14
+      rect:
+        serializedVersion: 2
+        x: 1787
+        y: 26
+        width: 86
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0086fb805477fd5d0800000000000000
+      internalID: -3035576485441214464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimo_idel 1_15
+      rect:
+        serializedVersion: 2
+        x: 1905
+        y: 26
+        width: 94
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d8c7e427bc059d80800000000000000
+      internalID: -8244669562094106407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimo_idel 1_16
+      rect:
+        serializedVersion: 2
+        x: 2043
+        y: 26
+        width: 82
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe8a78a7b4ab7cf80800000000000000
+      internalID: -8086289772579411729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimo_idel 1_17
+      rect:
+        serializedVersion: 2
+        x: 2157
+        y: 26
+        width: 94
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9fa283db9da74000800000000000000
+      internalID: 20175608126549914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimo_idel 1_18
+      rect:
+        serializedVersion: 2
+        x: 2289
+        y: 26
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80000010fdf64ed40800000000000000
+      internalID: 5612734039195648008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimo_idel 1_19
+      rect:
+        serializedVersion: 2
+        x: 2409
+        y: 26
+        width: 94
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f21e8d6bbb06710c0800000000000000
+      internalID: -4605105734620225233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      inimo_idel 1_0: 964883867930400671
+      inimo_idel 1_1: -6300755985966931365
+      inimo_idel 1_10: -2181090417739174538
+      inimo_idel 1_11: 2660634715989529945
+      inimo_idel 1_12: -3049682859545568668
+      inimo_idel 1_13: 5915418495415646112
+      inimo_idel 1_14: -3035576485441214464
+      inimo_idel 1_15: -8244669562094106407
+      inimo_idel 1_16: -8086289772579411729
+      inimo_idel 1_17: 20175608126549914
+      inimo_idel 1_18: 5612734039195648008
+      inimo_idel 1_19: -4605105734620225233
+      inimo_idel 1_2: -4554223592464530180
+      inimo_idel 1_3: -2221453747403168563
+      inimo_idel 1_4: -1028806986716405739
+      inimo_idel 1_5: 9189023942202736641
+      inimo_idel 1_6: 5629963469665705518
+      inimo_idel 1_7: 4390995272886800980
+      inimo_idel 1_8: -8521041775910850966
+      inimo_idel 1_9: 4776501106660035562
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
