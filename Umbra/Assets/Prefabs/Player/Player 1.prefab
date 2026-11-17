@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7347399500280590335}
   - component: {fileID: 4676774010596248139}
+  - component: {fileID: 192035446896264400}
   m_Layer: 0
   m_Name: Lamparina
   m_TagString: Untagged
@@ -112,6 +113,30 @@ MonoBehaviour:
   - {x: 0.33139515, y: -0.2946533, z: 0}
   - {x: 0.3776002, y: -0.20820987, z: 0}
   - {x: 0.40605307, y: -0.11441326, z: 0}
+--- !u!114 &192035446896264400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640550541129321186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 920438d2dc5a4e84ea6c82e821cd2094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VelaFogo
+  luz: {fileID: 4676774010596248139}
+  chamaVisual: {fileID: 0}
+  intensidadeBase: 1
+  variacaoIntensidade: 0.25
+  animarRaio: 1
+  variacaoRaio: 0.3
+  velocidade: 3
+  balancoPosicao: 0.04
+  balancoRotacaoChama: 6
+  usarRajadas: 1
+  chanceRajadaPorSegundo: 0.4
+  forcaRajada: 2
 --- !u!1 &1878869115233910570
 GameObject:
   m_ObjectHideFlags: 0
@@ -1185,7 +1210,7 @@ Transform:
   m_GameObject: {fileID: 9046899001730944564}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.4277232, y: -0.030525923, z: -10}
+  m_LocalPosition: {x: 5.452228, y: 1.0126362, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

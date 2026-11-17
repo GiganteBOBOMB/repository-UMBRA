@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 112}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 0
-  controlID: 23887
+  controlID: 7816
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 112}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 23888
+  controlID: 7817
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -194,16 +194,16 @@ MonoBehaviour:
     y: 627
     width: 1401
     height: 306
-  m_MinSize: {x: 201, y: 226}
-  m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 13}
+  m_MinSize: {x: 231, y: 276}
+  m_MaxSize: {x: 10001, y: 10026}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
   - {fileID: 18}
   - {fileID: 19}
   - {fileID: 13}
-  m_Selected: 3
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 3
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -228,7 +228,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 112}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 23966
+  controlID: 7847
   draggingID: 0
 --- !u!114 &10
 MonoBehaviour:
@@ -571,7 +571,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 706
+    y: 651
     width: 1400
     height: 280
   m_SerializedDataModeController:
@@ -620,7 +620,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1024,13 +1024,13 @@ MonoBehaviour:
       sizeOverridden: 0
     - dockPosition: 1
       containerId: overlay-container--right
-      displayed: 0
+      displayed: 1
       id: SceneView/CamerasOverlay
       index: 7
-      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":0.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":25.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       layout: 4
@@ -1177,9 +1177,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 11.884277, y: 17.603508, z: -0.17959385}
+    m_Target: {x: 1.9594619, y: -0.077429265, z: 0.093546815}
     speed: 2
-    m_Value: {x: 11.884277, y: 17.603508, z: -0.17959385}
+    m_Value: {x: 1.9594619, y: -0.077429265, z: 0.093546815}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1229,9 +1229,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 32.171055
+    m_Target: 4.8566947
     speed: 2
-    m_Value: 32.171055
+    m_Value: 4.8566947
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1443,7 +1443,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/boss 2
+    - Assets/Prefabs/cenario
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1453,25 +1453,22 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 50
   m_LastFolders:
-  - Assets/Scripts/boss 2
+  - Assets/Prefabs/cenario
   m_LastFoldersGridSize: 50
   m_LastProjectPath: C:\Users\Gigante\OneDrive\Documentos\GitHub\repository-UMBRA\Umbra
   m_LockTracker:
     m_IsLocked: 0
   m_LastLocalAssetsSearchArea: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 172}
+    scrollPos: {x: 0, y: 120}
     m_SelectedIDs:
-    - m_Data: 96056
+    - m_Data: 77116
     m_LastClickedID:
-      m_Data: 96056
+      m_Data: 77116
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 67062
-    - m_Data: 69226
-    - m_Data: 74580
-    - m_Data: 76166
-    - m_Data: 96056
+    - m_Data: 69284
+    - m_Data: 71488
     - m_Data: 1000000000
     - m_Data: 2147483647
     m_RenameOverlay:
@@ -1506,11 +1503,7 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 67062
-    - m_Data: 69226
-    - m_Data: 74580
-    - m_Data: 76166
-    - m_Data: 96056
+    - m_Data: 69284
     - m_Data: 1000000000
     - m_Data: 2147483647
     m_RenameOverlay:
@@ -1540,9 +1533,9 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
     m_SelectedInstanceIDs:
-    - m_Data: -150378
-    m_LastClickedInstanceID: -150378
-    m_HadKeyboardFocusLastEvent: 1
+    - m_Data: -76422
+    m_LastClickedInstanceID: -76422
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs:
     - m_Data: 75886
     - m_Data: 61286
@@ -1672,7 +1665,7 @@ MonoBehaviour:
     m_DynamicPanelBehavior: 0
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -150378
+  m_LastSelectedObjectID: -76422
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1715,40 +1708,18 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs:
-      - m_Data: -150378
+      - m_Data: -76422
       m_LastClickedID:
-        m_Data: -150378
+        m_Data: -76422
       m_ExpandedIDs:
-      - m_Data: -150452
-      - m_Data: -150430
-      - m_Data: -150378
-      - m_Data: -150376
-      - m_Data: -148316
-      - m_Data: -146856
-      - m_Data: -141004
-      - m_Data: -139970
-      - m_Data: -128388
-      - m_Data: -128268
-      - m_Data: -128232
-      - m_Data: -128090
-      - m_Data: -123592
-      - m_Data: -107746
-      - m_Data: -107732
-      - m_Data: -107710
-      - m_Data: -107172
-      - m_Data: -100644
-      - m_Data: -96986
-      - m_Data: -96118
-      - m_Data: -94008
-      - m_Data: -94006
-      - m_Data: -92552
-      - m_Data: -64182
-      - m_Data: -64178
-      - m_Data: -64140
-      - m_Data: -61590
-      - m_Data: 82592
-      - m_Data: 83636
-      - m_Data: 83666
+      - m_Data: -77218
+      - m_Data: -76674
+      - m_Data: -76342
+      - m_Data: -76236
+      - m_Data: -73116
+      - m_Data: -70704
+      - m_Data: -65046
+      - m_Data: -63662
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

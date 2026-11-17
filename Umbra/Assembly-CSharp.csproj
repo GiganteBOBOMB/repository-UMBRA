@@ -84,8 +84,8 @@
     <Compile Include="Assets\Scripts\Inimigos\EnemyBase.cs" />
     <Compile Include="Assets\Scripts\Player\AttackHitbox.cs" />
     <Compile Include="Assets\Scripts\Paralaxa\ParallaxBackground.cs" />
-    <Compile Include="Assets\Scripts\Inimigos\ShieldEnemy.cs" />
     <Compile Include="Assets\Scripts\Player\FlashlightController.cs" />
+    <Compile Include="Assets\Scripts\Inimigos\ShieldEnemy.cs" />
     <Compile Include="Assets\Scripts\boss 2\dificuldade\Bossdifficultycontroller.cs" />
     <Compile Include="Assets\Scripts\Inimigos\ArcherEnemy.cs" />
     <Compile Include="Assets\Scripts\Inimigos\Arrow.cs" />
@@ -93,6 +93,8 @@
     <Compile Include="Assets\Scripts\boss 2\ataques\AtaqueEsmagamento.cs" />
     <Compile Include="Assets\Scripts\boss 2\dificuldade\Bosshealth.cs" />
     <Compile Include="Assets\Scripts\script\Player.cs" />
+    <Compile Include="Assets\Scripts\EFEITO\Vagalumes.cs" />
+    <Compile Include="Assets\Scripts\EFEITO\Velafogo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
