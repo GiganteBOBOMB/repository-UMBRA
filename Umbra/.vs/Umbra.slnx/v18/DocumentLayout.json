@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Gigante\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Gigante\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\EFEITO\\Velafogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\EFEITO\\Velafogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Gigante\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\script\\Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\script\\Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Gigante\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\EFEITO\\Vagalumes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\EFEITO\\Vagalumes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\gigante\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\gigante\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\plataformas\\doorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\plataformas\\doorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\gigante\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\plataformas\\lightbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\plataformas\\lightbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\gigante\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\efeito\\vagalumes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\efeito\\vagalumes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\gigante\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\efeito\\velafogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\efeito\\velafogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\gigante\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\player\\flashlightcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\flashlightcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\gigante\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\plataformas\\lightwall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\plataformas\\lightwall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,7 +50,34 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\Gigante\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\Gigante\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAA4wHUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-18T05:42:04.526Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LightButton.cs",
+              "DocumentMoniker": "C:\\Users\\Gigante\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Plataformas\\LightButton.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Plataformas\\LightButton.cs",
+              "ToolTip": "C:\\Users\\Gigante\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Plataformas\\LightButton.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Plataformas\\LightButton.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T17:19:57.271Z",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Velafogo.cs",
               "DocumentMoniker": "C:\\Users\\Gigante\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\EFEITO\\Velafogo.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EFEITO\\Velafogo.cs",
@@ -39,12 +86,38 @@
               "ViewState": "AgIAACwAAAAAAAAAAAAmwFcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-17T04:55:13.889Z",
+              "OwnerCaption": "%3"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\Gigante\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\script\\Menu.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\script\\Menu.cs",
+              "ToolTip": "C:\\Users\\Gigante\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\script\\Menu.cs",
+              "RelativeToolTip": "Assets\\Scripts\\script\\Menu.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-19T05:52:08.301Z",
               "EditorCaption": "",
               "OwnerCaption": "%3"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "DoorController.cs",
+              "DocumentMoniker": "C:\\Users\\Gigante\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Plataformas\\DoorController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Plataformas\\DoorController.cs",
+              "ToolTip": "C:\\Users\\Gigante\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Plataformas\\DoorController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Plataformas\\DoorController.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAA0wIQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T17:21:19.959Z",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "FlashlightController.cs",
               "DocumentMoniker": "C:\\Users\\Gigante\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Player\\FlashlightController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\FlashlightController.cs",
@@ -53,21 +126,32 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-16T03:23:19.51Z",
-              "EditorCaption": "",
               "OwnerCaption": "%3"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Vagalumes.cs",
               "DocumentMoniker": "C:\\Users\\Gigante\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\EFEITO\\Vagalumes.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EFEITO\\Vagalumes.cs",
               "ToolTip": "C:\\Users\\Gigante\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\EFEITO\\Vagalumes.cs",
               "RelativeToolTip": "Assets\\Scripts\\EFEITO\\Vagalumes.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAA2wI0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAywI0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-17T04:35:01.979Z",
-              "EditorCaption": "",
+              "OwnerCaption": "%3"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LightWall.cs",
+              "DocumentMoniker": "C:\\Users\\Gigante\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Plataformas\\LightWall.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Plataformas\\LightWall.cs",
+              "ToolTip": "C:\\Users\\Gigante\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Plataformas\\LightWall.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Plataformas\\LightWall.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAwwHMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T17:08:49.365Z",
               "OwnerCaption": "%3"
             }
           ]

@@ -89,6 +89,10 @@ public class PlayerController : MonoBehaviour
 
         // Precisa vir depois da verificação do chão, para usar o valor atualizado.
         UpdateAnimations();
+        if (groundCheck == null)
+            Debug.LogWarning("groundCheck NÃO está atribuído no Inspector!");
+        else
+            Debug.Log("No chão: " + isGrounded);
     }
 
     private void FixedUpdate()

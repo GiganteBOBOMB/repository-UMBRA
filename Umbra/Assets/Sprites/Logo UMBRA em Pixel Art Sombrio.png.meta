@@ -1,0 +1,200 @@
+fileFormatVersion: 2
+guid: a0aea3ea3dadacd469ca3a79aefdd013
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1614946490930167450
+    second: Logo UMBRA em Pixel Art Sombrio_0
+  - first:
+      213: 8637132877340675675
+    second: Logo UMBRA em Pixel Art Sombrio_1
+  - first:
+      213: 4849120344539507830
+    second: Logo UMBRA em Pixel Art Sombrio_2
+  - first:
+      213: 9199951497941516129
+    second: Logo UMBRA em Pixel Art Sombrio_3
+  - first:
+      213: 2549426596740958503
+    second: Logo UMBRA em Pixel Art Sombrio_4
+  - first:
+      213: 6856184072592155338
+    second: Logo UMBRA em Pixel Art Sombrio_5
+  - first:
+      213: 8237463445205930376
+    second: Logo UMBRA em Pixel Art Sombrio_6
+  - first:
+      213: -8184964818369969170
+    second: Logo UMBRA em Pixel Art Sombrio_7
+  - first:
+      213: 2774288200353081370
+    second: Logo UMBRA em Pixel Art Sombrio_8
+  - first:
+      213: -8473094502088697256
+    second: Logo UMBRA em Pixel Art Sombrio_9
+  - first:
+      213: -7571544769860037777
+    second: Logo UMBRA em Pixel Art Sombrio_10
+  - first:
+      213: 2209350511450855000
+    second: Logo UMBRA em Pixel Art Sombrio_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Logo UMBRA em Pixel Art Sombrio_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2149
+        height: 732
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66108dc09be8699e0800000000000000
+      internalID: -1614946490930167450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c77c39794244cde41ad17452b08cac6e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Logo UMBRA em Pixel Art Sombrio_0: -1614946490930167450
+      Logo UMBRA em Pixel Art Sombrio_1: 8637132877340675675
+      Logo UMBRA em Pixel Art Sombrio_10: -7571544769860037777
+      Logo UMBRA em Pixel Art Sombrio_11: 2209350511450855000
+      Logo UMBRA em Pixel Art Sombrio_2: 4849120344539507830
+      Logo UMBRA em Pixel Art Sombrio_3: 9199951497941516129
+      Logo UMBRA em Pixel Art Sombrio_4: 2549426596740958503
+      Logo UMBRA em Pixel Art Sombrio_5: 6856184072592155338
+      Logo UMBRA em Pixel Art Sombrio_6: 8237463445205930376
+      Logo UMBRA em Pixel Art Sombrio_7: -8184964818369969170
+      Logo UMBRA em Pixel Art Sombrio_8: 2774288200353081370
+      Logo UMBRA em Pixel Art Sombrio_9: -8473094502088697256
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
