@@ -44,6 +44,13 @@ public class FlashlightController : MonoBehaviour
     [Tooltip("Ativa mensagens de diagnóstico na Console.")]
     public bool debugPlatforms = false;
 
+    [Header("Botões de Luz e Fantasmas")]
+    [Tooltip("Alcance da luz para ativar botões e revelar fantasmas.")]
+    public float buttonGhostRange = 6f;
+
+    [Tooltip("Se verdadeiro, usa o ângulo reduzido durante o foco (igual às plataformas).")]
+    public bool buttonGhostUsesFocusAngle = false;
+
     private int facingDirection = 1;
     private Vector3 originalFocusScale;
     private float originalLightIntensity = 1f;
@@ -57,6 +64,10 @@ public class FlashlightController : MonoBehaviour
     // Guarda as plataformas da cena, mesmo quando seus
     // colliders físicos estiverem desativados.
     private LightPlatform[] allPlatforms;
+
+    // Botões de luz e fantasmas da cena.
+    private LightButton[] allButtons;
+    private GhostVisual[] allGhosts;
 
     public bool IsFocusing { get; private set; }
 
@@ -77,9 +88,15 @@ public class FlashlightController : MonoBehaviour
         // Não dependemos do collider físico para localizar
         // as plataformas transparentes.
         allPlatforms = FindObjectsOfType<LightPlatform>();
+        allButtons = FindObjectsOfType<LightButton>();
+        allGhosts = FindObjectsOfType<GhostVisual>();
 
         if (debugPlatforms)
+        {
             Debug.Log("Plataformas encontradas: " + allPlatforms.Length);
+            Debug.Log("Botões encontrados: " + allButtons.Length);
+            Debug.Log("Fantasmas encontrados: " + allGhosts.Length);
+        }
     }
 
     private void Update()
@@ -99,6 +116,8 @@ public class FlashlightController : MonoBehaviour
             stunnedEnemies.Clear();
 
         UpdateLightPlatforms();
+        UpdateLightButtons();
+        UpdateGhosts();
     }
 
     private void UpdateFacingDirection()
@@ -212,6 +231,61 @@ public class FlashlightController : MonoBehaviour
         }
     }
 
+    // Teste único do feixe: o ponto está dentro do alcance e do cone da lanterna?
+    private bool IsInBeam(Vector2 targetPosition, float range, float angle)
+    {
+        Vector2 toTarget = targetPosition - (Vector2)transform.position;
+        float distance = toTarget.magnitude;
+
+        if (distance > range)
+            return false;
+
+        // Praticamente em cima da lanterna.
+        if (distance < 0.001f)
+            return true;
+
+        float angleToTarget = Vector2.Angle(transform.right, toTarget / distance);
+        return angleToTarget <= angle / 2f;
+    }
+
+    private void UpdateLightButtons()
+    {
+        if (allButtons == null)
+            allButtons = FindObjectsOfType<LightButton>();
+
+        float angle = (IsFocusing && buttonGhostUsesFocusAngle) ? focusAngle : lightAngle;
+
+        foreach (LightButton button in allButtons)
+        {
+            if (button == null || !button.gameObject.activeInHierarchy)
+                continue;
+
+            bool lit = IsInBeam(button.transform.position, buttonGhostRange, angle);
+
+            // O LightButton ignora chamadas repetidas com o mesmo estado,
+            // então é seguro chamar todo quadro.
+            button.SetIlluminated(lit);
+        }
+    }
+
+    private void UpdateGhosts()
+    {
+        if (allGhosts == null)
+            allGhosts = FindObjectsOfType<GhostVisual>();
+
+        float angle = (IsFocusing && buttonGhostUsesFocusAngle) ? focusAngle : lightAngle;
+
+        foreach (GhostVisual ghost in allGhosts)
+        {
+            if (ghost == null || !ghost.gameObject.activeInHierarchy)
+                continue;
+
+            // Chamado todo quadro enquanto iluminado: renova o tempo de visibilidade.
+            if (IsInBeam(ghost.transform.position, buttonGhostRange, angle))
+                ghost.SetIlluminated(true);
+        }
+    }
+
     private void UpdateLightPlatforms()
     {
         if (allPlatforms == null)
@@ -228,9 +302,6 @@ public class FlashlightController : MonoBehaviour
         HashSet<LightPlatform> currentlyLit =
             new HashSet<LightPlatform>();
 
-        Vector2 lightPosition = transform.position;
-        Vector2 lightDirection = transform.right;
-
         foreach (LightPlatform platform in allPlatforms)
         {
             if (platform == null || !platform.gameObject.activeInHierarchy)
@@ -238,31 +309,7 @@ public class FlashlightController : MonoBehaviour
 
             // Usa a posição da plataforma, não seu collider.
             // Assim, ela continua detectável quando está intangível.
-            Vector2 targetPosition = platform.transform.position;
-            Vector2 directionToPlatform = targetPosition - lightPosition;
-
-            float distance = directionToPlatform.magnitude;
-
-            // Verifica o alcance.
-            if (distance > range)
-                continue;
-
-            // A plataforma está praticamente na posição da lanterna.
-            if (distance < 0.001f)
-            {
-                currentlyLit.Add(platform);
-                continue;
-            }
-
-            directionToPlatform /= distance;
-
-            // Verifica se a plataforma está dentro do cone de luz.
-            float angleToPlatform = Vector2.Angle(
-                lightDirection,
-                directionToPlatform
-            );
-
-            if (angleToPlatform <= angle / 2f)
+            if (IsInBeam(platform.transform.position, range, angle))
                 currentlyLit.Add(platform);
         }
 
@@ -304,6 +351,15 @@ public class FlashlightController : MonoBehaviour
 
         illuminatedPlatforms.Clear();
         stunnedEnemies.Clear();
+
+        if (allButtons != null)
+        {
+            foreach (LightButton button in allButtons)
+            {
+                if (button != null)
+                    button.SetIlluminated(false);
+            }
+        }
     }
 
     private void OnDrawGizmosSelected()
@@ -313,5 +369,8 @@ public class FlashlightController : MonoBehaviour
 
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(transform.position, platformLightRange);
+
+        Gizmos.color = Color.magenta;
+        Gizmos.DrawWireSphere(transform.position, buttonGhostRange);
     }
 }

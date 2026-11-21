@@ -25,6 +25,8 @@ public class LightButton : MonoBehaviour
         if (isIlluminated == illuminated)
             return;
 
+        Debug.Log($"[LightButton] SetIlluminated({illuminated})", this);
+
         isIlluminated = illuminated;
 
         if (buttonSprite != null)

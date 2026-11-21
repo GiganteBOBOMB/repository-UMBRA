@@ -1,51 +1,109 @@
 using UnityEngine;
 
+// Os modos do inimigo. Só um está ativo por vez.
+public enum ShieldEnemyMode
+{
+    Idle,    // parado (jogador longe, ou perto demais durante a recarga)
+    Chase,   // andando até o jogador
+    Charge   // dash com o escudo
+}
+
 public class ShieldEnemy : EnemyBase
 {
-    [Header("Detecção do Jogador")]
-
-    // Distância na qual o inimigo percebe o jogador.
-    public float detectionRange = 5f;
+    [Header("Jogador")]
 
     // Referência ao jogador.
     public Transform player;
 
 
-    [Header("Ataque de Escudo")]
+    [Header("Alcances")]
 
-    // Velocidade da investida.
-    public float chargeSpeed = 8f;
+    // Ligado: o dash começa quando o jogador está dentro da distância que o próprio dash percorre
+    // (calculada com a velocidade, a duração e a curva). Assim o dash sempre alcança o jogador.
+    // Desligado: usa o Attack Range manual abaixo.
+    public bool attackRangeFollowsDash = true;
 
-    // Tempo durante o qual o inimigo investe.
-    public float chargeDuration = 0.6f;
-
-    // Tempo de espera entre investidas.
-    public float attackCooldown = 2f;
-
-    // Distância mínima para iniciar a investida.
+    // Alcance do dash manual. Só vale se "Attack Range Follows Dash" estiver desligado.
     public float attackRange = 2.5f;
 
+    // O alcance em que ele SEGUE o jogador é o alcance do dash multiplicado por este valor.
+    // 2 = o dobro.
+    public float followRangeMultiplier = 2f;
 
-    // Informa se o inimigo está investindo.
-    private bool isCharging = false;
+
+    [Header("Modo 1: Andar até o jogador")]
+
+    // Velocidade de caminhada.
+    public float walkSpeed = 2.5f;
+
+    // Quão rápido ele ganha e perde velocidade (unidades por segundo ao quadrado).
+    // Maior = arranca e para mais bruscamente. Menor = mais suave.
+    public float acceleration = 12f;
+
+    // Diferença horizontal mínima para ele virar de lado.
+    // Evita ficar virando de um lado para o outro quando o jogador está bem acima ou abaixo.
+    public float turnDeadZone = 0.1f;
+
+
+    [Header("Modo 2: Dash")]
+
+    // Velocidade MÁXIMA do dash (o pico da curva abaixo).
+    public float chargeSpeed = 15f;
+
+    // Duração total do dash.
+    public float chargeDuration = 0.6f;
+
+    // Como a velocidade muda durante o dash.
+    // Horizontal: tempo do dash (0 = começo, 1 = fim).
+    // Vertical: fração da velocidade máxima (1 = chargeSpeed).
+    // Padrão: arranca, chega ao pico em 30% do tempo e vai freando até parar.
+    public AnimationCurve chargeSpeedCurve = new AnimationCurve(
+        new Keyframe(0f, 0.2f),
+        new Keyframe(0.3f, 1f),
+        new Keyframe(1f, 0f)
+    );
+
+    // Tempo de espera entre dashes.
+    public float attackCooldown = 2f;
+
+
+    // Distância que o dash percorre, calculada. Somente leitura (aparece nos gizmos).
+    public float DashDistance { get; private set; }
+
+    // Alcance do dash: a distância em que ele começa o dash.
+    public float DashRange => attackRangeFollowsDash ? DashDistance : attackRange;
+
+    // Alcance em que ele segue o jogador: o alcance do dash vezes o multiplicador (2 = o dobro).
+    public float FollowRange => DashRange * followRangeMultiplier;
+
+    // Modo atual (somente leitura de fora).
+    public ShieldEnemyMode Mode { get; private set; } = ShieldEnemyMode.Idle;
 
     // Informa se o ataque está em tempo de recarga.
     private bool isOnCooldown = false;
 
-    // Direção da investida.
-    private int chargeDirection = 1;
-
-    // Tempo restante da investida.
-    private float chargeTimer = 0f;
-
     // Tempo restante da recarga.
     private float cooldownTimer = 0f;
+
+    // Direção do dash (travada no começo dele).
+    private int chargeDirection = 1;
+
+    // Tempo já gasto no dash.
+    private float chargeElapsed = 0f;
+
+    // Lado para onde o inimigo está virado (-1 esquerda, 1 direita).
+    private int facingDirection = 1;
+
+    // Velocidade horizontal atual, com sinal. É ela que é suavizada.
+    private float moveVelocity = 0f;
 
 
     protected override void Awake()
     {
         // Inicializa vida e SpriteRenderer da classe base.
         base.Awake();
+
+        DashDistance = CalculateDashDistance();
 
         // Procura o jogador pela tag Player, caso não tenha sido definido.
         if (player == null)
@@ -60,78 +118,137 @@ public class ShieldEnemy : EnemyBase
     }
 
 
+    // Recalcula a distância do dash sempre que um valor muda no Inspector.
+    private void OnValidate()
+    {
+        DashDistance = CalculateDashDistance();
+    }
+
+
+    // Distância total que o dash percorre: velocidade máxima x duração x média da curva.
+    // A média é medida somando a curva em vários pontos do tempo.
+    private float CalculateDashDistance()
+    {
+        if (chargeSpeedCurve == null || chargeSpeedCurve.length == 0)
+            return chargeSpeed * chargeDuration;
+
+        const int samples = 60;
+        float sum = 0f;
+
+        for (int i = 0; i < samples; i++)
+        {
+            float t = (i + 0.5f) / samples;
+            sum += chargeSpeedCurve.Evaluate(t);
+        }
+
+        float average = sum / samples;
+        return chargeSpeed * chargeDuration * average;
+    }
+
+
     private void Update()
     {
         // Sem jogador, não há como detectar ou atacar.
         if (player == null)
             return;
 
-        // Durante o atordoamento, o inimigo não ataca.
+        // Durante o atordoamento, o inimigo não faz nada.
         if (IsStunned)
-            return;
-
-        // Atualiza o tempo de recarga.
-        if (isOnCooldown)
         {
-            cooldownTimer -= Time.deltaTime;
-
-            if (cooldownTimer <= 0f)
-            {
-                isOnCooldown = false;
-            }
+            moveVelocity = 0f;
+            return;
         }
 
-        // Continua a investida caso esteja atacando.
-        if (isCharging)
+        UpdateCooldown();
+
+        // Modo dash: só continua o dash.
+        if (Mode == ShieldEnemyMode.Charge)
         {
             UpdateCharge();
             return;
         }
 
-        // Calcula a distância até o jogador.
+        // Distância e lado do jogador.
         float distance = Vector2.Distance(transform.position, player.position);
+        float deltaX = player.position.x - transform.position.x;
 
-        // Ataca se o jogador estiver próximo e o ataque estiver disponível.
-        if (!isOnCooldown && distance <= attackRange)
+        // Dá o dash se o jogador estiver ao alcance do dash e o dash estiver disponível.
+        if (!isOnCooldown && distance <= DashRange)
         {
-            StartCharge();
+            StartCharge(deltaX);
+            return;
+        }
+
+        // Decide entre andar até o jogador ou ficar parado.
+        // Anda se o jogador está dentro do alcance de seguir e ainda fora do alcance do dash.
+        bool shouldChase = distance <= FollowRange && distance > DashRange;
+        Mode = shouldChase ? ShieldEnemyMode.Chase : ShieldEnemyMode.Idle;
+
+        // Vira para o jogador sempre que ele estiver à vista (inclusive esperando a recarga).
+        if (distance <= FollowRange && Mathf.Abs(deltaX) > turnDeadZone)
+        {
+            SetFacing(deltaX < 0f ? -1 : 1);
+        }
+
+        // Velocidade desejada: caminhada na direção do jogador, ou zero.
+        float targetVelocity = shouldChase ? facingDirection * walkSpeed : 0f;
+        MoveHorizontally(targetVelocity);
+    }
+
+
+    private void UpdateCooldown()
+    {
+        if (!isOnCooldown)
+            return;
+
+        cooldownTimer -= Time.deltaTime;
+
+        if (cooldownTimer <= 0f)
+        {
+            isOnCooldown = false;
         }
     }
 
 
-    private void StartCharge()
+    // Aproxima a velocidade atual da desejada aos poucos (é isso que deixa o movimento suave)
+    // e move o inimigo.
+    private void MoveHorizontally(float targetVelocity)
     {
-        // Define que a investida começou.
-        isCharging = true;
+        moveVelocity = Mathf.MoveTowards(moveVelocity, targetVelocity, acceleration * Time.deltaTime);
+        transform.position += Vector3.right * moveVelocity * Time.deltaTime;
+    }
 
-        // Determina se o jogador está à esquerda ou à direita.
-        chargeDirection = player.position.x < transform.position.x ? -1 : 1;
 
-        // Inicia a contagem da investida.
-        chargeTimer = chargeDuration;
+    private void StartCharge(float deltaX)
+    {
+        Mode = ShieldEnemyMode.Charge;
 
-        // Vira o sprite para a direção do ataque.
-        UpdateFacingDirection();
+        // Determina se o jogador está à esquerda ou à direita e trava essa direção.
+        chargeDirection = deltaX < 0f ? -1 : 1;
+        SetFacing(chargeDirection);
+
+        // Começa a contagem do dash.
+        chargeElapsed = 0f;
     }
 
 
     private void UpdateCharge()
     {
-        // Interrompe a investida se o inimigo for atordoado.
-        if (IsStunned)
-        {
-            StopCharge();
-            return;
-        }
+        chargeElapsed += Time.deltaTime;
 
-        // Move o inimigo horizontalmente durante a investida.
-        transform.position += Vector3.right * chargeDirection * chargeSpeed * Time.deltaTime;
+        // Progresso do dash de 0 a 1.
+        float t = Mathf.Clamp01(chargeElapsed / Mathf.Max(0.01f, chargeDuration));
 
-        // Atualiza a duração restante da investida.
-        chargeTimer -= Time.deltaTime;
+        // Fração da velocidade máxima neste instante, vinda da curva.
+        float multiplier = (chargeSpeedCurve != null && chargeSpeedCurve.length > 0)
+            ? chargeSpeedCurve.Evaluate(t)
+            : 1f;
 
-        // Finaliza a investida quando o tempo acaba.
-        if (chargeTimer <= 0f)
+        moveVelocity = chargeDirection * chargeSpeed * multiplier;
+        transform.position += Vector3.right * moveVelocity * Time.deltaTime;
+
+        // Finaliza quando o tempo acaba.
+        if (chargeElapsed >= chargeDuration)
         {
             StopCharge();
         }
@@ -140,29 +257,33 @@ public class ShieldEnemy : EnemyBase
 
     private void StopCharge()
     {
-        // Encerra a investida.
-        isCharging = false;
+        // Volta ao modo normal. A velocidade NÃO é zerada aqui:
+        // o MoveHorizontally a reduz aos poucos, então o inimigo desliza e para sem tranco.
+        Mode = ShieldEnemyMode.Idle;
 
-        // Inicia a recarga do ataque.
+        // Inicia a recarga do dash.
         isOnCooldown = true;
         cooldownTimer = attackCooldown;
     }
 
 
-    private void UpdateFacingDirection()
+    private void SetFacing(int direction)
     {
+        facingDirection = direction;
+
         // Vira o sprite para a esquerda ou para a direita.
         if (spriteRenderer != null)
         {
-            spriteRenderer.flipX = chargeDirection < 0;
+            spriteRenderer.flipX = direction < 0;
         }
     }
 
 
     public override void Stun(float duration)
     {
-        // Interrompe a investida ao receber o atordoamento.
-        isCharging = false;
+        // Interrompe o dash e qualquer movimento ao receber o atordoamento.
+        Mode = ShieldEnemyMode.Idle;
+        moveVelocity = 0f;
 
         // Aplica o atordoamento definido na classe base.
         base.Stun(duration);
@@ -173,5 +294,20 @@ public class ShieldEnemy : EnemyBase
     {
         // Usa a duração padrão definida no Inspector.
         Stun(stunDuration);
+    }
+
+
+    // Mostra os alcances na Scene View quando o inimigo está selecionado.
+    private void OnDrawGizmosSelected()
+    {
+        if (DashDistance <= 0f) DashDistance = CalculateDashDistance();
+
+        // Amarelo: alcance em que ele segue o jogador (o dobro do dash).
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, FollowRange);
+
+        // Vermelho: alcance do dash (onde ele para de andar e investe).
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, DashRange);
     }
 }
