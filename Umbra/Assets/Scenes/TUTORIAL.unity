@@ -321,7 +321,7 @@ TilemapRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.5, y: 0.5, z: 0}
+  m_ChunkCullingBounds: {x: 1.1666666, y: 1.1666666, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -16177,6 +16177,14 @@ PrefabInstance:
       propertyPath: orthographic size
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 4900195450021802196, guid: 42c3a1e33183afc45a5a55cc7f6a5384, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.034
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900195450021802196, guid: 42c3a1e33183afc45a5a55cc7f6a5384, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 5057403079134163928, guid: 42c3a1e33183afc45a5a55cc7f6a5384, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.6799996
@@ -16185,8 +16193,17 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.9000002
       objectReference: {fileID: 0}
+    - target: {fileID: 7766264491548287829, guid: 42c3a1e33183afc45a5a55cc7f6a5384, type: 3}
+      propertyPath: m_Size.x
+      value: 0.6894138
+      objectReference: {fileID: 0}
+    - target: {fileID: 7766264491548287829, guid: 42c3a1e33183afc45a5a55cc7f6a5384, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.009557441
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2307806525513014032, guid: 42c3a1e33183afc45a5a55cc7f6a5384, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42c3a1e33183afc45a5a55cc7f6a5384, type: 3}

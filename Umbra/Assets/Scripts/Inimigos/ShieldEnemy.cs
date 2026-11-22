@@ -1,313 +1,311 @@
+using System.Collections;
 using UnityEngine;
-
-// Os modos do inimigo. Só um está ativo por vez.
-public enum ShieldEnemyMode
-{
-    Idle,    // parado (jogador longe, ou perto demais durante a recarga)
-    Chase,   // andando até o jogador
-    Charge   // dash com o escudo
-}
 
 public class ShieldEnemy : EnemyBase
 {
-    [Header("Jogador")]
+    [Header("Detecção")]
+    public float detectionRange = 7f;
+    public float attackRange = 2f;
 
-    // Referência ao jogador.
-    public Transform player;
+    [Header("Movimentação")]
+    public float moveSpeed = 2.5f;
 
-
-    [Header("Alcances")]
-
-    // Ligado: o dash começa quando o jogador está dentro da distância que o próprio dash percorre
-    // (calculada com a velocidade, a duração e a curva). Assim o dash sempre alcança o jogador.
-    // Desligado: usa o Attack Range manual abaixo.
-    public bool attackRangeFollowsDash = true;
-
-    // Alcance do dash manual. Só vale se "Attack Range Follows Dash" estiver desligado.
-    public float attackRange = 2.5f;
-
-    // O alcance em que ele SEGUE o jogador é o alcance do dash multiplicado por este valor.
-    // 2 = o dobro.
-    public float followRangeMultiplier = 2f;
-
-
-    [Header("Modo 1: Andar até o jogador")]
-
-    // Velocidade de caminhada.
-    public float walkSpeed = 2.5f;
-
-    // Quão rápido ele ganha e perde velocidade (unidades por segundo ao quadrado).
-    // Maior = arranca e para mais bruscamente. Menor = mais suave.
-    public float acceleration = 12f;
-
-    // Diferença horizontal mínima para ele virar de lado.
-    // Evita ficar virando de um lado para o outro quando o jogador está bem acima ou abaixo.
-    public float turnDeadZone = 0.1f;
-
-
-    [Header("Modo 2: Dash")]
-
-    // Velocidade MÁXIMA do dash (o pico da curva abaixo).
-    public float chargeSpeed = 15f;
-
-    // Duração total do dash.
-    public float chargeDuration = 0.6f;
-
-    // Como a velocidade muda durante o dash.
-    // Horizontal: tempo do dash (0 = começo, 1 = fim).
-    // Vertical: fração da velocidade máxima (1 = chargeSpeed).
-    // Padrão: arranca, chega ao pico em 30% do tempo e vai freando até parar.
-    public AnimationCurve chargeSpeedCurve = new AnimationCurve(
-        new Keyframe(0f, 0.2f),
-        new Keyframe(0.3f, 1f),
-        new Keyframe(1f, 0f)
-    );
-
-    // Tempo de espera entre dashes.
+    [Header("Investida")]
+    public float chargeSpeed = 12f;
+    public float chargeDuration = 0.3f;
+    public float preparationTime = 0.4f;
     public float attackCooldown = 2f;
 
+    [Header("Dano")]
+    public float contactDamage = 1f;
 
-    // Distância que o dash percorre, calculada. Somente leitura (aparece nos gizmos).
-    public float DashDistance { get; private set; }
+    [Header("Recuperação do Stun")]
+    public float stunRecoveryDelay = 1f;
 
-    // Alcance do dash: a distância em que ele começa o dash.
-    public float DashRange => attackRangeFollowsDash ? DashDistance : attackRange;
+    private Transform player;
+    private Rigidbody2D rb;
 
-    // Alcance em que ele segue o jogador: o alcance do dash vezes o multiplicador (2 = o dobro).
-    public float FollowRange => DashRange * followRangeMultiplier;
+    private float horizontalMovement;
+    private float chargeDirection;
+    private float nextAttackTime;
 
-    // Modo atual (somente leitura de fora).
-    public ShieldEnemyMode Mode { get; private set; } = ShieldEnemyMode.Idle;
+    private bool isAttacking;
+    private bool isCharging;
+    private bool hasDamagedPlayer;
 
-    // Informa se o ataque está em tempo de recarga.
-    private bool isOnCooldown = false;
+    private Coroutine attackCoroutine;
 
-    // Tempo restante da recarga.
-    private float cooldownTimer = 0f;
-
-    // Direção do dash (travada no começo dele).
-    private int chargeDirection = 1;
-
-    // Tempo já gasto no dash.
-    private float chargeElapsed = 0f;
-
-    // Lado para onde o inimigo está virado (-1 esquerda, 1 direita).
-    private int facingDirection = 1;
-
-    // Velocidade horizontal atual, com sinal. É ela que é suavizada.
-    private float moveVelocity = 0f;
-
+    public bool IsCharging => isCharging;
 
     protected override void Awake()
     {
-        // Inicializa vida e SpriteRenderer da classe base.
         base.Awake();
 
-        DashDistance = CalculateDashDistance();
+        rb = GetComponent<Rigidbody2D>();
+    }
 
-        // Procura o jogador pela tag Player, caso não tenha sido definido.
-        if (player == null)
+    private void Start()
+    {
+        GameObject playerObject =
+            GameObject.FindGameObjectWithTag("Player");
+
+        if (playerObject != null)
         {
-            GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+            player = playerObject.transform;
+        }
+    }
 
-            if (playerObject != null)
+    private void Update()
+    {
+        horizontalMovement = 0f;
+
+        // Não realiza ações enquanto estiver atordoado.
+        if (IsStunned || player == null)
+            return;
+
+        // Não interfere durante a investida.
+        if (isAttacking)
+            return;
+
+        float distance = Vector2.Distance(
+            transform.position,
+            player.position
+        );
+
+        // Não detectou o Player.
+        if (distance > detectionRange)
+            return;
+
+        float direction = Mathf.Sign(
+            player.position.x - transform.position.x
+        );
+
+        // Vira o inimigo na direção do Player.
+        FlipEnemy(direction);
+
+        // Persegue o Player até alcançar
+        // a distância de ataque.
+        if (distance > attackRange)
+        {
+            horizontalMovement = direction * moveSpeed;
+        }
+        else
+        {
+            horizontalMovement = 0f;
+
+            // Verifica se pode atacar novamente.
+            if (Time.time >= nextAttackTime)
             {
-                player = playerObject.transform;
+                attackCoroutine = StartCoroutine(
+                    AttackRoutine(direction)
+                );
             }
         }
     }
 
-
-    // Recalcula a distância do dash sempre que um valor muda no Inspector.
-    private void OnValidate()
+    private void FixedUpdate()
     {
-        DashDistance = CalculateDashDistance();
-    }
-
-
-    // Distância total que o dash percorre: velocidade máxima x duração x média da curva.
-    // A média é medida somando a curva em vários pontos do tempo.
-    private float CalculateDashDistance()
-    {
-        if (chargeSpeedCurve == null || chargeSpeedCurve.length == 0)
-            return chargeSpeed * chargeDuration;
-
-        const int samples = 60;
-        float sum = 0f;
-
-        for (int i = 0; i < samples; i++)
-        {
-            float t = (i + 0.5f) / samples;
-            sum += chargeSpeedCurve.Evaluate(t);
-        }
-
-        float average = sum / samples;
-        return chargeSpeed * chargeDuration * average;
-    }
-
-
-    private void Update()
-    {
-        // Sem jogador, não há como detectar ou atacar.
-        if (player == null)
+        if (rb == null)
             return;
 
-        // Durante o atordoamento, o inimigo não faz nada.
+        // Impede movimentação durante o stun.
         if (IsStunned)
         {
-            moveVelocity = 0f;
+            StopMovement();
             return;
         }
 
-        UpdateCooldown();
-
-        // Modo dash: só continua o dash.
-        if (Mode == ShieldEnemyMode.Charge)
+        // Movimentação durante a investida.
+        if (isCharging)
         {
-            UpdateCharge();
+            rb.linearVelocity = new Vector2(
+                chargeDirection * chargeSpeed,
+                rb.linearVelocity.y
+            );
+
             return;
         }
 
-        // Distância e lado do jogador.
-        float distance = Vector2.Distance(transform.position, player.position);
-        float deltaX = player.position.x - transform.position.x;
-
-        // Dá o dash se o jogador estiver ao alcance do dash e o dash estiver disponível.
-        if (!isOnCooldown && distance <= DashRange)
+        // Fica parado durante a preparação.
+        if (isAttacking)
         {
-            StartCharge(deltaX);
+            StopMovement();
             return;
         }
 
-        // Decide entre andar até o jogador ou ficar parado.
-        // Anda se o jogador está dentro do alcance de seguir e ainda fora do alcance do dash.
-        bool shouldChase = distance <= FollowRange && distance > DashRange;
-        Mode = shouldChase ? ShieldEnemyMode.Chase : ShieldEnemyMode.Idle;
-
-        // Vira para o jogador sempre que ele estiver à vista (inclusive esperando a recarga).
-        if (distance <= FollowRange && Mathf.Abs(deltaX) > turnDeadZone)
-        {
-            SetFacing(deltaX < 0f ? -1 : 1);
-        }
-
-        // Velocidade desejada: caminhada na direção do jogador, ou zero.
-        float targetVelocity = shouldChase ? facingDirection * walkSpeed : 0f;
-        MoveHorizontally(targetVelocity);
+        // Movimentação normal.
+        rb.linearVelocity = new Vector2(
+            horizontalMovement,
+            rb.linearVelocity.y
+        );
     }
 
-
-    private void UpdateCooldown()
+    private IEnumerator AttackRoutine(float direction)
     {
-        if (!isOnCooldown)
+        isAttacking = true;
+        hasDamagedPlayer = false;
+
+        chargeDirection = direction;
+
+        horizontalMovement = 0f;
+
+        StopMovement();
+
+        // Preparação da investida.
+        yield return new WaitForSeconds(preparationTime);
+
+        if (IsStunned)
+        {
+            CancelAttack();
+            yield break;
+        }
+
+        // Inicia a investida.
+        isCharging = true;
+
+        yield return new WaitForSeconds(chargeDuration);
+
+        // Finaliza a investida.
+        isCharging = false;
+        isAttacking = false;
+
+        StopMovement();
+
+        // Inicia o cooldown do ataque.
+        nextAttackTime = Time.time + attackCooldown;
+
+        attackCoroutine = null;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        TryDamagePlayer(collision.collider);
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        TryDamagePlayer(collision.collider);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        TryDamagePlayer(other);
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        TryDamagePlayer(other);
+    }
+
+    private void TryDamagePlayer(Collider2D other)
+    {
+        // Só causa dano durante a investida.
+        if (!isCharging || IsStunned)
             return;
 
-        cooldownTimer -= Time.deltaTime;
+        // Impede múltiplos danos na mesma investida.
+        if (hasDamagedPlayer)
+            return;
 
-        if (cooldownTimer <= 0f)
-        {
-            isOnCooldown = false;
-        }
+        PlayerHealth playerHealth =
+            other.GetComponentInParent<PlayerHealth>();
+
+        // Verifica se encontrou o Player.
+        if (playerHealth == null)
+            return;
+
+        // Verifica se o Player pode receber dano.
+        if (playerHealth.IsDead ||
+            playerHealth.IsInvulnerable)
+            return;
+
+        // Evita causar dano através da hitbox
+        // de ataque do próprio Player.
+        if (other.GetComponent<AttackHitbox>() != null)
+            return;
+
+        // Aplica o dano.
+        hasDamagedPlayer = true;
+
+        playerHealth.TakeDamage(contactDamage);
+
+        Debug.Log("Shield causou " + contactDamage
+            + " de dano ao Player.");
     }
 
-
-    // Aproxima a velocidade atual da desejada aos poucos (é isso que deixa o movimento suave)
-    // e move o inimigo.
-    private void MoveHorizontally(float targetVelocity)
+    private void FlipEnemy(float direction)
     {
-        moveVelocity = Mathf.MoveTowards(moveVelocity, targetVelocity, acceleration * Time.deltaTime);
-        transform.position += Vector3.right * moveVelocity * Time.deltaTime;
-    }
-
-
-    private void StartCharge(float deltaX)
-    {
-        Mode = ShieldEnemyMode.Charge;
-
-        // Determina se o jogador está à esquerda ou à direita e trava essa direção.
-        chargeDirection = deltaX < 0f ? -1 : 1;
-        SetFacing(chargeDirection);
-
-        // Começa a contagem do dash.
-        chargeElapsed = 0f;
-    }
-
-
-    private void UpdateCharge()
-    {
-        chargeElapsed += Time.deltaTime;
-
-        // Progresso do dash de 0 a 1.
-        float t = Mathf.Clamp01(chargeElapsed / Mathf.Max(0.01f, chargeDuration));
-
-        // Fração da velocidade máxima neste instante, vinda da curva.
-        float multiplier = (chargeSpeedCurve != null && chargeSpeedCurve.length > 0)
-            ? chargeSpeedCurve.Evaluate(t)
-            : 1f;
-
-        moveVelocity = chargeDirection * chargeSpeed * multiplier;
-        transform.position += Vector3.right * moveVelocity * Time.deltaTime;
-
-        // Finaliza quando o tempo acaba.
-        if (chargeElapsed >= chargeDuration)
-        {
-            StopCharge();
-        }
-    }
-
-
-    private void StopCharge()
-    {
-        // Volta ao modo normal. A velocidade NÃO é zerada aqui:
-        // o MoveHorizontally a reduz aos poucos, então o inimigo desliza e para sem tranco.
-        Mode = ShieldEnemyMode.Idle;
-
-        // Inicia a recarga do dash.
-        isOnCooldown = true;
-        cooldownTimer = attackCooldown;
-    }
-
-
-    private void SetFacing(int direction)
-    {
-        facingDirection = direction;
-
-        // Vira o sprite para a esquerda ou para a direita.
         if (spriteRenderer != null)
         {
-            spriteRenderer.flipX = direction < 0;
+            spriteRenderer.flipX = direction < 0f;
         }
     }
 
+    private void StopMovement()
+    {
+        if (rb != null)
+        {
+            rb.linearVelocity = new Vector2(
+                0f,
+                rb.linearVelocity.y
+            );
+        }
+    }
+
+    private void CancelAttack()
+    {
+        if (attackCoroutine != null)
+        {
+            StopCoroutine(attackCoroutine);
+            attackCoroutine = null;
+        }
+
+        isAttacking = false;
+        isCharging = false;
+
+        horizontalMovement = 0f;
+
+        StopMovement();
+    }
 
     public override void Stun(float duration)
     {
-        // Interrompe o dash e qualquer movimento ao receber o atordoamento.
-        Mode = ShieldEnemyMode.Idle;
-        moveVelocity = 0f;
+        // Cancela a investida ao ser atordoado.
+        CancelAttack();
 
-        // Aplica o atordoamento definido na classe base.
         base.Stun(duration);
     }
 
-
-    public override void Stun()
+    protected override void EndStun()
     {
-        // Usa a duração padrão definida no Inspector.
-        Stun(stunDuration);
+        base.EndStun();
+
+        // Impede que o inimigo ataque imediatamente
+        // após sair do atordoamento.
+        nextAttackTime = Time.time + stunRecoveryDelay;
     }
 
+    private void OnDisable()
+    {
+        CancelAttack();
+    }
 
-    // Mostra os alcances na Scene View quando o inimigo está selecionado.
     private void OnDrawGizmosSelected()
     {
-        if (DashDistance <= 0f) DashDistance = CalculateDashDistance();
+        // Alcance de detecção.
+        Gizmos.color = Color.cyan;
 
-        // Amarelo: alcance em que ele segue o jogador (o dobro do dash).
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, FollowRange);
+        Gizmos.DrawWireSphere(
+            transform.position,
+            detectionRange
+        );
 
-        // Vermelho: alcance do dash (onde ele para de andar e investe).
+        // Alcance de ataque.
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, DashRange);
+
+        Gizmos.DrawWireSphere(
+            transform.position,
+            attackRange
+        );
     }
 }

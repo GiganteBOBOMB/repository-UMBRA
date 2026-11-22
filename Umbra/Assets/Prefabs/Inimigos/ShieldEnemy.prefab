@@ -129,8 +129,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.4915676, y: 0}
-  m_Size: {x: 1.4459572, y: 2}
+  m_Offset: {x: 0.384758, y: 0.04272306}
+  m_Size: {x: 2.058319, y: 2.5126774}
   m_Direction: 0
 --- !u!50 &2153227530279411044
 Rigidbody2D:
@@ -174,49 +174,14 @@ MonoBehaviour:
   maxHealth: 3
   stunDuration: 2
   stunnedColor: {r: 0.49803925, g: 0.9294118, b: 0.20392159, a: 1}
-  player: {fileID: 0}
-  attackRangeFollowsDash: 1
-  attackRange: 1.5
-  followRangeMultiplier: 2
-  walkSpeed: 2.5
-  acceleration: 12
-  turnDeadZone: 0.1
+  detectionRange: 8
+  attackRange: 5
+  moveSpeed: 2.5
   chargeSpeed: 15
   chargeDuration: 0.4
-  chargeSpeedCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.2
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.3
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  preparationTime: 0.4
   attackCooldown: 4
+  stunRecoveryDelay: 1
 --- !u!114 &7074543134742491829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,7 +194,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c800d984dbace59439c3b9468a81630d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GhostVisual
-  renderers: []
+  renderers:
+  - {fileID: 0}
   ghostAlpha: 0.65
   pulseAmount: 0.12
   pulseSpeed: 2

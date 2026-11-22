@@ -1,204 +1,116 @@
+
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-// Requer o PlayerController no mesmo objeto (usa IsGrounded e IsDashing).
 public class PlayerAttack : MonoBehaviour
 {
-    [Header("Configuração")]
-    public Key attackKey = Key.S;
-    public float attackDuration = 0.25f;
-    public float attackCooldown = 0.4f;
+    [Header("Referências")]
+    public AttackHitbox attackHitbox;
 
-    [Header("Regras do ataque")]
-    [Tooltip("Desmarque para permitir atacar no ar.")]
-    [SerializeField] private bool onlyOnGround = true;
+    [Header("Posição da Hitbox")]
+    public float horizontalOffset = 0.8f;
+    public float verticalOffset = 0f;
 
-    [Header("Ponto de ataque")]
-    public Transform attackPoint;
+    [Header("Configuração do ataque")]
+    public float attackCooldown = 0.5f;
+    public float attackDuration = 0.2f;
+    public float attackDelay = 0f;
 
-    [Header("Objetos do ataque")]
-    public GameObject attackHitbox;
-    [Tooltip("Efeito visual opcional. Pode deixar vazio se a animação já mostra o golpe.")]
-    public GameObject attackVisual;
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
 
-    [Header("Posição do ataque")]
-    public float attackOffsetX = 0.8f;
-    public float attackOffsetY = 0f;
+    private float nextAttackTime;
+    private bool isAttacking;
 
-    [Header("Animação")]
-    [SerializeField] private Animator animator;
-    [SerializeField] private string attackTrigger = "Attack";
-    [Tooltip("Ligado: a animação liga/desliga a hitbox e avisa o fim por Animation Events.\n" +
-             "Desligado: a hitbox usa o tempo de Attack Duration.")]
-    [SerializeField] private bool useAnimationEvents = true;
-    [Tooltip("Segurança: se o evento de fim nunca chegar, o ataque é liberado depois deste tempo.")]
-    [SerializeField] private float maxAttackTime = 1f;
+    private static readonly int AttackHash =
+        Animator.StringToHash("Attack");
 
-    // Outros scripts podem consultar (ex.: parar o movimento durante o golpe)
-    public bool IsAttacking { get; private set; }
-
-    private bool canAttack = true;
-    private bool facingRight = true;
-    private bool attackFinished;
-
-    private SpriteRenderer playerSprite;
-    private PlayerController controller;
-    private Vector3 visualOriginalScale;
-    private int attackHash;
-    private Coroutine attackRoutine;
-
-    void Awake()
+    private void Awake()
     {
-        playerSprite = GetComponent<SpriteRenderer>();
-        controller = GetComponent<PlayerController>();
-        if (animator == null) animator = GetComponent<Animator>();
-
-        // Converte o nome em número uma vez só (mais rápido que usar texto a cada ataque)
-        attackHash = Animator.StringToHash(attackTrigger);
-
-        if (attackVisual != null)
-            visualOriginalScale = attackVisual.transform.localScale;
-
-        SetHitbox(false);
-        SetVisual(false);
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    void Update()
+    private void Update()
     {
-        if (playerSprite != null)
-            facingRight = !playerSprite.flipX;
-
-        UpdateAttackPosition();
-
-        // Rolar cancela o golpe em andamento
-        if (IsAttacking && controller != null && controller.IsDashing)
+        if (Keyboard.current != null &&
+            Keyboard.current.qKey.wasPressedThisFrame)
         {
-            CancelAttack();
+            Attack();
+        }
+    }
+
+    private void LateUpdate()
+    {
+        UpdateHitboxPosition();
+    }
+
+    private void UpdateHitboxPosition()
+    {
+        if (attackHitbox == null)
+            return;
+
+        float direction = spriteRenderer.flipX ? -1f : 1f;
+
+        attackHitbox.transform.localPosition = new Vector3(
+            horizontalOffset * direction,
+            verticalOffset,
+            0f
+        );
+    }
+
+    private void Attack()
+    {
+        if (isAttacking || Time.time < nextAttackTime)
+            return;
+
+        if (attackHitbox == null)
+        {
+            Debug.LogWarning("AttackHitbox não atribuída!");
             return;
         }
 
-        if (Keyboard.current != null &&
-            Keyboard.current[attackKey].wasPressedThisFrame &&
-            CanStartAttack())
-        {
-            attackRoutine = StartCoroutine(AttackRoutine());
-        }
+        nextAttackTime = Time.time + attackCooldown;
+
+        // Executa a animação de ataque.
+        if (animator != null)
+            animator.SetTrigger(AttackHash);
+
+        // Controla a hitbox independentemente da animação.
+        StartCoroutine(AttackRoutine());
     }
 
-    // Todas as regras que impedem o ataque ficam aqui, num lugar só.
-    // Bloquear no código (e não só no Animator) evita o trigger ficar pendente.
-    private bool CanStartAttack()
+    private IEnumerator AttackRoutine()
     {
-        if (!canAttack) return false;
+        isAttacking = true;
 
-        if (controller != null)
-        {
-            if (controller.IsDashing) return false;
-            if (onlyOnGround && !controller.IsGrounded) return false;
-        }
+        // Tempo de espera antes de ativar o dano.
+        if (attackDelay > 0f)
+            yield return new WaitForSeconds(attackDelay);
 
-        return true;
+        // Atualiza a posição da hitbox.
+        UpdateHitboxPosition();
+
+        // Ativa o dano.
+        attackHitbox.ActivateHitbox();
+
+        // Mantém a hitbox ativa durante o golpe.
+        yield return new WaitForSeconds(attackDuration);
+
+        // Desativa o dano.
+        attackHitbox.DeactivateHitbox();
+
+        isAttacking = false;
     }
 
-    void UpdateAttackPosition()
+    private void OnDisable()
     {
-        if (attackPoint == null) return;
+        StopAllCoroutines();
 
-        attackPoint.localPosition = new Vector3(
-            Mathf.Abs(attackOffsetX) * (facingRight ? 1f : -1f),
-            attackOffsetY,
-            0f
-        );
+        if (attackHitbox != null)
+            attackHitbox.DeactivateHitbox();
 
-        if (attackVisual != null)
-        {
-            Vector3 scale = visualOriginalScale;
-            scale.x = Mathf.Abs(visualOriginalScale.x) * (facingRight ? 1f : -1f);
-            attackVisual.transform.localScale = scale;
-        }
-    }
-
-    IEnumerator AttackRoutine()
-    {
-        canAttack = false;
-        IsAttacking = true;
-        attackFinished = false;
-
-        // Dispara a animação
-        if (animator != null) animator.SetTrigger(attackHash);
-
-        if (useAnimationEvents)
-        {
-            // A animação manda: espera o evento de fim (com limite de segurança)
-            float timer = 0f;
-            while (!attackFinished && timer < maxAttackTime)
-            {
-                timer += Time.deltaTime;
-                yield return null;
-            }
-
-            // Garante que nada fica ligado se o evento de desligar falhou
-            SetHitbox(false);
-            SetVisual(false);
-        }
-        else
-        {
-            // Modo por tempo
-            SetHitbox(true);
-            SetVisual(true);
-            yield return new WaitForSeconds(attackDuration);
-            SetHitbox(false);
-            SetVisual(false);
-        }
-
-        IsAttacking = false;
-        attackRoutine = null;
-
-        yield return new WaitForSeconds(attackCooldown);
-        canAttack = true;
-    }
-
-    // Interrompe o golpe na hora (rolar, tomar dano, morrer...). Pode ser chamado de fora.
-    public void CancelAttack()
-    {
-        if (attackRoutine != null)
-        {
-            StopCoroutine(attackRoutine);
-            attackRoutine = null;
-        }
-
-        SetHitbox(false);
-        SetVisual(false);
-        IsAttacking = false;
-
-        // Limpa um trigger que ainda não foi usado, para não disparar o ataque depois
-        if (animator != null) animator.ResetTrigger(attackHash);
-
-        // O cooldown ainda vale depois de cancelar
-        StartCoroutine(CooldownRoutine());
-    }
-
-    private IEnumerator CooldownRoutine()
-    {
-        canAttack = false;
-        yield return new WaitForSeconds(attackCooldown);
-        canAttack = true;
-    }
-
-    // ---------- Chamados pelos Animation Events ----------
-    public void AnimEvent_HitboxOn() { SetHitbox(true); SetVisual(true); }
-    public void AnimEvent_HitboxOff() { SetHitbox(false); SetVisual(false); }
-    public void AnimEvent_AttackEnd() { attackFinished = true; }
-
-    // ---------- Auxiliares ----------
-    private void SetHitbox(bool value)
-    {
-        if (attackHitbox != null) attackHitbox.SetActive(value);
-    }
-
-    private void SetVisual(bool value)
-    {
-        if (attackVisual != null) attackVisual.SetActive(value);
+        isAttacking = false;
     }
 }

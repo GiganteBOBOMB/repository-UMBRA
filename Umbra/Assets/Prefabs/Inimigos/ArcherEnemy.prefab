@@ -206,8 +206,11 @@ MonoBehaviour:
   stunDuration: 2
   stunnedColor: {r: 0.49803925, g: 0.9333334, b: 0.20392159, a: 1}
   detectionRange: 9
+  attackRange: 7
+  moveSpeed: 1.5
   arrowPrefab: {fileID: 1563725222307782927, guid: 22db281f0b4789c42a63f19791b5e5f9, type: 3}
   firePoint: {fileID: 2694187357099951317}
   arrowSpeed: 5
   arrowDamage: 1
-  attackCooldown: 3
+  attackCooldown: 1.5
+  stunRecoveryDelay: 1

@@ -440,6 +440,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3323660159361039747, guid: b426a445ae35d3d4891397260158ea12, type: 3}
   m_PrefabInstance: {fileID: 1397019193}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &219617131 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7164066139223831555, guid: 42c3a1e33183afc45a5a55cc7f6a5384, type: 3}
+  m_PrefabInstance: {fileID: 1435732111}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15a533291d4b4a540a58af27273fbf97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AttackHitbox
 --- !u!1001 &245554954
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1323,7 +1334,7 @@ TilemapRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.61111116, y: 0.61111116, z: 0}
+  m_ChunkCullingBounds: {x: 1.1666666, y: 1.1666666, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -14920,7 +14931,7 @@ GameObject:
   m_Component:
   - component: {fileID: 986613295}
   m_Layer: 0
-  m_Name: Inimmigo
+  m_Name: Inimigo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16095,6 +16106,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 133953811585654031, guid: 42c3a1e33183afc45a5a55cc7f6a5384, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2918246729385045542, guid: 42c3a1e33183afc45a5a55cc7f6a5384, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.037771374
@@ -16137,8 +16152,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3735099031491221178, guid: 42c3a1e33183afc45a5a55cc7f6a5384, type: 3}
       propertyPath: m_Name
-      value: Player 1
+      value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4449810341283649581, guid: 42c3a1e33183afc45a5a55cc7f6a5384, type: 3}
+      propertyPath: attackHitbox
+      value: 
+      objectReference: {fileID: 219617131}
+    - target: {fileID: 4449810341283649581, guid: 42c3a1e33183afc45a5a55cc7f6a5384, type: 3}
+      propertyPath: playerSprite
+      value: 
+      objectReference: {fileID: 1806486080}
     - target: {fileID: 5057403079134163928, guid: 42c3a1e33183afc45a5a55cc7f6a5384, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.6799996
@@ -16637,6 +16660,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3323660159361039747, guid: b426a445ae35d3d4891397260158ea12, type: 3}
   m_PrefabInstance: {fileID: 1389573934}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &1806486080 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5286473466294323532, guid: 42c3a1e33183afc45a5a55cc7f6a5384, type: 3}
+  m_PrefabInstance: {fileID: 1435732111}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1810336378 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 395588208929900981, guid: 5712082dacc9fed4189680f917c1ac0d, type: 3}
@@ -16730,7 +16758,7 @@ TilemapRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.61111116, y: 0.61111116, z: 0}
+  m_ChunkCullingBounds: {x: 1.1666666, y: 1.1666666, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0

@@ -1,128 +1,212 @@
-using System.Collections;
+
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class ArcherEnemy : EnemyBase
 {
-    [Header("Detecção")]
+    [Header("Detecção e perseguição")]
     public float detectionRange = 8f;
+    public float attackRange = 4f;
+    public float moveSpeed = 2f;
 
-    [Header("Ataque")]
+    [Header("Configuração do disparo")]
     public GameObject arrowPrefab;
     public Transform firePoint;
     public float arrowSpeed = 8f;
     public float arrowDamage = 1f;
     public float attackCooldown = 2f;
 
+    [Header("Recuperação do atordoamento")]
+    public float stunRecoveryDelay = 1f;
+
     private Transform player;
-    private bool isAttacking;
+    private Rigidbody2D rb;
+
+    private float nextAttackTime;
+    private float horizontalMovement;
+
+    private Vector3 originalFirePointPosition;
 
     protected override void Awake()
     {
         base.Awake();
 
-        // Procura o jogador na cena.
+        rb = GetComponent<Rigidbody2D>();
+
+        if (firePoint != null)
+        {
+            originalFirePointPosition =
+                firePoint.localPosition;
+        }
+    }
+
+    private void Start()
+    {
         GameObject playerObject =
             GameObject.FindGameObjectWithTag("Player");
 
         if (playerObject != null)
             player = playerObject.transform;
+
+        nextAttackTime = Time.time;
     }
 
     private void Update()
     {
-        // Não ataca enquanto estiver atordoado.
-        if (IsStunned || isAttacking || player == null)
+        horizontalMovement = 0f;
+
+        // Não anda nem atira enquanto estiver atordoado.
+        if (IsStunned || player == null)
             return;
 
-        // Calcula a distância até o jogador.
-        float distance =
-            Vector2.Distance(transform.position, player.position);
+        float distance = Vector2.Distance(
+            transform.position,
+            player.position
+        );
 
-        // Ataca quando o jogador entra no alcance.
-        if (distance <= detectionRange)
-            StartCoroutine(ShootRoutine());
+        // Player fora do raio de detecção.
+        if (distance > detectionRange)
+            return;
+
+        // Direção do Player.
+        float direction = player.position.x >=
+            transform.position.x ? 1f : -1f;
+
+        UpdateDirection(direction);
+
+        // Persegue quando estiver fora do raio de ataque.
+        if (distance > attackRange)
+        {
+            horizontalMovement = direction * moveSpeed;
+        }
+        else
+        {
+            // Para para realizar o disparo.
+            horizontalMovement = 0f;
+
+            if (Time.time >= nextAttackTime)
+            {
+                nextAttackTime = Time.time +
+                    Mathf.Max(0.05f, attackCooldown);
+
+                Shoot(direction);
+            }
+        }
     }
 
-    private IEnumerator ShootRoutine()
+    private void FixedUpdate()
     {
-        if (isAttacking || IsStunned)
-            yield break;
+        // Impede movimentação horizontal durante o stun.
+        float velocityX = IsStunned
+            ? 0f
+            : horizontalMovement;
 
-        isAttacking = true;
+        rb.linearVelocity = new Vector2(
+            velocityX,
+            rb.linearVelocity.y
+        );
+    }
 
-        // Vira na direção do jogador.
-        float direction =
-            Mathf.Sign(player.position.x - transform.position.x);
-
+    private void UpdateDirection(float direction)
+    {
+        // Vira o sprite para o Player.
         if (spriteRenderer != null)
             spriteRenderer.flipX = direction < 0f;
 
-        // Cria e dispara a flecha.
-        if (arrowPrefab != null && firePoint != null)
+        // Mantém o ponto de disparo na frente do arqueiro.
+        if (firePoint != null)
         {
-            GameObject arrowObject = Instantiate(
-                arrowPrefab,
-                firePoint.position,
-                Quaternion.identity
+            firePoint.localPosition = new Vector3(
+                Mathf.Abs(originalFirePointPosition.x)
+                    * direction,
+                originalFirePointPosition.y,
+                originalFirePointPosition.z
             );
-
-            Arrow arrow = arrowObject.GetComponent<Arrow>();
-
-            if (arrow != null)
-            {
-                Vector2 aimDirection =
-                    ((Vector2)player.position -
-                    (Vector2)firePoint.position).normalized;
-
-                arrow.Launch(
-                    aimDirection,
-                    arrowSpeed,
-                    arrowDamage
-                );
-            }
-            else
-            {
-                Debug.LogWarning(
-                    "A flecha não possui o componente Arrow!",
-                    arrowObject
-                );
-            }
         }
-
-        yield return new WaitForSeconds(attackCooldown);
-
-        isAttacking = false;
     }
 
-    // Mostra na Console quando o arqueiro é atordoado.
-    public override void Stun(float duration = -1f)
+    private void Shoot(float direction)
     {
-        StopCoroutine(nameof(ShootRoutine));
-        isAttacking = false;
+        if (IsStunned)
+            return;
 
-        Debug.Log("Arqueiro atordoado: " + gameObject.name);
+        if (arrowPrefab == null || firePoint == null)
+            return;
 
+        // Mantém o disparo horizontal.
+        Vector2 shootDirection = new Vector2(
+            direction,
+            0f
+        );
+
+        GameObject arrowObject = Instantiate(
+            arrowPrefab,
+            firePoint.position,
+            Quaternion.identity
+        );
+
+        Arrow arrow = arrowObject.GetComponent<Arrow>();
+
+        if (arrow != null)
+        {
+            arrow.Launch(
+                shootDirection,
+                arrowSpeed,
+                arrowDamage
+            );
+        }
+        else
+        {
+            Debug.LogWarning(
+                "O prefab da flecha não possui o script Arrow!"
+            );
+
+            Destroy(arrowObject);
+        }
+    }
+
+    public override void Stun(float duration)
+    {
+        // Interrompe imediatamente a perseguição.
+        horizontalMovement = 0f;
+
+        if (rb != null)
+        {
+            rb.linearVelocity = new Vector2(
+                0f,
+                rb.linearVelocity.y
+            );
+        }
+
+        // Mantém o sistema de stun do EnemyBase.
         base.Stun(duration);
     }
 
-    // Mostra na Console quando o arqueiro recebe dano.
-    public override void TakeDamage(int damage)
+    protected override void EndStun()
     {
-        Debug.Log(
-            "Arqueiro recebeu tentativa de dano: " +
-            damage + ". Atordoado: " + IsStunned,
-            gameObject
-        );
+        base.EndStun();
 
-        base.TakeDamage(damage);
+        // Reinicia o tempo de disparo após o atordoamento.
+        nextAttackTime = Time.time +
+            Mathf.Max(0f, stunRecoveryDelay);
     }
 
     private void OnDrawGizmosSelected()
     {
+        // Raio de detecção.
         Gizmos.color = Color.cyan;
+
         Gizmos.DrawWireSphere(
             transform.position,
             detectionRange
+        );
+
+        // Raio de ataque.
+        Gizmos.color = Color.red;
+
+        Gizmos.DrawWireSphere(
+            transform.position,
+            attackRange
         );
     }
 }

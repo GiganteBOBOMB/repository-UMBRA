@@ -43,7 +43,7 @@
     <UnityVersion>6000.3.10f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\18\Insiders\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
@@ -84,6 +84,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Scripts\Boss 1\KnightContext.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+    <Compile Include="Assets\Scripts\HUD\HealthHUD.cs" />
     <Compile Include="Assets\Scripts\script\Ofuscavel.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\Scripts\Plataformas\LightButton.cs" />
@@ -124,6 +125,7 @@
     <Compile Include="Assets\Scripts\Boss 1\AtaqueTeleporteCone.cs" />
     <Compile Include="Assets\Scripts\Player\FlashlightController.cs" />
     <Compile Include="Assets\Scripts\Inimigos\ShieldEnemy.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerFocus.cs" />
     <Compile Include="Assets\Scripts\boss 2\dificuldade\Bossdifficultycontroller.cs" />
     <Compile Include="Assets\Scripts\Inimigos\ArcherEnemy.cs" />
     <Compile Include="Assets\Scripts\Inimigos\Arrow.cs" />

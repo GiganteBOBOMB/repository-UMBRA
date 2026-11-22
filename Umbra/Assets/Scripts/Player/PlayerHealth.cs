@@ -7,72 +7,202 @@ public class PlayerHealth : MonoBehaviour
     [Header("Vida")]
     public float maxHealth = 5f;
 
-    [Header("Reinício da fase")]
+    [Header("Morte")]
     public float restartDelay = 1f;
 
+    [Header("Invulnerabilidade")]
+    public float invulnerabilityDuration = 1f;
+    public float blinkInterval = 0.1f;
+
+    [Header("Interface")]
+    public HealthHUD healthHUD;
+
     private float currentHealth;
+
     private bool isDead;
+    private bool isInvulnerable;
+
+    private SpriteRenderer spriteRenderer;
+    private Rigidbody2D rb;
+
+    public float CurrentHealth => currentHealth;
+    public bool IsDead => isDead;
+    public bool IsInvulnerable => isInvulnerable;
 
     private void Awake()
     {
-        // Começa com a vida máxima.
         currentHealth = maxHealth;
+
+        spriteRenderer =
+            GetComponentInChildren<SpriteRenderer>();
+
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void Start()
+    {
+        // Encontra automaticamente o HUD da fase.
+        if (healthHUD == null)
+        {
+            healthHUD =
+                FindFirstObjectByType<HealthHUD>();
+        }
+
+        if (healthHUD == null)
+        {
+            Debug.LogWarning(
+                "PlayerHealth: HealthHUD não encontrado."
+            );
+        }
+
+        UpdateHUD();
     }
 
     public void TakeDamage(float damage)
     {
-        // Impede receber dano após a morte.
-        if (isDead)
+        if (isDead || isInvulnerable || damage <= 0f)
             return;
 
-        // Reduz a vida e impede valores negativos.
-        currentHealth = Mathf.Max(0f, currentHealth - damage);
+        currentHealth -= damage;
 
-        Debug.Log("Vida do jogador: " + currentHealth + "/" + maxHealth);
+        currentHealth = Mathf.Clamp(
+            currentHealth,
+            0f,
+            maxHealth
+        );
 
-        // Inicia a morte quando a vida chega a zero.
+        UpdateHUD();
+
+        Debug.Log("Vida do Player: " + currentHealth);
+
         if (currentHealth <= 0f)
         {
             Die();
+        }
+        else
+        {
+            StartCoroutine(InvulnerabilityRoutine());
+        }
+    }
+
+    private IEnumerator InvulnerabilityRoutine()
+    {
+        isInvulnerable = true;
+
+        float elapsedTime = 0f;
+
+        float interval = Mathf.Max(
+            0.02f,
+            blinkInterval
+        );
+
+        while (elapsedTime < invulnerabilityDuration)
+        {
+            if (spriteRenderer != null)
+            {
+                spriteRenderer.enabled =
+                    !spriteRenderer.enabled;
+            }
+
+            yield return new WaitForSeconds(interval);
+
+            elapsedTime += interval;
+        }
+
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.enabled = true;
+        }
+
+        isInvulnerable = false;
+    }
+
+    public void Heal(float amount)
+    {
+        if (isDead || amount <= 0f)
+            return;
+
+        currentHealth = Mathf.Clamp(
+            currentHealth + amount,
+            0f,
+            maxHealth
+        );
+
+        UpdateHUD();
+    }
+
+    private void UpdateHUD()
+    {
+        if (healthHUD != null)
+        {
+            healthHUD.UpdateHealth(
+                currentHealth,
+                maxHealth
+            );
         }
     }
 
     private void Die()
     {
-        // Garante que a rotina de morte só aconteça uma vez.
         if (isDead)
             return;
 
         isDead = true;
 
-        // Interrompe a movimentação.
-        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        StopAllCoroutines();
+
+        isInvulnerable = false;
+
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.enabled = true;
+        }
 
         if (rb != null)
+        {
             rb.linearVelocity = Vector2.zero;
+            rb.simulated = false;
+        }
 
-        // Desativa os controles do jogador.
-        PlayerController controller = GetComponent<PlayerController>();
+        PlayerController playerController =
+            GetComponent<PlayerController>();
 
-        if (controller != null)
-            controller.enabled = false;
+        if (playerController != null)
+        {
+            playerController.enabled = false;
+        }
 
-        PlayerAttack attack = GetComponent<PlayerAttack>();
+        PlayerAttack playerAttack =
+            GetComponent<PlayerAttack>();
 
-        if (attack != null)
-            attack.enabled = false;
+        if (playerAttack != null)
+        {
+            playerAttack.enabled = false;
+        }
 
-        // Aguarda um instante antes de reiniciar a fase.
-        StartCoroutine(RestartCurrentScene());
+        Debug.Log("Player morreu.");
+
+        StartCoroutine(RestartScene());
     }
 
-    private IEnumerator RestartCurrentScene()
+    private IEnumerator RestartScene()
     {
         yield return new WaitForSeconds(restartDelay);
 
-        // Recarrega a cena que está sendo jogada atualmente.
-        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(
+            SceneManager.GetActiveScene().buildIndex
+        );
+    }
 
-        SceneManager.LoadScene(currentScene.buildIndex);
+    private void OnDisable()
+    {
+        StopAllCoroutines();
+
+        isInvulnerable = false;
+
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.enabled = true;
+        }
     }
 }
