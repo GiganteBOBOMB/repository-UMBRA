@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -21,9 +20,12 @@ public class ArcherEnemy : EnemyBase
 
     private Transform player;
     private Rigidbody2D rb;
+    private PlayerHealth playerHealth;
 
     private float nextAttackTime;
     private float horizontalMovement;
+
+    private bool hasDetectedPlayer;
 
     private Vector3 originalFirePointPosition;
 
@@ -46,7 +48,12 @@ public class ArcherEnemy : EnemyBase
             GameObject.FindGameObjectWithTag("Player");
 
         if (playerObject != null)
+        {
             player = playerObject.transform;
+
+            playerHealth =
+                playerObject.GetComponent<PlayerHealth>();
+        }
 
         nextAttackTime = Time.time;
     }
@@ -55,18 +62,58 @@ public class ArcherEnemy : EnemyBase
     {
         horizontalMovement = 0f;
 
-        // Não anda nem atira enquanto estiver atordoado.
-        if (IsStunned || player == null)
+        // Impede ações caso o inimigo ou o Player
+        // estejam mortos.
+        if (IsDead ||
+            player == null ||
+            (playerHealth != null && playerHealth.IsDead))
+        {
+            hasDetectedPlayer = false;
+
+            StopMovement();
+
             return;
+        }
 
         float distance = Vector2.Distance(
             transform.position,
             player.position
         );
 
-        // Player fora do raio de detecção.
-        if (distance > detectionRange)
+        bool playerInRange =
+            distance <= detectionRange;
+
+        // Permite reproduzir novamente o som de detecção
+        // quando o Player voltar para o alcance.
+        if (!playerInRange)
+        {
+            hasDetectedPlayer = false;
+        }
+
+        // Não anda nem atira enquanto estiver atordoado.
+        if (IsStunned)
+        {
+            StopMovement();
+
             return;
+        }
+
+        // Player fora do raio de detecção.
+        if (!playerInRange)
+        {
+            StopMovement();
+
+            return;
+        }
+
+        // Reproduz o som de detecção apenas uma vez.
+        if (!hasDetectedPlayer)
+        {
+            hasDetectedPlayer = true;
+
+            if (enemyAudio != null)
+                enemyAudio.PlayDetection();
+        }
 
         // Direção do Player.
         float direction = player.position.x >=
@@ -78,11 +125,20 @@ public class ArcherEnemy : EnemyBase
         if (distance > attackRange)
         {
             horizontalMovement = direction * moveSpeed;
+
+            // Reproduz o som contínuo de movimentação.
+            if (enemyAudio != null)
+            {
+                if (Mathf.Abs(horizontalMovement) > 0.01f)
+                    enemyAudio.StartMovement();
+                else
+                    enemyAudio.StopMovement();
+            }
         }
         else
         {
             // Para para realizar o disparo.
-            horizontalMovement = 0f;
+            StopMovement();
 
             if (Time.time >= nextAttackTime)
             {
@@ -96,8 +152,9 @@ public class ArcherEnemy : EnemyBase
 
     private void FixedUpdate()
     {
-        // Impede movimentação horizontal durante o stun.
-        float velocityX = IsStunned
+        // Impede movimentação horizontal durante
+        // o stun ou após a morte.
+        float velocityX = IsStunned || IsDead
             ? 0f
             : horizontalMovement;
 
@@ -127,7 +184,10 @@ public class ArcherEnemy : EnemyBase
 
     private void Shoot(float direction)
     {
-        if (IsStunned)
+        if (IsStunned || IsDead)
+            return;
+
+        if (playerHealth != null && playerHealth.IsDead)
             return;
 
         if (arrowPrefab == null || firePoint == null)
@@ -154,6 +214,10 @@ public class ArcherEnemy : EnemyBase
                 arrowSpeed,
                 arrowDamage
             );
+
+            // Reproduz o áudio no momento do disparo.
+            if (enemyAudio != null)
+                enemyAudio.PlayAttack();
         }
         else
         {
@@ -165,9 +229,8 @@ public class ArcherEnemy : EnemyBase
         }
     }
 
-    public override void Stun(float duration)
+    private void StopMovement()
     {
-        // Interrompe imediatamente a perseguição.
         horizontalMovement = 0f;
 
         if (rb != null)
@@ -177,6 +240,19 @@ public class ArcherEnemy : EnemyBase
                 rb.linearVelocity.y
             );
         }
+
+        // Interrompe o som contínuo de movimentação.
+        if (enemyAudio != null)
+            enemyAudio.StopMovement();
+    }
+
+    public override void Stun(float duration)
+    {
+        if (IsDead)
+            return;
+
+        // Interrompe a perseguição e seus sons.
+        StopMovement();
 
         // Mantém o sistema de stun do EnemyBase.
         base.Stun(duration);
@@ -189,6 +265,24 @@ public class ArcherEnemy : EnemyBase
         // Reinicia o tempo de disparo após o atordoamento.
         nextAttackTime = Time.time +
             Mathf.Max(0f, stunRecoveryDelay);
+    }
+
+    protected override void Die()
+    {
+        if (IsDead)
+            return;
+
+        StopMovement();
+
+        // Reproduz o som de morte e destrói o inimigo.
+        base.Die();
+    }
+
+    private void OnDisable()
+    {
+        hasDetectedPlayer = false;
+
+        StopMovement();
     }
 
     private void OnDrawGizmosSelected()

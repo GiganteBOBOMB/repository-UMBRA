@@ -58030,6 +58030,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: FINAL
       objectReference: {fileID: 0}
+    - target: {fileID: 5832363135549198261, guid: fa3a73934fe2f884b9c0c25e49522f13, type: 3}
+      propertyPath: nextSceneName
+      value: Fase 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560013821009857659, guid: fa3a73934fe2f884b9c0c25e49522f13, type: 3}
+      propertyPath: nextSceneName
+      value: Fase 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -17,6 +17,10 @@ public class PlayerHealth : MonoBehaviour
     [Header("Interface")]
     public HealthHUD healthHUD;
 
+    [Header("Áudio")]
+    [SerializeField] private PlayerAudio playerAudio;
+    public bool waitForDeathSound = true;
+
     private float currentHealth;
 
     private bool isDead;
@@ -37,6 +41,13 @@ public class PlayerHealth : MonoBehaviour
             GetComponentInChildren<SpriteRenderer>();
 
         rb = GetComponent<Rigidbody2D>();
+
+        // Procura automaticamente o áudio do jogador.
+        if (playerAudio == null)
+        {
+            playerAudio =
+                GetComponentInChildren<PlayerAudio>();
+        }
     }
 
     private void Start()
@@ -81,6 +92,10 @@ public class PlayerHealth : MonoBehaviour
         }
         else
         {
+            // Som de dano.
+            if (playerAudio != null)
+                playerAudio.PlayHurt();
+
             StartCoroutine(InvulnerabilityRoutine());
         }
     }
@@ -158,6 +173,13 @@ public class PlayerHealth : MonoBehaviour
             spriteRenderer.enabled = true;
         }
 
+        // Interrompe os passos e reproduz a morte.
+        if (playerAudio != null)
+        {
+            playerAudio.StopFootsteps();
+            playerAudio.PlayDeath();
+        }
+
         if (rb != null)
         {
             rb.linearVelocity = Vector2.zero;
@@ -187,7 +209,20 @@ public class PlayerHealth : MonoBehaviour
 
     private IEnumerator RestartScene()
     {
-        yield return new WaitForSeconds(restartDelay);
+        float delay = Mathf.Max(0f, restartDelay);
+
+        // Aguarda o áudio de morte terminar.
+        if (waitForDeathSound &&
+            playerAudio != null &&
+            playerAudio.deathSound != null)
+        {
+            delay = Mathf.Max(
+                delay,
+                playerAudio.deathSound.length
+            );
+        }
+
+        yield return new WaitForSeconds(delay);
 
         SceneManager.LoadScene(
             SceneManager.GetActiveScene().buildIndex

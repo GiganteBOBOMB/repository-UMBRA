@@ -24,6 +24,7 @@ public class ShieldEnemy : EnemyBase
 
     private Transform player;
     private Rigidbody2D rb;
+    private PlayerHealth playerHealth;
 
     private float horizontalMovement;
     private float chargeDirection;
@@ -32,6 +33,9 @@ public class ShieldEnemy : EnemyBase
     private bool isAttacking;
     private bool isCharging;
     private bool hasDamagedPlayer;
+
+    // Controla o som de detecção.
+    private bool hasDetectedPlayer;
 
     private Coroutine attackCoroutine;
 
@@ -52,6 +56,9 @@ public class ShieldEnemy : EnemyBase
         if (playerObject != null)
         {
             player = playerObject.transform;
+
+            playerHealth =
+                playerObject.GetComponent<PlayerHealth>();
         }
     }
 
@@ -59,22 +66,59 @@ public class ShieldEnemy : EnemyBase
     {
         horizontalMovement = 0f;
 
-        // Não realiza ações enquanto estiver atordoado.
-        if (IsStunned || player == null)
-            return;
+        if (IsDead ||
+            player == null ||
+            (playerHealth != null && playerHealth.IsDead))
+        {
+            hasDetectedPlayer = false;
 
-        // Não interfere durante a investida.
-        if (isAttacking)
+            CancelAttack();
             return;
+        }
 
         float distance = Vector2.Distance(
             transform.position,
             player.position
         );
 
-        // Não detectou o Player.
-        if (distance > detectionRange)
+        bool playerInRange =
+            distance <= detectionRange;
+
+        // Permite detectar novamente caso o jogador saia do alcance.
+        if (!playerInRange)
+        {
+            hasDetectedPlayer = false;
+        }
+
+        // Não realiza ações enquanto estiver atordoado.
+        if (IsStunned)
+        {
+            StopMovementSound();
             return;
+        }
+
+        // Não interfere durante a investida.
+        if (isAttacking)
+        {
+            StopMovementSound();
+            return;
+        }
+
+        // Não detectou o Player.
+        if (!playerInRange)
+        {
+            StopMovementSound();
+            return;
+        }
+
+        // Reproduz o som apenas ao detectar o Player.
+        if (!hasDetectedPlayer)
+        {
+            hasDetectedPlayer = true;
+
+            if (enemyAudio != null)
+                enemyAudio.PlayDetection();
+        }
 
         float direction = Mathf.Sign(
             player.position.x - transform.position.x
@@ -88,10 +132,19 @@ public class ShieldEnemy : EnemyBase
         if (distance > attackRange)
         {
             horizontalMovement = direction * moveSpeed;
+
+            // Inicia o som contínuo de movimentação.
+            if (enemyAudio != null &&
+                Mathf.Abs(horizontalMovement) > 0.01f)
+            {
+                enemyAudio.StartMovement();
+            }
         }
         else
         {
             horizontalMovement = 0f;
+
+            StopMovementSound();
 
             // Verifica se pode atacar novamente.
             if (Time.time >= nextAttackTime)
@@ -108,8 +161,8 @@ public class ShieldEnemy : EnemyBase
         if (rb == null)
             return;
 
-        // Impede movimentação durante o stun.
-        if (IsStunned)
+        // Impede movimentação durante o stun ou morte.
+        if (IsStunned || IsDead)
         {
             StopMovement();
             return;
@@ -154,7 +207,7 @@ public class ShieldEnemy : EnemyBase
         // Preparação da investida.
         yield return new WaitForSeconds(preparationTime);
 
-        if (IsStunned)
+        if (IsStunned || IsDead)
         {
             CancelAttack();
             yield break;
@@ -162,6 +215,10 @@ public class ShieldEnemy : EnemyBase
 
         // Inicia a investida.
         isCharging = true;
+
+        // Reproduz o som da investida.
+        if (enemyAudio != null)
+            enemyAudio.PlayAttack();
 
         yield return new WaitForSeconds(chargeDuration);
 
@@ -200,23 +257,22 @@ public class ShieldEnemy : EnemyBase
     private void TryDamagePlayer(Collider2D other)
     {
         // Só causa dano durante a investida.
-        if (!isCharging || IsStunned)
+        if (!isCharging || IsStunned || IsDead)
             return;
 
         // Impede múltiplos danos na mesma investida.
         if (hasDamagedPlayer)
             return;
 
-        PlayerHealth playerHealth =
+        PlayerHealth targetHealth =
             other.GetComponentInParent<PlayerHealth>();
 
-        // Verifica se encontrou o Player.
-        if (playerHealth == null)
+        if (targetHealth == null)
             return;
 
         // Verifica se o Player pode receber dano.
-        if (playerHealth.IsDead ||
-            playerHealth.IsInvulnerable)
+        if (targetHealth.IsDead ||
+            targetHealth.IsInvulnerable)
             return;
 
         // Evita causar dano através da hitbox
@@ -224,13 +280,14 @@ public class ShieldEnemy : EnemyBase
         if (other.GetComponent<AttackHitbox>() != null)
             return;
 
-        // Aplica o dano.
         hasDamagedPlayer = true;
 
-        playerHealth.TakeDamage(contactDamage);
+        targetHealth.TakeDamage(contactDamage);
 
-        Debug.Log("Shield causou " + contactDamage
-            + " de dano ao Player.");
+        Debug.Log(
+            "Shield causou " + contactDamage +
+            " de dano ao Player."
+        );
     }
 
     private void FlipEnemy(float direction)
@@ -239,6 +296,12 @@ public class ShieldEnemy : EnemyBase
         {
             spriteRenderer.flipX = direction < 0f;
         }
+    }
+
+    private void StopMovementSound()
+    {
+        if (enemyAudio != null)
+            enemyAudio.StopMovement();
     }
 
     private void StopMovement()
@@ -250,6 +313,8 @@ public class ShieldEnemy : EnemyBase
                 rb.linearVelocity.y
             );
         }
+
+        StopMovementSound();
     }
 
     private void CancelAttack()
@@ -270,6 +335,9 @@ public class ShieldEnemy : EnemyBase
 
     public override void Stun(float duration)
     {
+        if (IsDead)
+            return;
+
         // Cancela a investida ao ser atordoado.
         CancelAttack();
 
@@ -280,9 +348,18 @@ public class ShieldEnemy : EnemyBase
     {
         base.EndStun();
 
-        // Impede que o inimigo ataque imediatamente
-        // após sair do atordoamento.
+        // Impede um ataque imediatamente após o stun.
         nextAttackTime = Time.time + stunRecoveryDelay;
+    }
+
+    protected override void Die()
+    {
+        if (IsDead)
+            return;
+
+        CancelAttack();
+
+        base.Die();
     }
 
     private void OnDisable()

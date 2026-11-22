@@ -1,4 +1,3 @@
-
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -7,6 +6,9 @@ public class PlayerAttack : MonoBehaviour
 {
     [Header("Referências")]
     public AttackHitbox attackHitbox;
+
+    [Header("Áudio")]
+    [SerializeField] private PlayerAudio playerAudio;
 
     [Header("Posição da Hitbox")]
     public float horizontalOffset = 0.8f;
@@ -30,6 +32,10 @@ public class PlayerAttack : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        // Procura automaticamente o componente de áudio.
+        if (playerAudio == null)
+            playerAudio = GetComponentInChildren<PlayerAudio>();
     }
 
     private void Update()
@@ -91,6 +97,10 @@ public class PlayerAttack : MonoBehaviour
 
         // Atualiza a posição da hitbox.
         UpdateHitboxPosition();
+
+        // Reproduz o som do ataque.
+        if (playerAudio != null)
+            playerAudio.PlayAttack();
 
         // Ativa o dano.
         attackHitbox.ActivateHitbox();

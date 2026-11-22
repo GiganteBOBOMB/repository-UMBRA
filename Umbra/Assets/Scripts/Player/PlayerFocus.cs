@@ -14,6 +14,9 @@ public class PlayerFocus : MonoBehaviour
     [Header("Interface")]
     public HealthHUD healthHUD;
 
+    [Header("Áudio")]
+    [SerializeField] private FlashlightAudio flashlightAudio;
+
     private float currentFocus;
     private float regenerationTimer;
 
@@ -31,6 +34,13 @@ public class PlayerFocus : MonoBehaviour
         currentFocus = maxFocus;
 
         playerHealth = GetComponent<PlayerHealth>();
+
+        // Localiza automaticamente o áudio da lanterna.
+        if (flashlightAudio == null)
+        {
+            flashlightAudio =
+                GetComponentInChildren<FlashlightAudio>();
+        }
     }
 
     private void Start()
@@ -54,10 +64,15 @@ public class PlayerFocus : MonoBehaviour
 
     private void Update()
     {
-        // Impede o foco caso o Player esteja morto.
+        // Interrompe o foco e os sons caso o Player morra.
         if (playerHealth != null && playerHealth.IsDead)
         {
             isFocusing = false;
+            isRecharging = false;
+
+            if (flashlightAudio != null)
+                flashlightAudio.StopAllSounds();
+
             return;
         }
 
@@ -85,13 +100,18 @@ public class PlayerFocus : MonoBehaviour
         if (focusPressed && currentFocus > 0f)
         {
             isFocusing = true;
+
+            // Som de ativação e foco contínuo.
+            if (flashlightAudio != null)
+                flashlightAudio.StartFocus();
         }
 
         if (isFocusing)
         {
             if (!focusHeld)
             {
-                StartRecharge();
+                // Interrompe o foco voluntariamente.
+                StartRecharge(false);
             }
             else
             {
@@ -116,16 +136,30 @@ public class PlayerFocus : MonoBehaviour
         // Quando a energia acaba, inicia a recarga.
         if (currentFocus <= 0f)
         {
-            StartRecharge();
+            StartRecharge(true);
         }
     }
 
-    private void StartRecharge()
+    private void StartRecharge(bool focusEmpty)
     {
         isFocusing = false;
         isRecharging = true;
 
         regenerationTimer = regenerationDelay;
+
+        if (flashlightAudio != null)
+        {
+            if (focusEmpty)
+            {
+                // Som de energia esgotada.
+                flashlightAudio.PlayFocusEmpty();
+            }
+            else
+            {
+                // Som de desativação voluntária.
+                flashlightAudio.StopFocus();
+            }
+        }
     }
 
     private void RegenerateFocus()
@@ -137,6 +171,8 @@ public class PlayerFocus : MonoBehaviour
             return;
         }
 
+        float previousFocus = currentFocus;
+
         currentFocus +=
             regenerationRate * Time.deltaTime;
 
@@ -146,11 +182,25 @@ public class PlayerFocus : MonoBehaviour
             maxFocus
         );
 
+        // Reproduz o som somente durante a regeneração.
+        if (currentFocus > previousFocus &&
+            currentFocus < maxFocus)
+        {
+            if (flashlightAudio != null)
+                flashlightAudio.StartRecharge();
+        }
+
         // Libera o foco somente com a barra cheia.
         if (currentFocus >= maxFocus)
         {
             currentFocus = maxFocus;
             isRecharging = false;
+
+            if (flashlightAudio != null)
+            {
+                // Interrompe a recarga e toca o som final.
+                flashlightAudio.PlayFocusRecovered();
+            }
         }
     }
 
@@ -168,5 +218,8 @@ public class PlayerFocus : MonoBehaviour
     private void OnDisable()
     {
         isFocusing = false;
+
+        if (flashlightAudio != null)
+            flashlightAudio.StopAllSounds();
     }
 }
