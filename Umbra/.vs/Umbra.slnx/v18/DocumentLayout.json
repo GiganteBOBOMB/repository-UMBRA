@@ -3,91 +3,104 @@
   "WorkspaceRootPath": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Plataformas\\LightWall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Plataformas\\LightWall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\hud\\menumusic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hud\\menumusic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\player\\flashlightcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\flashlightcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\hud\\bossfinaltransition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hud\\bossfinaltransition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\audio\\bossaudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audio\\bossaudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\inimigos\\archerenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inimigos\\archerenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\inimigos\\shieldenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inimigos\\shieldenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\inimigos\\enemybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inimigos\\enemybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\player\\playerfocus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerfocus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\audio\\flashlightaudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audio\\flashlightaudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\player\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\player\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\audio\\playeraudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audio\\playeraudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\audio\\randomambience.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audio\\randomambience.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mateu\\AppData\\Local\\Packages\\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\\LocalState\\sessions\\E9F47B546E53846707CD1EF52F7B3281DCC7C110\\transfers\\2026-47\\LevelIntro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\audio\\sceneaudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audio\\sceneaudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\audio\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audio\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\hud\\healthhud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hud\\healthhud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\plataformas\\lightbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\plataformas\\lightbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\plataformas\\doorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\plataformas\\doorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\boss 1\\ataquefinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boss 1\\ataquefinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\boss 1\\bossstun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boss 1\\bossstun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\player\\attackhitbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\attackhitbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\audio\\enemyaudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audio\\enemyaudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\boss 2\\bossbattlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boss 2\\bossbattlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\boss 2\\boss2deatheffects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boss 2\\boss2deatheffects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\player\\flashlightcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\flashlightcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\boss 2\\dificuldade\\bossdifficultycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boss 2\\dificuldade\\bossdifficultycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\boss 2\\sweepattackbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boss 2\\sweepattackbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\boss 2\\shockwave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boss 2\\shockwave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\boss 2\\bossrhythmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boss 2\\bossrhythmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\boss 2\\bosshitbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boss 2\\bosshitbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\boss 2\\bossattackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boss 2\\bossattackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\boss 2\\bossattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boss 2\\bossattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\boss 2\\bossarena.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boss 2\\bossarena.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\boss 2\\attackcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boss 2\\attackcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\boss 2\\handscript\\bosshand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boss 2\\handscript\\bosshand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\boss 2\\floatbob\\floatbob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boss 2\\floatbob\\floatbob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\boss 2\\efeitoboss\\camerashake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boss 2\\efeitoboss\\camerashake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\boss 2\\dificuldade\\bosshealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boss 2\\dificuldade\\bosshealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\boss 2\\dificuldade\\bossdeathhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boss 2\\dificuldade\\bossdeathhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\boss 2\\ataques\\ataquevarreduraunica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boss 2\\ataques\\ataquevarreduraunica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\boss 2\\ataques\\ataquevarreduradupla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boss 2\\ataques\\ataquevarreduradupla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\boss 2\\ataques\\ataqueondaesmagadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boss 2\\ataques\\ataqueondaesmagadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\mateu\\onedrive\\documentos\\github\\repository-umbra\\umbra\\assets\\scripts\\boss 2\\ataques\\ataqueesmagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boss 2\\ataques\\ataqueesmagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -97,273 +110,331 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 21,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FlashlightAudio.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Audio\\FlashlightAudio.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Audio\\FlashlightAudio.cs",
-              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Audio\\FlashlightAudio.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Audio\\FlashlightAudio.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAswJUAAAABAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "MenuMusic.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\HUD\\MenuMusic.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HUD\\MenuMusic.cs",
+              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\HUD\\MenuMusic.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HUD\\MenuMusic.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwCkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-22T22:12:01.808Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BossAudio.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Audio\\BossAudio.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Audio\\BossAudio.cs",
-              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Audio\\BossAudio.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Audio\\BossAudio.cs",
-              "ViewState": "AgIAAIAAAAAAAAAAAAAqwMQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-22T22:07:46.993Z",
+              "WhenOpened": "2026-11-23T14:42:28.774Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "RandomAmbience.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Audio\\RandomAmbience.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Audio\\RandomAmbience.cs",
-              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Audio\\RandomAmbience.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Audio\\RandomAmbience.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAwEoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-22T18:34:41.491Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "LevelIntro.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\AppData\\Local\\Packages\\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\\LocalState\\sessions\\E9F47B546E53846707CD1EF52F7B3281DCC7C110\\transfers\\2026-47\\LevelIntro.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Packages\\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\\LocalState\\sessions\\E9F47B546E53846707CD1EF52F7B3281DCC7C110\\transfers\\2026-47\\LevelIntro.cs",
-              "ToolTip": "C:\\Users\\mateu\\AppData\\Local\\Packages\\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\\LocalState\\sessions\\E9F47B546E53846707CD1EF52F7B3281DCC7C110\\transfers\\2026-47\\LevelIntro.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Packages\\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\\LocalState\\sessions\\E9F47B546E53846707CD1EF52F7B3281DCC7C110\\transfers\\2026-47\\LevelIntro.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-22T18:28:00.82Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "SceneAudio.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Audio\\SceneAudio.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Audio\\SceneAudio.cs",
-              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Audio\\SceneAudio.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Audio\\SceneAudio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-22T17:53:27.844Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PlayerFocus.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Player\\PlayerFocus.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerFocus.cs",
-              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Player\\PlayerFocus.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerFocus.cs",
-              "ViewState": "AgIAAKYAAAAAAAAAAADwv+AAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-22T02:11:13.989Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "HealthHUD.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\HUD\\HealthHUD.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\HUD\\HealthHUD.cs",
-              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\HUD\\HealthHUD.cs",
-              "RelativeToolTip": "Assets\\Scripts\\HUD\\HealthHUD.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAA1wC0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-22T02:01:20.378Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ArcherEnemy.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Inimigos\\ArcherEnemy.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Inimigos\\ArcherEnemy.cs",
-              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Inimigos\\ArcherEnemy.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Inimigos\\ArcherEnemy.cs",
-              "ViewState": "AgIAAO4AAAAAAAAAAAAswDEBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-21T23:37:29.649Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EnemyBase.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Inimigos\\EnemyBase.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Inimigos\\EnemyBase.cs",
-              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Inimigos\\EnemyBase.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Inimigos\\EnemyBase.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAswLkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-21T22:41:22.904Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PlayerController.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Player\\PlayerController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Player\\PlayerController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ViewState": "AgIAANAAAAAAAAAAAAAAwPUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-21T22:32:23.195Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PlayerAttack.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Player\\PlayerAttack.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerAttack.cs",
-              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Player\\PlayerAttack.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerAttack.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAiwH0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-21T22:27:41.508Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FlashlightController.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Player\\FlashlightController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\FlashlightController.cs",
-              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Player\\FlashlightController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\FlashlightController.cs",
-              "ViewState": "AgIAAGYCAAAAAAAAAAAqwKoCAAABAAAAAAAAAA==",
+              "Title": "BossFinalTransition.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\HUD\\BossFinalTransition.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HUD\\BossFinalTransition.cs",
+              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\HUD\\BossFinalTransition.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HUD\\BossFinalTransition.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAQwFYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-21T02:05:38.766Z",
+              "WhenOpened": "2026-11-23T14:35:27.626Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "DoorController.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Plataformas\\DoorController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Plataformas\\DoorController.cs",
-              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Plataformas\\DoorController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Plataformas\\DoorController.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAADwv58AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-21T01:50:10.946Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "LightButton.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Plataformas\\LightButton.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Plataformas\\LightButton.cs",
-              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Plataformas\\LightButton.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Plataformas\\LightButton.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAxwCsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-21T01:48:40.545Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PlayerHealth.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Player\\PlayerHealth.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerHealth.cs",
-              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Player\\PlayerHealth.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerHealth.cs",
-              "ViewState": "AgIAAMAAAAAAAAAAAAAiwPIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-21T01:15:24.778Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ShieldEnemy.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Inimigos\\ShieldEnemy.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Inimigos\\ShieldEnemy.cs",
-              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Inimigos\\ShieldEnemy.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Inimigos\\ShieldEnemy.cs",
-              "ViewState": "AgIAAEABAAAAAAAAAAAwwIMBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-21T00:45:07.609Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AtaqueFinal.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Boss 1\\AtaqueFinal.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Boss 1\\AtaqueFinal.cs",
-              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Boss 1\\AtaqueFinal.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Boss 1\\AtaqueFinal.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAANsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-20T05:27:30.36Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 3,
               "Title": "AttackHitbox.cs",
               "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Player\\AttackHitbox.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\AttackHitbox.cs",
               "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Player\\AttackHitbox.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\AttackHitbox.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAmwHEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-21T22:24:46.757Z"
+              "WhenOpened": "2026-11-23T14:17:12.735Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AudioManager.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Audio\\AudioManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Audio\\AudioManager.cs",
-              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Audio\\AudioManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Audio\\AudioManager.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAgwEgAAAABAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "BossBattleManager.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\BossBattleManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\boss 2\\BossBattleManager.cs",
+              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\BossBattleManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\boss 2\\BossBattleManager.cs",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAQwLQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-22T17:48:01.994Z"
+              "WhenOpened": "2026-11-23T13:59:52.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Boss2DeathEffects.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\Boss2DeathEffects.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\boss 2\\Boss2DeathEffects.cs",
+              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\Boss2DeathEffects.cs",
+              "RelativeToolTip": "Assets\\Scripts\\boss 2\\Boss2DeathEffects.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAgwEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T13:57:39.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FlashlightController.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Player\\FlashlightController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\FlashlightController.cs",
+              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Player\\FlashlightController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\FlashlightController.cs",
+              "ViewState": "AgIAAM0CAAAAAAAAAAAgwPMCAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T13:48:33.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BossStun.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Boss 1\\BossStun.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Boss 1\\BossStun.cs",
+              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Boss 1\\BossStun.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Boss 1\\BossStun.cs",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAQwMYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T13:45:54.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Sweepattackbase.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\Sweepattackbase.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\boss 2\\Sweepattackbase.cs",
+              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\Sweepattackbase.cs",
+              "RelativeToolTip": "Assets\\Scripts\\boss 2\\Sweepattackbase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T13:22:20.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Shockwave.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\Shockwave.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\boss 2\\Shockwave.cs",
+              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\Shockwave.cs",
+              "RelativeToolTip": "Assets\\Scripts\\boss 2\\Shockwave.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T13:22:11.153Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "PlayerAudio.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Audio\\PlayerAudio.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Audio\\PlayerAudio.cs",
-              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Audio\\PlayerAudio.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Audio\\PlayerAudio.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAmwHIAAAABAAAAAAAAAA==",
+              "Title": "BossRhythmController.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\BossRhythmController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\boss 2\\BossRhythmController.cs",
+              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\BossRhythmController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\boss 2\\BossRhythmController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAmwFUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-22T22:00:13.104Z"
+              "WhenOpened": "2026-11-23T13:21:44.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Bosshitbox.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\Bosshitbox.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\boss 2\\Bosshitbox.cs",
+              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\Bosshitbox.cs",
+              "RelativeToolTip": "Assets\\Scripts\\boss 2\\Bosshitbox.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAmwEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T13:21:38.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Bossattackcontroller.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\Bossattackcontroller.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\boss 2\\Bossattackcontroller.cs",
+              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\Bossattackcontroller.cs",
+              "RelativeToolTip": "Assets\\Scripts\\boss 2\\Bossattackcontroller.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAqwJMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T13:21:30.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BossAttack.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\BossAttack.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\boss 2\\BossAttack.cs",
+              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\BossAttack.cs",
+              "RelativeToolTip": "Assets\\Scripts\\boss 2\\BossAttack.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T13:21:18.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Bossarena.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\Bossarena.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\boss 2\\Bossarena.cs",
+              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\Bossarena.cs",
+              "RelativeToolTip": "Assets\\Scripts\\boss 2\\Bossarena.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T13:21:09.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AttackContext.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\AttackContext.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\boss 2\\AttackContext.cs",
+              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\AttackContext.cs",
+              "RelativeToolTip": "Assets\\Scripts\\boss 2\\AttackContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T13:21:00.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BossHand.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\handScript\\BossHand.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\boss 2\\handScript\\BossHand.cs",
+              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\handScript\\BossHand.cs",
+              "RelativeToolTip": "Assets\\Scripts\\boss 2\\handScript\\BossHand.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA3wE4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T13:20:51.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FloatBob.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\FloatBob\\FloatBob.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\boss 2\\FloatBob\\FloatBob.cs",
+              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\FloatBob\\FloatBob.cs",
+              "RelativeToolTip": "Assets\\Scripts\\boss 2\\FloatBob\\FloatBob.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T13:20:40.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Camerashake.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\efeitoBoss\\Camerashake.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\boss 2\\efeitoBoss\\Camerashake.cs",
+              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\efeitoBoss\\Camerashake.cs",
+              "RelativeToolTip": "Assets\\Scripts\\boss 2\\efeitoBoss\\Camerashake.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T13:20:29.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Bosshealth.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\dificuldade\\Bosshealth.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\boss 2\\dificuldade\\Bosshealth.cs",
+              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\dificuldade\\Bosshealth.cs",
+              "RelativeToolTip": "Assets\\Scripts\\boss 2\\dificuldade\\Bosshealth.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA4wE0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T13:20:14.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BossDifficultyController.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\dificuldade\\BossDifficultyController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\boss 2\\dificuldade\\BossDifficultyController.cs",
+              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\dificuldade\\BossDifficultyController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\boss 2\\dificuldade\\BossDifficultyController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T13:20:06.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Bossdeathhandler.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\dificuldade\\Bossdeathhandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\boss 2\\dificuldade\\Bossdeathhandler.cs",
+              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\dificuldade\\Bossdeathhandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\boss 2\\dificuldade\\Bossdeathhandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T13:19:45.44Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "EnemyAudio.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Audio\\EnemyAudio.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Audio\\EnemyAudio.cs",
-              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Audio\\EnemyAudio.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Audio\\EnemyAudio.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAwwJ0AAAABAAAAAAAAAA==",
+              "Title": "Ataquevarreduraunica.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\ataques\\Ataquevarreduraunica.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\boss 2\\ataques\\Ataquevarreduraunica.cs",
+              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\ataques\\Ataquevarreduraunica.cs",
+              "RelativeToolTip": "Assets\\Scripts\\boss 2\\ataques\\Ataquevarreduraunica.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-22T22:03:45.382Z"
+              "WhenOpened": "2026-11-23T13:19:34.525Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LightWall.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Plataformas\\LightWall.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Plataformas\\LightWall.cs",
-              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\Plataformas\\LightWall.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Plataformas\\LightWall.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAQwEcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 22,
+              "Title": "Ataquevarreduradupla.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\ataques\\Ataquevarreduradupla.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\boss 2\\ataques\\Ataquevarreduradupla.cs",
+              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\ataques\\Ataquevarreduradupla.cs",
+              "RelativeToolTip": "Assets\\Scripts\\boss 2\\ataques\\Ataquevarreduradupla.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T00:34:26.057Z",
+              "WhenOpened": "2026-11-23T13:19:27.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Ataqueondaesmagadora.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\ataques\\Ataqueondaesmagadora.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\boss 2\\ataques\\Ataqueondaesmagadora.cs",
+              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\ataques\\Ataqueondaesmagadora.cs",
+              "RelativeToolTip": "Assets\\Scripts\\boss 2\\ataques\\Ataqueondaesmagadora.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T13:19:17.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AtaqueEsmagamento.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\ataques\\AtaqueEsmagamento.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\boss 2\\ataques\\AtaqueEsmagamento.cs",
+              "ToolTip": "C:\\Users\\mateu\\OneDrive\\Documentos\\GitHub\\repository-UMBRA\\Umbra\\Assets\\Scripts\\boss 2\\ataques\\AtaqueEsmagamento.cs",
+              "RelativeToolTip": "Assets\\Scripts\\boss 2\\ataques\\AtaqueEsmagamento.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAgwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T13:19:07.401Z",
               "EditorCaption": ""
             }
           ]

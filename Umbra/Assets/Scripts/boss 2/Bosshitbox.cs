@@ -1,14 +1,14 @@
+
 using UnityEngine;
 
-// Área de dano do Boss. Usada nas mãos (ligada só no impacto) e nas ondas (sempre ligada).
-// Precisa de um Collider2D no mesmo objeto. Ele é forçado a ser Trigger.
 [RequireComponent(typeof(Collider2D))]
 public class BossHitbox : MonoBehaviour
 {
+    [Header("Dano")]
     [SerializeField] private int damage = 1;
     [SerializeField] private string targetTag = "Player";
 
-    [Tooltip("Ligado: nasce ativa (use nas ondas).\nDesligado: só ativa quando o ataque mandar (use nas mãos).")]
+    [Header("Ativação")]
     [SerializeField] private bool startActive = false;
 
     private Collider2D area;
@@ -17,30 +17,53 @@ public class BossHitbox : MonoBehaviour
     private void Awake()
     {
         area = GetComponent<Collider2D>();
+
         area.isTrigger = true;
         area.enabled = startActive;
     }
 
-    // Chamado pelos ataques para ligar/desligar a área de dano
     public void SetActive(bool value)
     {
-        if (value) alreadyHit = false; // cada ativação só pode acertar uma vez
+        if (value)
+            alreadyHit = false;
+
         area.enabled = value;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (alreadyHit || !other.CompareTag(targetTag)) return;
-
-        alreadyHit = true;
-        DealDamage(other);
+        TryDamage(other);
     }
 
-    private void DealDamage(Collider2D target)
+    private void OnTriggerStay2D(Collider2D other)
     {
-        Debug.Log($"[Boss] Acertou {target.name}: {damage} de dano");
+        TryDamage(other);
+    }
 
-        // TODO: chamar aqui o script de vida do seu player. Exemplo:
-        // target.GetComponentInParent<PlayerHealth>()?.TakeDamage(damage);
+    private void TryDamage(Collider2D other)
+    {
+        if (alreadyHit || area == null || !area.enabled)
+            return;
+
+        // Procura o jogador, mesmo que o collider
+        // esteja em um objeto filho.
+        PlayerHealth playerHealth =
+            other.GetComponentInParent<PlayerHealth>();
+
+        if (playerHealth == null)
+            return;
+
+        // Confere a Tag do objeto principal do jogador.
+        if (!playerHealth.CompareTag(targetTag))
+            return;
+
+        alreadyHit = true;
+
+        playerHealth.TakeDamage(damage);
+
+        Debug.Log(
+            "[Boss] Acertou " + playerHealth.name +
+            " causando " + damage + " de dano!"
+        );
     }
 }

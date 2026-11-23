@@ -75,6 +75,12 @@ public class FlashlightController : MonoBehaviour
     private readonly List<EnemyBase> enemiesToReset =
         new List<EnemyBase>();
 
+    // Bosses: exposição contínua ao foco.
+    private readonly HashSet<BossStun> stunnedBosses = new HashSet<BossStun>();
+    private readonly Dictionary<BossStun, float> bossStunProgress = new Dictionary<BossStun, float>();
+    private readonly HashSet<BossStun> currentlyFocusedBosses = new HashSet<BossStun>();
+    private readonly List<BossStun> bossesToReset = new List<BossStun>();
+
     private readonly HashSet<LightPlatform> illuminatedPlatforms =
         new HashSet<LightPlatform>();
 
@@ -193,6 +199,7 @@ public class FlashlightController : MonoBehaviour
         if (IsFocusing && lightPivot != null)
         {
             StunEnemies();
+            StunBosses();
         }
         else
         {
@@ -200,6 +207,9 @@ public class FlashlightController : MonoBehaviour
             stunnedEnemies.Clear();
             stunProgress.Clear();
             currentlyFocused.Clear();
+            stunnedBosses.Clear();
+            bossStunProgress.Clear();
+            currentlyFocusedBosses.Clear();
         }
 
         // Interações com objetos iluminados.
@@ -412,6 +422,65 @@ public class FlashlightController : MonoBehaviour
         }
     }
 
+    // Usa a mesma duração de exposição e o mesmo alcance dos inimigos comuns.
+    private void StunBosses()
+    {
+        if (!IsFocusing || lightPivot == null)
+            return;
+
+        Collider2D[] hits = Physics2D.OverlapCircleAll(
+            lightPivot.position, stunRange, enemyLayer);
+
+        currentlyFocusedBosses.Clear();
+
+        foreach (Collider2D hit in hits)
+        {
+            BossStun boss = hit.GetComponentInParent<BossStun>();
+            if (boss == null || !boss.isActiveAndEnabled)
+                continue;
+
+            BossHealth health = boss.GetComponent<BossHealth>();
+            if (health != null && (health.IsDead || health.IsDepleted))
+                continue;
+
+            // Usa o centro do collider para detectar o corpo do boss.
+            if (!IsInBeam(hit.bounds.center, stunRange, focusAngle))
+                continue;
+
+            if (!currentlyFocusedBosses.Add(boss))
+                continue;
+
+            if (stunnedBosses.Contains(boss) || boss.IsStunned)
+            {
+                bossStunProgress.Remove(boss);
+                continue;
+            }
+
+            if (!bossStunProgress.TryGetValue(boss, out float progress))
+                progress = 0f;
+
+            progress += Time.deltaTime;
+            bossStunProgress[boss] = progress;
+
+            if (progress >= timeToStun)
+            {
+                boss.Stun(stunDuration);
+                stunnedBosses.Add(boss);
+                bossStunProgress.Remove(boss);
+            }
+        }
+
+        bossesToReset.Clear();
+        foreach (var entry in bossStunProgress)
+        {
+            if (entry.Key == null || !currentlyFocusedBosses.Contains(entry.Key))
+                bossesToReset.Add(entry.Key);
+        }
+
+        foreach (BossStun boss in bossesToReset)
+            bossStunProgress.Remove(boss);
+    }
+
     private bool IsInBeam(
         Vector2 targetPosition,
         float range,
@@ -612,6 +681,10 @@ public class FlashlightController : MonoBehaviour
         stunProgress.Clear();
         currentlyFocused.Clear();
         enemiesToReset.Clear();
+        stunnedBosses.Clear();
+        bossStunProgress.Clear();
+        currentlyFocusedBosses.Clear();
+        bossesToReset.Clear();
 
         // Restaura o modo normal da luz.
         UpdateLightMode();

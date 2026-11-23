@@ -2,43 +2,46 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(BoxCollider2D))]
 public class AttackHitbox : MonoBehaviour
 {
-    [Header("Configuração do dano")]
-    public int damage = 1;
+    [Header("Configurações do Ataque")]
+    [SerializeField] private int damage = 1;
 
-    [Header("Depuração")]
-    public bool debugAttack = true;
+    [Header("Referências")]
+    [SerializeField] private Collider2D attackCollider;
 
-    private BoxCollider2D attackCollider;
-
-    private HashSet<EnemyBase> enemiesHit =
-        new HashSet<EnemyBase>();
+    // Inimigos atingidos durante o ataque atual.
+    private HashSet<Component> hitTargets =
+        new HashSet<Component>();
 
     private void Awake()
     {
-        attackCollider = GetComponent<BoxCollider2D>();
-        attackCollider.isTrigger = true;
-        attackCollider.enabled = false;
+        if (attackCollider == null)
+            attackCollider = GetComponent<Collider2D>();
+
+        if (attackCollider != null)
+        {
+            attackCollider.isTrigger = true;
+            attackCollider.enabled = false;
+        }
     }
 
+    // Chamado pelo PlayerAttack quando o golpe começa.
     public void ActivateHitbox()
     {
-        enemiesHit.Clear();
-        attackCollider.enabled = true;
+        hitTargets.Clear();
 
-        if (debugAttack)
-            Debug.Log("Hitbox ATIVADA");
+        if (attackCollider != null)
+            attackCollider.enabled = true;
     }
 
+    // Chamado pelo PlayerAttack quando o golpe termina.
     public void DeactivateHitbox()
     {
         if (attackCollider != null)
             attackCollider.enabled = false;
 
-        if (debugAttack)
-            Debug.Log("Hitbox DESATIVADA");
+        hitTargets.Clear();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -53,61 +56,71 @@ public class AttackHitbox : MonoBehaviour
 
     private void TryDamage(Collider2D other)
     {
-        if (!attackCollider.enabled)
+        if (attackCollider == null ||
+            !attackCollider.enabled)
+        {
             return;
+        }
 
+        // Verifica primeiro se atingiu um boss.
+        BossHealth bossHealth =
+            other.GetComponentInParent<BossHealth>();
+
+        if (bossHealth != null)
+        {
+            BossStun bossStun =
+                bossHealth.GetComponent<BossStun>();
+
+            // Não permite dano sem atordoamento.
+            if (bossStun == null ||
+                !bossStun.IsStunned)
+            {
+                return;
+            }
+
+            // Evita acertar um boss morto.
+            if (bossHealth.IsDead ||
+                bossHealth.IsDepleted)
+            {
+                return;
+            }
+
+            // Apenas um acerto por ativação.
+            if (hitTargets.Contains(bossHealth))
+                return;
+
+            hitTargets.Add(bossHealth);
+
+            bossHealth.TakeDamage(damage);
+
+            return;
+        }
+
+        // Verifica inimigos comuns.
         EnemyBase enemy =
             other.GetComponentInParent<EnemyBase>();
 
         if (enemy == null)
             return;
 
-        if (enemiesHit.Contains(enemy))
-            return;
-
+        // Inimigos comuns também precisam
+        // estar atordoados para receber dano.
         if (!enemy.IsStunned)
-        {
-            if (debugAttack)
-                Debug.Log(enemy.name + " não está atordoado!");
-
             return;
-        }
 
-        enemiesHit.Add(enemy);
+        if (hitTargets.Contains(enemy))
+            return;
+
+        hitTargets.Add(enemy);
 
         enemy.TakeDamage(damage);
-
-        if (debugAttack)
-            Debug.Log("Ataque acertou: " + enemy.name);
     }
 
-    private void OnDrawGizmos()
+    private void OnDisable()
     {
-        BoxCollider2D box = GetComponent<BoxCollider2D>();
+        if (attackCollider != null)
+            attackCollider.enabled = false;
 
-        if (box == null)
-            return;
-
-        Gizmos.matrix = transform.localToWorldMatrix;
-
-        // Vermelho quando ativa.
-        // Amarelo quando desativada.
-        Gizmos.color = box.enabled
-            ? Color.red
-            : Color.yellow;
-
-        Vector3 center = new Vector3(
-            box.offset.x,
-            box.offset.y,
-            0f
-        );
-
-        Vector3 size = new Vector3(
-            box.size.x,
-            box.size.y,
-            0.1f
-        );
-
-        Gizmos.DrawWireCube(center, size);
+        hitTargets.Clear();
     }
 }
