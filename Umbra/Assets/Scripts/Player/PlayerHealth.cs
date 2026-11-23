@@ -7,72 +7,237 @@ public class PlayerHealth : MonoBehaviour
     [Header("Vida")]
     public float maxHealth = 5f;
 
-    [Header("Reinício da fase")]
+    [Header("Morte")]
     public float restartDelay = 1f;
 
+    [Header("Invulnerabilidade")]
+    public float invulnerabilityDuration = 1f;
+    public float blinkInterval = 0.1f;
+
+    [Header("Interface")]
+    public HealthHUD healthHUD;
+
+    [Header("Áudio")]
+    [SerializeField] private PlayerAudio playerAudio;
+    public bool waitForDeathSound = true;
+
     private float currentHealth;
+
     private bool isDead;
+    private bool isInvulnerable;
+
+    private SpriteRenderer spriteRenderer;
+    private Rigidbody2D rb;
+
+    public float CurrentHealth => currentHealth;
+    public bool IsDead => isDead;
+    public bool IsInvulnerable => isInvulnerable;
 
     private void Awake()
     {
-        // Começa com a vida máxima.
         currentHealth = maxHealth;
+
+        spriteRenderer =
+            GetComponentInChildren<SpriteRenderer>();
+
+        rb = GetComponent<Rigidbody2D>();
+
+        // Procura automaticamente o áudio do jogador.
+        if (playerAudio == null)
+        {
+            playerAudio =
+                GetComponentInChildren<PlayerAudio>();
+        }
+    }
+
+    private void Start()
+    {
+        // Encontra automaticamente o HUD da fase.
+        if (healthHUD == null)
+        {
+            healthHUD =
+                FindFirstObjectByType<HealthHUD>();
+        }
+
+        if (healthHUD == null)
+        {
+            Debug.LogWarning(
+                "PlayerHealth: HealthHUD não encontrado."
+            );
+        }
+
+        UpdateHUD();
     }
 
     public void TakeDamage(float damage)
     {
-        // Impede receber dano após a morte.
-        if (isDead)
+        if (isDead || isInvulnerable || damage <= 0f)
             return;
 
-        // Reduz a vida e impede valores negativos.
-        currentHealth = Mathf.Max(0f, currentHealth - damage);
+        currentHealth -= damage;
 
-        Debug.Log("Vida do jogador: " + currentHealth + "/" + maxHealth);
+        currentHealth = Mathf.Clamp(
+            currentHealth,
+            0f,
+            maxHealth
+        );
 
-        // Inicia a morte quando a vida chega a zero.
+        UpdateHUD();
+
+        Debug.Log("Vida do Player: " + currentHealth);
+
         if (currentHealth <= 0f)
         {
             Die();
+        }
+        else
+        {
+            // Som de dano.
+            if (playerAudio != null)
+                playerAudio.PlayHurt();
+
+            StartCoroutine(InvulnerabilityRoutine());
+        }
+    }
+
+    private IEnumerator InvulnerabilityRoutine()
+    {
+        isInvulnerable = true;
+
+        float elapsedTime = 0f;
+
+        float interval = Mathf.Max(
+            0.02f,
+            blinkInterval
+        );
+
+        while (elapsedTime < invulnerabilityDuration)
+        {
+            if (spriteRenderer != null)
+            {
+                spriteRenderer.enabled =
+                    !spriteRenderer.enabled;
+            }
+
+            yield return new WaitForSeconds(interval);
+
+            elapsedTime += interval;
+        }
+
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.enabled = true;
+        }
+
+        isInvulnerable = false;
+    }
+
+    public void Heal(float amount)
+    {
+        if (isDead || amount <= 0f)
+            return;
+
+        currentHealth = Mathf.Clamp(
+            currentHealth + amount,
+            0f,
+            maxHealth
+        );
+
+        UpdateHUD();
+    }
+
+    private void UpdateHUD()
+    {
+        if (healthHUD != null)
+        {
+            healthHUD.UpdateHealth(
+                currentHealth,
+                maxHealth
+            );
         }
     }
 
     private void Die()
     {
-        // Garante que a rotina de morte só aconteça uma vez.
         if (isDead)
             return;
 
         isDead = true;
 
-        // Interrompe a movimentação.
-        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        StopAllCoroutines();
+
+        isInvulnerable = false;
+
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.enabled = true;
+        }
+
+        // Interrompe os passos e reproduz a morte.
+        if (playerAudio != null)
+        {
+            playerAudio.StopFootsteps();
+            playerAudio.PlayDeath();
+        }
 
         if (rb != null)
+        {
             rb.linearVelocity = Vector2.zero;
+            rb.simulated = false;
+        }
 
-        // Desativa os controles do jogador.
-        PlayerController controller = GetComponent<PlayerController>();
+        PlayerController playerController =
+            GetComponent<PlayerController>();
 
-        if (controller != null)
-            controller.enabled = false;
+        if (playerController != null)
+        {
+            playerController.enabled = false;
+        }
 
-        PlayerAttack attack = GetComponent<PlayerAttack>();
+        PlayerAttack playerAttack =
+            GetComponent<PlayerAttack>();
 
-        if (attack != null)
-            attack.enabled = false;
+        if (playerAttack != null)
+        {
+            playerAttack.enabled = false;
+        }
 
-        // Aguarda um instante antes de reiniciar a fase.
-        StartCoroutine(RestartCurrentScene());
+        Debug.Log("Player morreu.");
+
+        StartCoroutine(RestartScene());
     }
 
-    private IEnumerator RestartCurrentScene()
+    private IEnumerator RestartScene()
     {
-        yield return new WaitForSeconds(restartDelay);
+        float delay = Mathf.Max(0f, restartDelay);
 
-        // Recarrega a cena que está sendo jogada atualmente.
-        Scene currentScene = SceneManager.GetActiveScene();
+        // Aguarda o áudio de morte terminar.
+        if (waitForDeathSound &&
+            playerAudio != null &&
+            playerAudio.deathSound != null)
+        {
+            delay = Mathf.Max(
+                delay,
+                playerAudio.deathSound.length
+            );
+        }
 
-        SceneManager.LoadScene(currentScene.buildIndex);
+        yield return new WaitForSeconds(delay);
+
+        SceneManager.LoadScene(
+            SceneManager.GetActiveScene().buildIndex
+        );
+    }
+
+    private void OnDisable()
+    {
+        StopAllCoroutines();
+
+        isInvulnerable = false;
+
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.enabled = true;
+        }
     }
 }

@@ -16,22 +16,26 @@ public class EnemyBase : MonoBehaviour
     [Tooltip("Cor do inimigo enquanto estiver atordoado.")]
     public Color stunnedColor = Color.yellow;
 
+    [Header("Áudio")]
+    [SerializeField] protected EnemyAudio enemyAudio;
+
     protected bool isStunned = false;
+    protected bool isDead = false;
+
     protected SpriteRenderer spriteRenderer;
     protected Color originalColor;
 
     private Coroutine stunCoroutine;
 
-    // Permite que outros scripts verifiquem se o inimigo está atordoado.
     public bool IsStunned => isStunned;
+    public bool IsDead => isDead;
 
     protected virtual void Awake()
     {
-        // Inicializa a vida de acordo com o valor definido no Inspector.
         currentHealth = Mathf.Max(1, maxHealth);
 
-        // Procura o SpriteRenderer no próprio objeto ou em seus filhos.
-        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        spriteRenderer =
+            GetComponentInChildren<SpriteRenderer>();
 
         if (spriteRenderer != null)
         {
@@ -40,28 +44,41 @@ public class EnemyBase : MonoBehaviour
         else
         {
             Debug.LogWarning(
-                "EnemyBase: nenhum SpriteRenderer encontrado em " + gameObject.name,
+                "EnemyBase: nenhum SpriteRenderer encontrado em "
+                + gameObject.name,
                 gameObject
             );
+        }
+
+        // Localiza automaticamente o áudio do inimigo.
+        if (enemyAudio == null)
+        {
+            enemyAudio =
+                GetComponentInChildren<EnemyAudio>();
         }
     }
 
     public virtual void TakeDamage(int damage)
     {
-        // Ignora dano inválido.
-        if (damage <= 0)
+        // Ignora dano inválido ou inimigos mortos.
+        if (damage <= 0 || isDead)
             return;
 
-        // Não permite causar dano enquanto o inimigo não estiver atordoado.
+        // Só recebe dano enquanto estiver atordoado.
         if (!IsStunned)
             return;
 
         currentHealth -= damage;
-        currentHealth = Mathf.Max(0, currentHealth);
+
+        currentHealth = Mathf.Max(
+            0,
+            currentHealth
+        );
 
         Debug.Log(
             gameObject.name + " recebeu " + damage +
-            " de dano. Vida restante: " + currentHealth + "/" + maxHealth,
+            " de dano. Vida restante: " +
+            currentHealth + "/" + maxHealth,
             gameObject
         );
 
@@ -69,17 +86,27 @@ public class EnemyBase : MonoBehaviour
         {
             Die();
         }
+        else
+        {
+            // Som de dano válido.
+            if (enemyAudio != null)
+                enemyAudio.PlayHurt();
+        }
     }
 
-    // Atordoa usando a duração configurada no Inspector.
     public virtual void Stun()
     {
         Stun(stunDuration);
     }
 
-    // Atordoa pelo tempo informado.
     public virtual void Stun(float duration)
     {
+        if (isDead)
+            return;
+
+        // Verifica se já estava atordoado.
+        bool wasStunned = isStunned;
+
         if (stunCoroutine != null)
         {
             StopCoroutine(stunCoroutine);
@@ -90,6 +117,12 @@ public class EnemyBase : MonoBehaviour
 
         ApplyStunnedColor();
 
+        // Toca somente ao iniciar um novo atordoamento.
+        if (!wasStunned && enemyAudio != null)
+        {
+            enemyAudio.PlayStun();
+        }
+
         stunCoroutine = StartCoroutine(
             StunRoutine(Mathf.Max(0f, duration))
         );
@@ -97,9 +130,11 @@ public class EnemyBase : MonoBehaviour
 
     private void ApplyStunnedColor()
     {
-        // Tenta localizar o SpriteRenderer novamente, se necessário.
         if (spriteRenderer == null)
-            spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        {
+            spriteRenderer =
+                GetComponentInChildren<SpriteRenderer>();
+        }
 
         if (spriteRenderer != null)
             spriteRenderer.color = stunnedColor;
@@ -117,7 +152,10 @@ public class EnemyBase : MonoBehaviour
         isStunned = false;
 
         if (spriteRenderer == null)
-            spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        {
+            spriteRenderer =
+                GetComponentInChildren<SpriteRenderer>();
+        }
 
         if (spriteRenderer != null)
             spriteRenderer.color = originalColor;
@@ -127,7 +165,22 @@ public class EnemyBase : MonoBehaviour
 
     protected virtual void Die()
     {
-        // Remove o inimigo da cena quando sua vida chega a zero.
+        // Impede que a morte seja executada mais de uma vez.
+        if (isDead)
+            return;
+
+        isDead = true;
+
+        StopAllCoroutines();
+
+        // Reproduz o som de morte independentemente do inimigo.
+        if (enemyAudio != null)
+        {
+            enemyAudio.StopMovement();
+            enemyAudio.PlayDeath();
+        }
+
+        // Remove imediatamente o inimigo da cena.
         Destroy(gameObject);
     }
 }

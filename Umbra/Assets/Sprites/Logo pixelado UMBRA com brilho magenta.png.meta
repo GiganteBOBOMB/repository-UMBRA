@@ -1,0 +1,4180 @@
+fileFormatVersion: 2
+guid: 9e288c380015f1945bac24e3a30c1b77
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1831522202167674909
+    second: Logo pixelado UMBRA com brilho magenta_0
+  - first:
+      213: -5883232474922769798
+    second: Logo pixelado UMBRA com brilho magenta_1
+  - first:
+      213: 3117384787119955106
+    second: Logo pixelado UMBRA com brilho magenta_2
+  - first:
+      213: -7047138176771576145
+    second: Logo pixelado UMBRA com brilho magenta_3
+  - first:
+      213: 5105192827194939222
+    second: Logo pixelado UMBRA com brilho magenta_4
+  - first:
+      213: 4106717021854004006
+    second: Logo pixelado UMBRA com brilho magenta_5
+  - first:
+      213: -2443017597994274573
+    second: Logo pixelado UMBRA com brilho magenta_6
+  - first:
+      213: -4943268035829681871
+    second: Logo pixelado UMBRA com brilho magenta_7
+  - first:
+      213: 6496275100538553966
+    second: Logo pixelado UMBRA com brilho magenta_8
+  - first:
+      213: 6861606572452755626
+    second: Logo pixelado UMBRA com brilho magenta_9
+  - first:
+      213: -3619232965006831087
+    second: Logo pixelado UMBRA com brilho magenta_10
+  - first:
+      213: 5393503534236884
+    second: Logo pixelado UMBRA com brilho magenta_11
+  - first:
+      213: -120545689399515305
+    second: Logo pixelado UMBRA com brilho magenta_12
+  - first:
+      213: -1644303936383698446
+    second: Logo pixelado UMBRA com brilho magenta_13
+  - first:
+      213: 3164040646018032382
+    second: Logo pixelado UMBRA com brilho magenta_14
+  - first:
+      213: 6647627256210361451
+    second: Logo pixelado UMBRA com brilho magenta_15
+  - first:
+      213: -7489805890668911534
+    second: Logo pixelado UMBRA com brilho magenta_16
+  - first:
+      213: 4010997487726112656
+    second: Logo pixelado UMBRA com brilho magenta_17
+  - first:
+      213: 6100024011781960233
+    second: Logo pixelado UMBRA com brilho magenta_18
+  - first:
+      213: 2946172407452055541
+    second: Logo pixelado UMBRA com brilho magenta_19
+  - first:
+      213: 4747368801133590151
+    second: Logo pixelado UMBRA com brilho magenta_20
+  - first:
+      213: -3067387283507186404
+    second: Logo pixelado UMBRA com brilho magenta_21
+  - first:
+      213: -3109781640608046917
+    second: Logo pixelado UMBRA com brilho magenta_22
+  - first:
+      213: 135640260166574961
+    second: Logo pixelado UMBRA com brilho magenta_23
+  - first:
+      213: -1425510271030865201
+    second: Logo pixelado UMBRA com brilho magenta_24
+  - first:
+      213: -2690225794221962903
+    second: Logo pixelado UMBRA com brilho magenta_25
+  - first:
+      213: 5113581861694021871
+    second: Logo pixelado UMBRA com brilho magenta_26
+  - first:
+      213: 6689457737786641990
+    second: Logo pixelado UMBRA com brilho magenta_27
+  - first:
+      213: 2112757751604955808
+    second: Logo pixelado UMBRA com brilho magenta_28
+  - first:
+      213: -1955285980491667341
+    second: Logo pixelado UMBRA com brilho magenta_29
+  - first:
+      213: -2528966128429838607
+    second: Logo pixelado UMBRA com brilho magenta_30
+  - first:
+      213: 8361272441413877222
+    second: Logo pixelado UMBRA com brilho magenta_31
+  - first:
+      213: -5788411533000742123
+    second: Logo pixelado UMBRA com brilho magenta_32
+  - first:
+      213: 451917562971781838
+    second: Logo pixelado UMBRA com brilho magenta_33
+  - first:
+      213: -9144380429833407397
+    second: Logo pixelado UMBRA com brilho magenta_34
+  - first:
+      213: -651015665570876362
+    second: Logo pixelado UMBRA com brilho magenta_35
+  - first:
+      213: 8656245327138412491
+    second: Logo pixelado UMBRA com brilho magenta_36
+  - first:
+      213: 8374965135732128961
+    second: Logo pixelado UMBRA com brilho magenta_37
+  - first:
+      213: 269042165165063268
+    second: Logo pixelado UMBRA com brilho magenta_38
+  - first:
+      213: 7289706589299578634
+    second: Logo pixelado UMBRA com brilho magenta_39
+  - first:
+      213: -3774065632164675190
+    second: Logo pixelado UMBRA com brilho magenta_40
+  - first:
+      213: 232893453471894209
+    second: Logo pixelado UMBRA com brilho magenta_41
+  - first:
+      213: -4748251336627669357
+    second: Logo pixelado UMBRA com brilho magenta_42
+  - first:
+      213: 7030977746688496672
+    second: Logo pixelado UMBRA com brilho magenta_43
+  - first:
+      213: 1088754624555717832
+    second: Logo pixelado UMBRA com brilho magenta_44
+  - first:
+      213: -2691712541480006107
+    second: Logo pixelado UMBRA com brilho magenta_45
+  - first:
+      213: -5983075659723487340
+    second: Logo pixelado UMBRA com brilho magenta_46
+  - first:
+      213: -238745111604184217
+    second: Logo pixelado UMBRA com brilho magenta_47
+  - first:
+      213: 1575558083759934159
+    second: Logo pixelado UMBRA com brilho magenta_48
+  - first:
+      213: -516221484807878891
+    second: Logo pixelado UMBRA com brilho magenta_49
+  - first:
+      213: 2527841232783204947
+    second: Logo pixelado UMBRA com brilho magenta_50
+  - first:
+      213: -4713126791574533440
+    second: Logo pixelado UMBRA com brilho magenta_51
+  - first:
+      213: -1559368726302691314
+    second: Logo pixelado UMBRA com brilho magenta_52
+  - first:
+      213: -6405099090257124171
+    second: Logo pixelado UMBRA com brilho magenta_53
+  - first:
+      213: -4831622349679119004
+    second: Logo pixelado UMBRA com brilho magenta_54
+  - first:
+      213: -6780846307158822382
+    second: Logo pixelado UMBRA com brilho magenta_55
+  - first:
+      213: 3080173861695609153
+    second: Logo pixelado UMBRA com brilho magenta_56
+  - first:
+      213: 881989097112947797
+    second: Logo pixelado UMBRA com brilho magenta_57
+  - first:
+      213: 6576088178238913605
+    second: Logo pixelado UMBRA com brilho magenta_58
+  - first:
+      213: -3413083979232125784
+    second: Logo pixelado UMBRA com brilho magenta_59
+  - first:
+      213: 6748699069956377941
+    second: Logo pixelado UMBRA com brilho magenta_60
+  - first:
+      213: -5389033713696165674
+    second: Logo pixelado UMBRA com brilho magenta_61
+  - first:
+      213: -296633911694368136
+    second: Logo pixelado UMBRA com brilho magenta_62
+  - first:
+      213: -3071320675777204377
+    second: Logo pixelado UMBRA com brilho magenta_63
+  - first:
+      213: 1292291452946885905
+    second: Logo pixelado UMBRA com brilho magenta_64
+  - first:
+      213: -1122278388804174747
+    second: Logo pixelado UMBRA com brilho magenta_65
+  - first:
+      213: -172154174443975017
+    second: Logo pixelado UMBRA com brilho magenta_66
+  - first:
+      213: -2251181975206647756
+    second: Logo pixelado UMBRA com brilho magenta_67
+  - first:
+      213: -7840824046871657544
+    second: Logo pixelado UMBRA com brilho magenta_68
+  - first:
+      213: 640657349690857343
+    second: Logo pixelado UMBRA com brilho magenta_69
+  - first:
+      213: 2314957645000345717
+    second: Logo pixelado UMBRA com brilho magenta_70
+  - first:
+      213: -5268319617189300461
+    second: Logo pixelado UMBRA com brilho magenta_71
+  - first:
+      213: 7834111922057038504
+    second: Logo pixelado UMBRA com brilho magenta_72
+  - first:
+      213: 4906710042115548552
+    second: Logo pixelado UMBRA com brilho magenta_73
+  - first:
+      213: 939979950310760525
+    second: Logo pixelado UMBRA com brilho magenta_74
+  - first:
+      213: -1266975436289486965
+    second: Logo pixelado UMBRA com brilho magenta_75
+  - first:
+      213: 3204252938573836829
+    second: Logo pixelado UMBRA com brilho magenta_76
+  - first:
+      213: -4528928418231179050
+    second: Logo pixelado UMBRA com brilho magenta_77
+  - first:
+      213: -6327586559067487459
+    second: Logo pixelado UMBRA com brilho magenta_78
+  - first:
+      213: -4209849667329791087
+    second: Logo pixelado UMBRA com brilho magenta_79
+  - first:
+      213: -8648083680351565
+    second: Logo pixelado UMBRA com brilho magenta_80
+  - first:
+      213: -8687786264718561388
+    second: Logo pixelado UMBRA com brilho magenta_81
+  - first:
+      213: 2805476873688827971
+    second: Logo pixelado UMBRA com brilho magenta_82
+  - first:
+      213: -6875727003646859911
+    second: Logo pixelado UMBRA com brilho magenta_83
+  - first:
+      213: -1711513142285253996
+    second: Logo pixelado UMBRA com brilho magenta_84
+  - first:
+      213: -1146811425225931341
+    second: Logo pixelado UMBRA com brilho magenta_85
+  - first:
+      213: -6914384411316389779
+    second: Logo pixelado UMBRA com brilho magenta_86
+  - first:
+      213: -3089622025389591972
+    second: Logo pixelado UMBRA com brilho magenta_87
+  - first:
+      213: 6506849141344142259
+    second: Logo pixelado UMBRA com brilho magenta_88
+  - first:
+      213: -1521260482357547576
+    second: Logo pixelado UMBRA com brilho magenta_89
+  - first:
+      213: -1542801747847444902
+    second: Logo pixelado UMBRA com brilho magenta_90
+  - first:
+      213: -4018175353486381561
+    second: Logo pixelado UMBRA com brilho magenta_91
+  - first:
+      213: 7538349254522009139
+    second: Logo pixelado UMBRA com brilho magenta_92
+  - first:
+      213: 527809726183183605
+    second: Logo pixelado UMBRA com brilho magenta_93
+  - first:
+      213: 4074584868543558613
+    second: Logo pixelado UMBRA com brilho magenta_94
+  - first:
+      213: 1627873327138144543
+    second: Logo pixelado UMBRA com brilho magenta_95
+  - first:
+      213: 708139219551560836
+    second: Logo pixelado UMBRA com brilho magenta_96
+  - first:
+      213: -5847794701173541225
+    second: Logo pixelado UMBRA com brilho magenta_97
+  - first:
+      213: 8926651616358526868
+    second: Logo pixelado UMBRA com brilho magenta_98
+  - first:
+      213: -5102268393608394886
+    second: Logo pixelado UMBRA com brilho magenta_99
+  - first:
+      213: 8329723063217778619
+    second: Logo pixelado UMBRA com brilho magenta_100
+  - first:
+      213: -5683527190899454546
+    second: Logo pixelado UMBRA com brilho magenta_101
+  - first:
+      213: 4753794541483401488
+    second: Logo pixelado UMBRA com brilho magenta_102
+  - first:
+      213: 9217136461118772774
+    second: Logo pixelado UMBRA com brilho magenta_103
+  - first:
+      213: -1130645484197189424
+    second: Logo pixelado UMBRA com brilho magenta_104
+  - first:
+      213: -7439976834778169876
+    second: Logo pixelado UMBRA com brilho magenta_105
+  - first:
+      213: 6183130156617436675
+    second: Logo pixelado UMBRA com brilho magenta_106
+  - first:
+      213: 1144701478159926221
+    second: Logo pixelado UMBRA com brilho magenta_107
+  - first:
+      213: -1045889968276836886
+    second: Logo pixelado UMBRA com brilho magenta_108
+  - first:
+      213: 3468940970394959991
+    second: Logo pixelado UMBRA com brilho magenta_109
+  - first:
+      213: 5314835150032657597
+    second: Logo pixelado UMBRA com brilho magenta_110
+  - first:
+      213: 6058737015131745082
+    second: Logo pixelado UMBRA com brilho magenta_111
+  - first:
+      213: 5446201664200313834
+    second: Logo pixelado UMBRA com brilho magenta_112
+  - first:
+      213: 663734022078522259
+    second: Logo pixelado UMBRA com brilho magenta_113
+  - first:
+      213: -2958140313553808946
+    second: Logo pixelado UMBRA com brilho magenta_114
+  - first:
+      213: 4906238301811413889
+    second: Logo pixelado UMBRA com brilho magenta_115
+  - first:
+      213: -9180344672383980313
+    second: Logo pixelado UMBRA com brilho magenta_116
+  - first:
+      213: 8669583811650496183
+    second: Logo pixelado UMBRA com brilho magenta_117
+  - first:
+      213: -8623517018267749299
+    second: Logo pixelado UMBRA com brilho magenta_118
+  - first:
+      213: -1833400986543199256
+    second: Logo pixelado UMBRA com brilho magenta_119
+  - first:
+      213: 5642003713982541601
+    second: Logo pixelado UMBRA com brilho magenta_120
+  - first:
+      213: -4612597496642643988
+    second: Logo pixelado UMBRA com brilho magenta_121
+  - first:
+      213: 7308902627666178606
+    second: Logo pixelado UMBRA com brilho magenta_122
+  - first:
+      213: 448599697660072635
+    second: Logo pixelado UMBRA com brilho magenta_123
+  - first:
+      213: 2610719313648185271
+    second: Logo pixelado UMBRA com brilho magenta_124
+  - first:
+      213: 5595240129343835282
+    second: Logo pixelado UMBRA com brilho magenta_125
+  - first:
+      213: -8361076864607952071
+    second: Logo pixelado UMBRA com brilho magenta_126
+  - first:
+      213: -6773499013856640222
+    second: Logo pixelado UMBRA com brilho magenta_127
+  - first:
+      213: -2627626548887011280
+    second: Logo pixelado UMBRA com brilho magenta_128
+  - first:
+      213: 1267436834774781417
+    second: Logo pixelado UMBRA com brilho magenta_129
+  - first:
+      213: 839533462441160181
+    second: Logo pixelado UMBRA com brilho magenta_130
+  - first:
+      213: 8177956600732901345
+    second: Logo pixelado UMBRA com brilho magenta_131
+  - first:
+      213: -2658232134525646141
+    second: Logo pixelado UMBRA com brilho magenta_132
+  - first:
+      213: 3354649080176533458
+    second: Logo pixelado UMBRA com brilho magenta_133
+  - first:
+      213: -3341772861668722084
+    second: Logo pixelado UMBRA com brilho magenta_134
+  - first:
+      213: -9213462026560124903
+    second: Logo pixelado UMBRA com brilho magenta_135
+  - first:
+      213: -7596206389016263223
+    second: Logo pixelado UMBRA com brilho magenta_136
+  - first:
+      213: 4862639870590995096
+    second: Logo pixelado UMBRA com brilho magenta_137
+  - first:
+      213: -2746603524027185617
+    second: Logo pixelado UMBRA com brilho magenta_138
+  - first:
+      213: 6655278092916298368
+    second: Logo pixelado UMBRA com brilho magenta_139
+  - first:
+      213: 632965193399651475
+    second: Logo pixelado UMBRA com brilho magenta_140
+  - first:
+      213: 1169984407218693496
+    second: Logo pixelado UMBRA com brilho magenta_141
+  - first:
+      213: 7582445608189370510
+    second: Logo pixelado UMBRA com brilho magenta_142
+  - first:
+      213: 7720370297335608453
+    second: Logo pixelado UMBRA com brilho magenta_143
+  - first:
+      213: -8440045982119495496
+    second: Logo pixelado UMBRA com brilho magenta_144
+  - first:
+      213: 7461897286069770294
+    second: Logo pixelado UMBRA com brilho magenta_145
+  - first:
+      213: -8055540798228394206
+    second: Logo pixelado UMBRA com brilho magenta_146
+  - first:
+      213: 7551367255543253720
+    second: Logo pixelado UMBRA com brilho magenta_147
+  - first:
+      213: -8138573830576086673
+    second: Logo pixelado UMBRA com brilho magenta_148
+  - first:
+      213: -2485215969760596126
+    second: Logo pixelado UMBRA com brilho magenta_149
+  - first:
+      213: -5722960817875805424
+    second: Logo pixelado UMBRA com brilho magenta_150
+  - first:
+      213: -5810213296186363251
+    second: Logo pixelado UMBRA com brilho magenta_151
+  - first:
+      213: 1044934462563063980
+    second: Logo pixelado UMBRA com brilho magenta_152
+  - first:
+      213: 4782852631147017465
+    second: Logo pixelado UMBRA com brilho magenta_153
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_0
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 652
+        width: 242
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e7fd8dc2402596e0800000000000000
+      internalID: -1831522202167674909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_1
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 761
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a72af291c3f8a5ea0800000000000000
+      internalID: -5883232474922769798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_2
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 756
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2acdd7082fc234b20800000000000000
+      internalID: 3117384787119955106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_3
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 761
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faeaf626a29833e90800000000000000
+      internalID: -7047138176771576145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_4
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 761
+        width: 59
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65793dee3d949d640800000000000000
+      internalID: 5105192827194939222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_5
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 768
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62378a08f5dfdf830800000000000000
+      internalID: 4106717021854004006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_6
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 766
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f0f5833078a81ed0800000000000000
+      internalID: -2443017597994274573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_7
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 743
+        width: 57
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13134d679ebf56bb0800000000000000
+      internalID: -4943268035829681871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_8
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 743
+        width: 68
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e66c0d209c7672a50800000000000000
+      internalID: 6496275100538553966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_9
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 751
+        width: 63
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa83883c2d2593f50800000000000000
+      internalID: 6861606572452755626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_10
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 684
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11252693bc6e5cdc0800000000000000
+      internalID: -3619232965006831087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_11
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 745
+        width: 52
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d4c046ec59231000800000000000000
+      internalID: 5393503534236884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_12
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 680
+        width: 168
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 757232c855cb35ef0800000000000000
+      internalID: -120545689399515305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_13
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 777
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f9b21128424e29e0800000000000000
+      internalID: -1644303936383698446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_14
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 745
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef26dc8243ee8eb20800000000000000
+      internalID: 3164040646018032382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_15
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 794
+        width: 56
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6c8f95d4cd114c50800000000000000
+      internalID: 6647627256210361451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_16
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 729
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2542d02a93dde0890800000000000000
+      internalID: -7489805890668911534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_17
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 796
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09f26e2c6fce9a730800000000000000
+      internalID: 4010997487726112656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_18
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 759
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 922fd97f483a7a450800000000000000
+      internalID: 6100024011781960233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_19
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 764
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f7bc31f138e2e820800000000000000
+      internalID: 2946172407452055541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_20
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 761
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 786f651a5ca02e140800000000000000
+      internalID: 4747368801133590151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_21
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 742
+        width: 73
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c15f00274837e65d0800000000000000
+      internalID: -3067387283507186404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_22
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 761
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb0a68ef216d7d4d0800000000000000
+      internalID: -3109781640608046917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_23
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 761
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17368741914e1e100800000000000000
+      internalID: 135640260166574961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_24
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 766
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc2d88f06f1973ce0800000000000000
+      internalID: -1425510271030865201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_25
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 746
+        width: 27
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9698ec1c4e56aaad0800000000000000
+      internalID: -2690225794221962903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_26
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 725
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe0272c3c9717f640800000000000000
+      internalID: 5113581861694021871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_27
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 759
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64ec2c8ce5ab5dc50800000000000000
+      internalID: 6689457737786641990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_28
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 674
+        width: 150
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aacdd03bf5025d10800000000000000
+      internalID: 2112757751604955808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_29
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 769
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3782e72a2cd6dd4e0800000000000000
+      internalID: -1955285980491667341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_30
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 670
+        width: 68
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fec1f984be47ecd0800000000000000
+      internalID: -2528966128429838607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_31
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 667
+        width: 60
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6edbcbc4cf4390470800000000000000
+      internalID: 8361272441413877222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_32
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 751
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51b67b9016e6bafa0800000000000000
+      internalID: -5788411533000742123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_33
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 753
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eca71b011a8854600800000000000000
+      internalID: 451917562971781838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_34
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 680
+        width: 43
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b54feb4b272a81180800000000000000
+      internalID: -9144380429833407397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_35
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 733
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 634fe6e83b027f6f0800000000000000
+      internalID: -651015665570876362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_36
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 673
+        width: 24
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc758b42349212870800000000000000
+      internalID: 8656245327138412491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_37
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 729
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cc38912b6ad93470800000000000000
+      internalID: 8374965135732128961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_38
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 731
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46cf34c7c64dbb300800000000000000
+      internalID: 269042165165063268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_39
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 729
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a07960c358d3a2560800000000000000
+      internalID: 7289706589299578634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_40
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 593
+        width: 81
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8180dbad43df9bc0800000000000000
+      internalID: -3774065632164675190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_41
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 716
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cac4bcac576b3300800000000000000
+      internalID: 232893453471894209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_42
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 711
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 396b8001192da1eb0800000000000000
+      internalID: -4748251336627669357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_43
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 567
+        width: 100
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0245b07420d039160800000000000000
+      internalID: 7030977746688496672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_44
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 699
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c4153400980c1f00800000000000000
+      internalID: 1088754624555717832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_45
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 697
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52ece9f64bd15aad0800000000000000
+      internalID: -2691712541480006107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_46
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 624
+        width: 44
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49745ed1368d7fca0800000000000000
+      internalID: -5983075659723487340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_47
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 684
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76bb8fef59ecfacf0800000000000000
+      internalID: -238745111604184217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_48
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 682
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fca8181cab18dd510800000000000000
+      internalID: 1575558083759934159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_49
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 667
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5170a9c6b4306d8f0800000000000000
+      internalID: -516221484807878891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_50
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 50
+        width: 851
+        height: 623
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 352e0a84532b41320800000000000000
+      internalID: 2527841232783204947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_51
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 664
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cac2de772c979eb0800000000000000
+      internalID: -4713126791574533440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_52
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 632
+        width: 20
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e00ffd2c7620c5ae0800000000000000
+      internalID: -1559368726302691314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_53
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 626
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b4eb0620548c17a0800000000000000
+      internalID: -6405099090257124171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_54
+      rect:
+        serializedVersion: 2
+        x: 1493
+        y: 632
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 465b98e6211a2fcb0800000000000000
+      internalID: -4831622349679119004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_55
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 624
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2127749c53895e1a0800000000000000
+      internalID: -6780846307158822382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_56
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 590
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1495fc8cec9feba20800000000000000
+      internalID: 3080173861695609153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_57
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 578
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c4f2d29647d3c00800000000000000
+      internalID: 881989097112947797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_58
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 366
+        width: 302
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54c73934b55f24b50800000000000000
+      internalID: 6576088178238913605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_59
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 384
+        width: 277
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8acda45443a42a0d0800000000000000
+      internalID: -3413083979232125784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_60
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 605
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55d42c84c0238ad50800000000000000
+      internalID: 6748699069956377941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_61
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 599
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d03984c36e4635b0800000000000000
+      internalID: -5389033713696165674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_62
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 601
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8726f19670522ebf0800000000000000
+      internalID: -296633911694368136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_63
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 526
+        width: 92
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76facf03e1a7065d0800000000000000
+      internalID: -3071320675777204377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 507
+        width: 55
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11d2c27ca342fe110800000000000000
+      internalID: 1292291452946885905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_65
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 582
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56cba3060cddc60f0800000000000000
+      internalID: -1122278388804174747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_66
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 567
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79e8aa1c0b26c9df0800000000000000
+      internalID: -172154174443975017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_67
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 579
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 438ab0bbbe132c0e0800000000000000
+      internalID: -2251181975206647756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_68
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 567
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b3cfd3621ccf2390800000000000000
+      internalID: -7840824046871657544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_69
+      rect:
+        serializedVersion: 2
+        x: 1577
+        y: 571
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f771117177214e800800000000000000
+      internalID: 640657349690857343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_70
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 532
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 578025486b1602020800000000000000
+      internalID: 2314957645000345717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_71
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 518
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 317b53e883b23e6b0800000000000000
+      internalID: -5268319617189300461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 405
+        width: 67
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aaccd4494b58bc60800000000000000
+      internalID: 7834111922057038504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_73
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 433
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 885a32459c2281440800000000000000
+      internalID: 4906710042115548552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_74
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 398
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d40234ad8ca7b0d00800000000000000
+      internalID: 939979950310760525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_75
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 348
+        width: 64
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8fc1dcad8cca6ee0800000000000000
+      internalID: -1266975436289486965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_76
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 453
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d12f13e121bc77c20800000000000000
+      internalID: 3204252938573836829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_77
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 411
+        width: 163
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d8a82259930621c0800000000000000
+      internalID: -4528928418231179050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_78
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 413
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d130f3dac85ef28a0800000000000000
+      internalID: -6327586559067487459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_79
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 390
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19be205480c9395c0800000000000000
+      internalID: -4209849667329791087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_80
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 402
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3baae3c1d9641eff0800000000000000
+      internalID: -8648083680351565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_81
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 364
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49faeee0c68ce6780800000000000000
+      internalID: -8687786264718561388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_82
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 407
+        width: 173
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 348cbc14a5e0fe620800000000000000
+      internalID: 2805476873688827971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_83
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 346
+        width: 88
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 975611728b28490a0800000000000000
+      internalID: -6875727003646859911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_84
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 392
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 492cca57ddb7f38e0800000000000000
+      internalID: -1711513142285253996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_85
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 394
+        width: 65
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b58c07b515b510f0800000000000000
+      internalID: -1146811425225931341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_86
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 394
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d68fcfa030c2b00a0800000000000000
+      internalID: -6914384411316389779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_87
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 372
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c523e6e23257f15d0800000000000000
+      internalID: -3089622025389591972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_88
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 372
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b38fdcb1d8fc4a50800000000000000
+      internalID: 6506849141344142259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_89
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 341
+        width: 357
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cd2d3ab6a563eae0800000000000000
+      internalID: -1521260482357547576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_90
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 378
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5683b40cfdd69ae0800000000000000
+      internalID: -1542801747847444902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_91
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 364
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70ee6322ec29c38c0800000000000000
+      internalID: -4018175353486381561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_92
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 131
+        width: 127
+        height: 243
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3367d9405b89d9860800000000000000
+      internalID: 7538349254522009139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_93
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 357
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f415264628235700800000000000000
+      internalID: 527809726183183605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_94
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 366
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d378b09955db8830800000000000000
+      internalID: 4074584868543558613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_95
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 337
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f11076b8a2e579610800000000000000
+      internalID: 1627873327138144543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_96
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 323
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 484a4e84ed0d3d900800000000000000
+      internalID: 708139219551560836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_97
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 329
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 796b325c3b578dea0800000000000000
+      internalID: -5847794701173541225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_98
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 336
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49f67b28956d1eb70800000000000000
+      internalID: 8926651616358526868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_99
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 321
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a77c442dde91139b0800000000000000
+      internalID: -5102268393608394886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_100
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 309
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbf69744efe199370800000000000000
+      internalID: 8329723063217778619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_101
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 285
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ead0a2be12e0021b0800000000000000
+      internalID: -5683527190899454546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_102
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 186
+        width: 101
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0112f44e2fed8f140800000000000000
+      internalID: 4753794541483401488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_103
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 299
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6261943e6c8d9ef70800000000000000
+      internalID: 9217136461118772774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_104
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 283
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d8e68b2ce32f40f0800000000000000
+      internalID: -1130645484197189424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_105
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 275
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ced79e9cc74efb890800000000000000
+      internalID: -7439976834778169876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_106
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 210
+        width: 52
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e00392e14eec550800000000000000
+      internalID: 6183130156617436675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_107
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 277
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc34693fdebc2ef00800000000000000
+      internalID: 1144701478159926221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_108
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 275
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aede6be7d904c71f0800000000000000
+      internalID: -1045889968276836886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_109
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 212
+        width: 47
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 770c03fee67242030800000000000000
+      internalID: 3468940970394959991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_110
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 255
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbcd475e86612c940800000000000000
+      internalID: 5314835150032657597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_111
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 161
+        width: 62
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b2076f635f41450800000000000000
+      internalID: 6058737015131745082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_112
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 269
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeb0dc1fe8bc49b40800000000000000
+      internalID: 5446201664200313834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_113
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 256
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 393e453939e063900800000000000000
+      internalID: 663734022078522259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_114
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 261
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec1dcd6ce0392f6d0800000000000000
+      internalID: -2958140313553808946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_115
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 225
+        width: 52
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18392eabdb5761440800000000000000
+      internalID: 4906238301811413889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_116
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 224
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ec27e6f82dd89080800000000000000
+      internalID: -9180344672383980313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_117
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 242
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b6a7e31b8c805870800000000000000
+      internalID: 8669583811650496183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_118
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 257
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d447d9316fc135880800000000000000
+      internalID: -8623517018267749299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_119
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 192
+        width: 43
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ebed3a34837e86e0800000000000000
+      internalID: -1833400986543199256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_120
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 248
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12f2d593c7c6c4e40800000000000000
+      internalID: 5642003713982541601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_121
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 244
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce752c0f303ccffb0800000000000000
+      internalID: -4612597496642643988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_122
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 244
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2236f337307e6560800000000000000
+      internalID: 7308902627666178606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_123
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 244
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb250695c0fb93600800000000000000
+      internalID: 448599697660072635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_124
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 244
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bf604232632b3420800000000000000
+      internalID: 2610719313648185271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_125
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 234
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29ccc86b04946ad40800000000000000
+      internalID: 5595240129343835282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_126
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 228
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9336e49f3ec77fb80800000000000000
+      internalID: -8361076864607952071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_127
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 196
+        width: 23
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 223cd90d882bff1a0800000000000000
+      internalID: -6773499013856640222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_128
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 214
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0304437539bc88bd0800000000000000
+      internalID: -2627626548887011280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_129
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 214
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed0ff70617d69110800000000000000
+      internalID: 1267436834774781417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_130
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 213
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fdebdd6c3f96ab00800000000000000
+      internalID: 839533462441160181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_131
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 169
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1efde3f1330fd7170800000000000000
+      internalID: 8177956600732901345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_132
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 198
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca021325ff0c1bd0800000000000000
+      internalID: -2658232134525646141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_133
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 196
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df5302909b1e8e20800000000000000
+      internalID: 3354649080176533458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_134
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 159
+        width: 70
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5af13ca943af91d0800000000000000
+      internalID: -3341772861668722084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_135
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 204
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91845531a15332080800000000000000
+      internalID: -9213462026560124903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_136
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 206
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c5022e198ad49690800000000000000
+      internalID: -7596206389016263223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_137
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 208
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89a4a3de2319b7340800000000000000
+      internalID: 4862639870590995096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_138
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 196
+        width: 44
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f260683a5aa12e9d0800000000000000
+      internalID: -2746603524027185617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_139
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 210
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08217b11a2c4c5c50800000000000000
+      internalID: 6655278092916298368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_140
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 194
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39cc5c36d7eb8c800800000000000000
+      internalID: 632965193399651475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_141
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 174
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87524099e9e9c3010800000000000000
+      internalID: 1169984407218693496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_142
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 196
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8029dc6b124a3960800000000000000
+      internalID: 7582445608189370510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_143
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 200
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5847a2391e3442b60800000000000000
+      internalID: 7720370297335608453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_144
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 194
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b8fdc385eeeeda80800000000000000
+      internalID: -8440045982119495496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_145
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 198
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 638d3aefb0cfd8760800000000000000
+      internalID: 7461897286069770294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_146
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 202
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f0ee7f258f43090800000000000000
+      internalID: -8055540798228394206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_147
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 196
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8da0c239288dbc860800000000000000
+      internalID: 7551367255543253720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_148
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 194
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f61e83a983afd0f80800000000000000
+      internalID: -8138573830576086673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_149
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 195
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26faa442e3db28dd0800000000000000
+      internalID: -2485215969760596126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_150
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 181
+        width: 36
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01b980b2575f390b0800000000000000
+      internalID: -5722960817875805424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_151
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 182
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d827f8b7ac9fd5fa0800000000000000
+      internalID: -5810213296186363251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_152
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 177
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca892ae7b5a508e00800000000000000
+      internalID: 1044934462563063980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_153
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 169
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f47f8c902b106240800000000000000
+      internalID: 4782852631147017465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_154
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 854
+        width: 103
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391a03aea80c37441a789f4197e287a5
+      internalID: -1079626143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo pixelado UMBRA com brilho magenta_155
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 260
+        width: 1542
+        height: 461
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491e36b1f7db61448a2ec7a8fa11bbee
+      internalID: 1153023364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c15eba6ac42013d4b8abd463453eba6b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Logo pixelado UMBRA com brilho magenta_0: -1831522202167674909
+      Logo pixelado UMBRA com brilho magenta_1: -5883232474922769798
+      Logo pixelado UMBRA com brilho magenta_10: -3619232965006831087
+      Logo pixelado UMBRA com brilho magenta_100: 8329723063217778619
+      Logo pixelado UMBRA com brilho magenta_101: -5683527190899454546
+      Logo pixelado UMBRA com brilho magenta_102: 4753794541483401488
+      Logo pixelado UMBRA com brilho magenta_103: 9217136461118772774
+      Logo pixelado UMBRA com brilho magenta_104: -1130645484197189424
+      Logo pixelado UMBRA com brilho magenta_105: -7439976834778169876
+      Logo pixelado UMBRA com brilho magenta_106: 6183130156617436675
+      Logo pixelado UMBRA com brilho magenta_107: 1144701478159926221
+      Logo pixelado UMBRA com brilho magenta_108: -1045889968276836886
+      Logo pixelado UMBRA com brilho magenta_109: 3468940970394959991
+      Logo pixelado UMBRA com brilho magenta_11: 5393503534236884
+      Logo pixelado UMBRA com brilho magenta_110: 5314835150032657597
+      Logo pixelado UMBRA com brilho magenta_111: 6058737015131745082
+      Logo pixelado UMBRA com brilho magenta_112: 5446201664200313834
+      Logo pixelado UMBRA com brilho magenta_113: 663734022078522259
+      Logo pixelado UMBRA com brilho magenta_114: -2958140313553808946
+      Logo pixelado UMBRA com brilho magenta_115: 4906238301811413889
+      Logo pixelado UMBRA com brilho magenta_116: -9180344672383980313
+      Logo pixelado UMBRA com brilho magenta_117: 8669583811650496183
+      Logo pixelado UMBRA com brilho magenta_118: -8623517018267749299
+      Logo pixelado UMBRA com brilho magenta_119: -1833400986543199256
+      Logo pixelado UMBRA com brilho magenta_12: -120545689399515305
+      Logo pixelado UMBRA com brilho magenta_120: 5642003713982541601
+      Logo pixelado UMBRA com brilho magenta_121: -4612597496642643988
+      Logo pixelado UMBRA com brilho magenta_122: 7308902627666178606
+      Logo pixelado UMBRA com brilho magenta_123: 448599697660072635
+      Logo pixelado UMBRA com brilho magenta_124: 2610719313648185271
+      Logo pixelado UMBRA com brilho magenta_125: 5595240129343835282
+      Logo pixelado UMBRA com brilho magenta_126: -8361076864607952071
+      Logo pixelado UMBRA com brilho magenta_127: -6773499013856640222
+      Logo pixelado UMBRA com brilho magenta_128: -2627626548887011280
+      Logo pixelado UMBRA com brilho magenta_129: 1267436834774781417
+      Logo pixelado UMBRA com brilho magenta_13: -1644303936383698446
+      Logo pixelado UMBRA com brilho magenta_130: 839533462441160181
+      Logo pixelado UMBRA com brilho magenta_131: 8177956600732901345
+      Logo pixelado UMBRA com brilho magenta_132: -2658232134525646141
+      Logo pixelado UMBRA com brilho magenta_133: 3354649080176533458
+      Logo pixelado UMBRA com brilho magenta_134: -3341772861668722084
+      Logo pixelado UMBRA com brilho magenta_135: -9213462026560124903
+      Logo pixelado UMBRA com brilho magenta_136: -7596206389016263223
+      Logo pixelado UMBRA com brilho magenta_137: 4862639870590995096
+      Logo pixelado UMBRA com brilho magenta_138: -2746603524027185617
+      Logo pixelado UMBRA com brilho magenta_139: 6655278092916298368
+      Logo pixelado UMBRA com brilho magenta_14: 3164040646018032382
+      Logo pixelado UMBRA com brilho magenta_140: 632965193399651475
+      Logo pixelado UMBRA com brilho magenta_141: 1169984407218693496
+      Logo pixelado UMBRA com brilho magenta_142: 7582445608189370510
+      Logo pixelado UMBRA com brilho magenta_143: 7720370297335608453
+      Logo pixelado UMBRA com brilho magenta_144: -8440045982119495496
+      Logo pixelado UMBRA com brilho magenta_145: 7461897286069770294
+      Logo pixelado UMBRA com brilho magenta_146: -8055540798228394206
+      Logo pixelado UMBRA com brilho magenta_147: 7551367255543253720
+      Logo pixelado UMBRA com brilho magenta_148: -8138573830576086673
+      Logo pixelado UMBRA com brilho magenta_149: -2485215969760596126
+      Logo pixelado UMBRA com brilho magenta_15: 6647627256210361451
+      Logo pixelado UMBRA com brilho magenta_150: -5722960817875805424
+      Logo pixelado UMBRA com brilho magenta_151: -5810213296186363251
+      Logo pixelado UMBRA com brilho magenta_152: 1044934462563063980
+      Logo pixelado UMBRA com brilho magenta_153: 4782852631147017465
+      Logo pixelado UMBRA com brilho magenta_154: -1079626143
+      Logo pixelado UMBRA com brilho magenta_155: 1153023364
+      Logo pixelado UMBRA com brilho magenta_16: -7489805890668911534
+      Logo pixelado UMBRA com brilho magenta_17: 4010997487726112656
+      Logo pixelado UMBRA com brilho magenta_18: 6100024011781960233
+      Logo pixelado UMBRA com brilho magenta_19: 2946172407452055541
+      Logo pixelado UMBRA com brilho magenta_2: 3117384787119955106
+      Logo pixelado UMBRA com brilho magenta_20: 4747368801133590151
+      Logo pixelado UMBRA com brilho magenta_21: -3067387283507186404
+      Logo pixelado UMBRA com brilho magenta_22: -3109781640608046917
+      Logo pixelado UMBRA com brilho magenta_23: 135640260166574961
+      Logo pixelado UMBRA com brilho magenta_24: -1425510271030865201
+      Logo pixelado UMBRA com brilho magenta_25: -2690225794221962903
+      Logo pixelado UMBRA com brilho magenta_26: 5113581861694021871
+      Logo pixelado UMBRA com brilho magenta_27: 6689457737786641990
+      Logo pixelado UMBRA com brilho magenta_28: 2112757751604955808
+      Logo pixelado UMBRA com brilho magenta_29: -1955285980491667341
+      Logo pixelado UMBRA com brilho magenta_3: -7047138176771576145
+      Logo pixelado UMBRA com brilho magenta_30: -2528966128429838607
+      Logo pixelado UMBRA com brilho magenta_31: 8361272441413877222
+      Logo pixelado UMBRA com brilho magenta_32: -5788411533000742123
+      Logo pixelado UMBRA com brilho magenta_33: 451917562971781838
+      Logo pixelado UMBRA com brilho magenta_34: -9144380429833407397
+      Logo pixelado UMBRA com brilho magenta_35: -651015665570876362
+      Logo pixelado UMBRA com brilho magenta_36: 8656245327138412491
+      Logo pixelado UMBRA com brilho magenta_37: 8374965135732128961
+      Logo pixelado UMBRA com brilho magenta_38: 269042165165063268
+      Logo pixelado UMBRA com brilho magenta_39: 7289706589299578634
+      Logo pixelado UMBRA com brilho magenta_4: 5105192827194939222
+      Logo pixelado UMBRA com brilho magenta_40: -3774065632164675190
+      Logo pixelado UMBRA com brilho magenta_41: 232893453471894209
+      Logo pixelado UMBRA com brilho magenta_42: -4748251336627669357
+      Logo pixelado UMBRA com brilho magenta_43: 7030977746688496672
+      Logo pixelado UMBRA com brilho magenta_44: 1088754624555717832
+      Logo pixelado UMBRA com brilho magenta_45: -2691712541480006107
+      Logo pixelado UMBRA com brilho magenta_46: -5983075659723487340
+      Logo pixelado UMBRA com brilho magenta_47: -238745111604184217
+      Logo pixelado UMBRA com brilho magenta_48: 1575558083759934159
+      Logo pixelado UMBRA com brilho magenta_49: -516221484807878891
+      Logo pixelado UMBRA com brilho magenta_5: 4106717021854004006
+      Logo pixelado UMBRA com brilho magenta_50: 2527841232783204947
+      Logo pixelado UMBRA com brilho magenta_51: -4713126791574533440
+      Logo pixelado UMBRA com brilho magenta_52: -1559368726302691314
+      Logo pixelado UMBRA com brilho magenta_53: -6405099090257124171
+      Logo pixelado UMBRA com brilho magenta_54: -4831622349679119004
+      Logo pixelado UMBRA com brilho magenta_55: -6780846307158822382
+      Logo pixelado UMBRA com brilho magenta_56: 3080173861695609153
+      Logo pixelado UMBRA com brilho magenta_57: 881989097112947797
+      Logo pixelado UMBRA com brilho magenta_58: 6576088178238913605
+      Logo pixelado UMBRA com brilho magenta_59: -3413083979232125784
+      Logo pixelado UMBRA com brilho magenta_6: -2443017597994274573
+      Logo pixelado UMBRA com brilho magenta_60: 6748699069956377941
+      Logo pixelado UMBRA com brilho magenta_61: -5389033713696165674
+      Logo pixelado UMBRA com brilho magenta_62: -296633911694368136
+      Logo pixelado UMBRA com brilho magenta_63: -3071320675777204377
+      Logo pixelado UMBRA com brilho magenta_64: 1292291452946885905
+      Logo pixelado UMBRA com brilho magenta_65: -1122278388804174747
+      Logo pixelado UMBRA com brilho magenta_66: -172154174443975017
+      Logo pixelado UMBRA com brilho magenta_67: -2251181975206647756
+      Logo pixelado UMBRA com brilho magenta_68: -7840824046871657544
+      Logo pixelado UMBRA com brilho magenta_69: 640657349690857343
+      Logo pixelado UMBRA com brilho magenta_7: -4943268035829681871
+      Logo pixelado UMBRA com brilho magenta_70: 2314957645000345717
+      Logo pixelado UMBRA com brilho magenta_71: -5268319617189300461
+      Logo pixelado UMBRA com brilho magenta_72: 7834111922057038504
+      Logo pixelado UMBRA com brilho magenta_73: 4906710042115548552
+      Logo pixelado UMBRA com brilho magenta_74: 939979950310760525
+      Logo pixelado UMBRA com brilho magenta_75: -1266975436289486965
+      Logo pixelado UMBRA com brilho magenta_76: 3204252938573836829
+      Logo pixelado UMBRA com brilho magenta_77: -4528928418231179050
+      Logo pixelado UMBRA com brilho magenta_78: -6327586559067487459
+      Logo pixelado UMBRA com brilho magenta_79: -4209849667329791087
+      Logo pixelado UMBRA com brilho magenta_8: 6496275100538553966
+      Logo pixelado UMBRA com brilho magenta_80: -8648083680351565
+      Logo pixelado UMBRA com brilho magenta_81: -8687786264718561388
+      Logo pixelado UMBRA com brilho magenta_82: 2805476873688827971
+      Logo pixelado UMBRA com brilho magenta_83: -6875727003646859911
+      Logo pixelado UMBRA com brilho magenta_84: -1711513142285253996
+      Logo pixelado UMBRA com brilho magenta_85: -1146811425225931341
+      Logo pixelado UMBRA com brilho magenta_86: -6914384411316389779
+      Logo pixelado UMBRA com brilho magenta_87: -3089622025389591972
+      Logo pixelado UMBRA com brilho magenta_88: 6506849141344142259
+      Logo pixelado UMBRA com brilho magenta_89: -1521260482357547576
+      Logo pixelado UMBRA com brilho magenta_9: 6861606572452755626
+      Logo pixelado UMBRA com brilho magenta_90: -1542801747847444902
+      Logo pixelado UMBRA com brilho magenta_91: -4018175353486381561
+      Logo pixelado UMBRA com brilho magenta_92: 7538349254522009139
+      Logo pixelado UMBRA com brilho magenta_93: 527809726183183605
+      Logo pixelado UMBRA com brilho magenta_94: 4074584868543558613
+      Logo pixelado UMBRA com brilho magenta_95: 1627873327138144543
+      Logo pixelado UMBRA com brilho magenta_96: 708139219551560836
+      Logo pixelado UMBRA com brilho magenta_97: -5847794701173541225
+      Logo pixelado UMBRA com brilho magenta_98: 8926651616358526868
+      Logo pixelado UMBRA com brilho magenta_99: -5102268393608394886
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

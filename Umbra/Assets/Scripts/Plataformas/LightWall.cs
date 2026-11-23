@@ -1,115 +1,71 @@
 using System.Collections;
 using UnityEngine;
 
+[RequireComponent(typeof(Collider2D))]
+[RequireComponent(typeof(SpriteRenderer))]
 public class LightWall : MonoBehaviour
 {
-    [Header("Referências")]
-    public BoxCollider2D wallCollider;
-    public SpriteRenderer wallSprite;
+    [Min(0f)] public float openDuration = 5f;
+    [Range(0f, 1f)] public float openAlpha = 0.2f;
 
-    [Header("Tempo de abertura")]
-    public float openDuration = 5f;
-
-    [Header("Aparência")]
-    public Color normalColor = Color.white;
-    public Color illuminatedColor = new Color(1f, 1f, 1f, 0.3f);
-
+    private Collider2D wallCollider;
+    private SpriteRenderer spriteRenderer;
+    private Color originalColor;
     private bool isIlluminated;
-    private bool isOpen;
-
     private Coroutine closeCoroutine;
 
-    private void Start()
+    private void Awake()
     {
-        if (wallCollider == null)
-            wallCollider = GetComponent<BoxCollider2D>();
-
-        if (wallSprite == null)
-            wallSprite = GetComponent<SpriteRenderer>();
-
-        // Começa com a parede fechada.
-        isIlluminated = false;
-        isOpen = false;
-
-        ApplyWallState();
+        wallCollider = GetComponent<Collider2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        originalColor = spriteRenderer.color;
+        CloseWall();
     }
 
     public void SetIlluminated(bool illuminated)
     {
-        // Evita executar a mesma ação repetidamente.
-        if (isIlluminated == illuminated)
+        if (!isActiveAndEnabled || isIlluminated == illuminated)
             return;
 
         isIlluminated = illuminated;
-
         if (illuminated)
         {
-            // Cancela o fechamento se a parede
-            // voltar a receber iluminação.
             if (closeCoroutine != null)
             {
                 StopCoroutine(closeCoroutine);
                 closeCoroutine = null;
             }
-
-            OpenWall();
+            wallCollider.enabled = false;
+            Color color = originalColor;
+            color.a = openAlpha;
+            spriteRenderer.color = color;
         }
         else
         {
-            // Começa a contagem para fechar a parede.
-            if (closeCoroutine != null)
-                StopCoroutine(closeCoroutine);
-
             closeCoroutine = StartCoroutine(CloseAfterDelay());
         }
     }
 
-    private void OpenWall()
-    {
-        isOpen = true;
-        ApplyWallState();
-    }
-
     private IEnumerator CloseAfterDelay()
     {
-        // Espera o tempo configurado no Inspector.
         yield return new WaitForSeconds(openDuration);
-
-        CloseWall();
-
+        if (!isIlluminated)
+            CloseWall();
         closeCoroutine = null;
     }
 
     private void CloseWall()
     {
-        isOpen = false;
-        ApplyWallState();
-    }
-
-    private void ApplyWallState()
-    {
-        // Quando aberta, a parede não possui colisão.
-        if (wallCollider != null)
-            wallCollider.enabled = !isOpen;
-
-        // Atualiza a aparência.
-        if (wallSprite != null)
-        {
-            wallSprite.color = isOpen
-                ? illuminatedColor
-                : normalColor;
-        }
+        wallCollider.enabled = true;
+        spriteRenderer.color = originalColor;
     }
 
     private void OnDisable()
     {
-        if (closeCoroutine != null)
-        {
-            StopCoroutine(closeCoroutine);
-            closeCoroutine = null;
-        }
-
-        isOpen = false;
+        StopAllCoroutines();
+        closeCoroutine = null;
         isIlluminated = false;
+        if (wallCollider != null && spriteRenderer != null)
+            CloseWall();
     }
 }

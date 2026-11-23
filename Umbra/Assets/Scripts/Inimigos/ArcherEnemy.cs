@@ -1,128 +1,306 @@
-using System.Collections;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class ArcherEnemy : EnemyBase
 {
-    [Header("Detecção")]
+    [Header("Detecção e perseguição")]
     public float detectionRange = 8f;
+    public float attackRange = 4f;
+    public float moveSpeed = 2f;
 
-    [Header("Ataque")]
+    [Header("Configuração do disparo")]
     public GameObject arrowPrefab;
     public Transform firePoint;
     public float arrowSpeed = 8f;
     public float arrowDamage = 1f;
     public float attackCooldown = 2f;
 
+    [Header("Recuperação do atordoamento")]
+    public float stunRecoveryDelay = 1f;
+
     private Transform player;
-    private bool isAttacking;
+    private Rigidbody2D rb;
+    private PlayerHealth playerHealth;
+
+    private float nextAttackTime;
+    private float horizontalMovement;
+
+    private bool hasDetectedPlayer;
+
+    private Vector3 originalFirePointPosition;
 
     protected override void Awake()
     {
         base.Awake();
 
-        // Procura o jogador na cena.
+        rb = GetComponent<Rigidbody2D>();
+
+        if (firePoint != null)
+        {
+            originalFirePointPosition =
+                firePoint.localPosition;
+        }
+    }
+
+    private void Start()
+    {
         GameObject playerObject =
             GameObject.FindGameObjectWithTag("Player");
 
         if (playerObject != null)
+        {
             player = playerObject.transform;
+
+            playerHealth =
+                playerObject.GetComponent<PlayerHealth>();
+        }
+
+        nextAttackTime = Time.time;
     }
 
     private void Update()
     {
-        // Não ataca enquanto estiver atordoado.
-        if (IsStunned || isAttacking || player == null)
+        horizontalMovement = 0f;
+
+        // Impede ações caso o inimigo ou o Player
+        // estejam mortos.
+        if (IsDead ||
+            player == null ||
+            (playerHealth != null && playerHealth.IsDead))
+        {
+            hasDetectedPlayer = false;
+
+            StopMovement();
+
             return;
+        }
 
-        // Calcula a distância até o jogador.
-        float distance =
-            Vector2.Distance(transform.position, player.position);
+        float distance = Vector2.Distance(
+            transform.position,
+            player.position
+        );
 
-        // Ataca quando o jogador entra no alcance.
-        if (distance <= detectionRange)
-            StartCoroutine(ShootRoutine());
+        bool playerInRange =
+            distance <= detectionRange;
+
+        // Permite reproduzir novamente o som de detecção
+        // quando o Player voltar para o alcance.
+        if (!playerInRange)
+        {
+            hasDetectedPlayer = false;
+        }
+
+        // Não anda nem atira enquanto estiver atordoado.
+        if (IsStunned)
+        {
+            StopMovement();
+
+            return;
+        }
+
+        // Player fora do raio de detecção.
+        if (!playerInRange)
+        {
+            StopMovement();
+
+            return;
+        }
+
+        // Reproduz o som de detecção apenas uma vez.
+        if (!hasDetectedPlayer)
+        {
+            hasDetectedPlayer = true;
+
+            if (enemyAudio != null)
+                enemyAudio.PlayDetection();
+        }
+
+        // Direção do Player.
+        float direction = player.position.x >=
+            transform.position.x ? 1f : -1f;
+
+        UpdateDirection(direction);
+
+        // Persegue quando estiver fora do raio de ataque.
+        if (distance > attackRange)
+        {
+            horizontalMovement = direction * moveSpeed;
+
+            // Reproduz o som contínuo de movimentação.
+            if (enemyAudio != null)
+            {
+                if (Mathf.Abs(horizontalMovement) > 0.01f)
+                    enemyAudio.StartMovement();
+                else
+                    enemyAudio.StopMovement();
+            }
+        }
+        else
+        {
+            // Para para realizar o disparo.
+            StopMovement();
+
+            if (Time.time >= nextAttackTime)
+            {
+                nextAttackTime = Time.time +
+                    Mathf.Max(0.05f, attackCooldown);
+
+                Shoot(direction);
+            }
+        }
     }
 
-    private IEnumerator ShootRoutine()
+    private void FixedUpdate()
     {
-        if (isAttacking || IsStunned)
-            yield break;
+        // Impede movimentação horizontal durante
+        // o stun ou após a morte.
+        float velocityX = IsStunned || IsDead
+            ? 0f
+            : horizontalMovement;
 
-        isAttacking = true;
+        rb.linearVelocity = new Vector2(
+            velocityX,
+            rb.linearVelocity.y
+        );
+    }
 
-        // Vira na direção do jogador.
-        float direction =
-            Mathf.Sign(player.position.x - transform.position.x);
-
+    private void UpdateDirection(float direction)
+    {
+        // Vira o sprite para o Player.
         if (spriteRenderer != null)
             spriteRenderer.flipX = direction < 0f;
 
-        // Cria e dispara a flecha.
-        if (arrowPrefab != null && firePoint != null)
+        // Mantém o ponto de disparo na frente do arqueiro.
+        if (firePoint != null)
         {
-            GameObject arrowObject = Instantiate(
-                arrowPrefab,
-                firePoint.position,
-                Quaternion.identity
+            firePoint.localPosition = new Vector3(
+                Mathf.Abs(originalFirePointPosition.x)
+                    * direction,
+                originalFirePointPosition.y,
+                originalFirePointPosition.z
             );
-
-            Arrow arrow = arrowObject.GetComponent<Arrow>();
-
-            if (arrow != null)
-            {
-                Vector2 aimDirection =
-                    ((Vector2)player.position -
-                    (Vector2)firePoint.position).normalized;
-
-                arrow.Launch(
-                    aimDirection,
-                    arrowSpeed,
-                    arrowDamage
-                );
-            }
-            else
-            {
-                Debug.LogWarning(
-                    "A flecha não possui o componente Arrow!",
-                    arrowObject
-                );
-            }
         }
-
-        yield return new WaitForSeconds(attackCooldown);
-
-        isAttacking = false;
     }
 
-    // Mostra na Console quando o arqueiro é atordoado.
-    public override void Stun(float duration = -1f)
+    private void Shoot(float direction)
     {
-        StopCoroutine(nameof(ShootRoutine));
-        isAttacking = false;
+        if (IsStunned || IsDead)
+            return;
 
-        Debug.Log("Arqueiro atordoado: " + gameObject.name);
+        if (playerHealth != null && playerHealth.IsDead)
+            return;
 
+        if (arrowPrefab == null || firePoint == null)
+            return;
+
+        // Mantém o disparo horizontal.
+        Vector2 shootDirection = new Vector2(
+            direction,
+            0f
+        );
+
+        GameObject arrowObject = Instantiate(
+            arrowPrefab,
+            firePoint.position,
+            Quaternion.identity
+        );
+
+        Arrow arrow = arrowObject.GetComponent<Arrow>();
+
+        if (arrow != null)
+        {
+            arrow.Launch(
+                shootDirection,
+                arrowSpeed,
+                arrowDamage
+            );
+
+            // Reproduz o áudio no momento do disparo.
+            if (enemyAudio != null)
+                enemyAudio.PlayAttack();
+        }
+        else
+        {
+            Debug.LogWarning(
+                "O prefab da flecha não possui o script Arrow!"
+            );
+
+            Destroy(arrowObject);
+        }
+    }
+
+    private void StopMovement()
+    {
+        horizontalMovement = 0f;
+
+        if (rb != null)
+        {
+            rb.linearVelocity = new Vector2(
+                0f,
+                rb.linearVelocity.y
+            );
+        }
+
+        // Interrompe o som contínuo de movimentação.
+        if (enemyAudio != null)
+            enemyAudio.StopMovement();
+    }
+
+    public override void Stun(float duration)
+    {
+        if (IsDead)
+            return;
+
+        // Interrompe a perseguição e seus sons.
+        StopMovement();
+
+        // Mantém o sistema de stun do EnemyBase.
         base.Stun(duration);
     }
 
-    // Mostra na Console quando o arqueiro recebe dano.
-    public override void TakeDamage(int damage)
+    protected override void EndStun()
     {
-        Debug.Log(
-            "Arqueiro recebeu tentativa de dano: " +
-            damage + ". Atordoado: " + IsStunned,
-            gameObject
-        );
+        base.EndStun();
 
-        base.TakeDamage(damage);
+        // Reinicia o tempo de disparo após o atordoamento.
+        nextAttackTime = Time.time +
+            Mathf.Max(0f, stunRecoveryDelay);
+    }
+
+    protected override void Die()
+    {
+        if (IsDead)
+            return;
+
+        StopMovement();
+
+        // Reproduz o som de morte e destrói o inimigo.
+        base.Die();
+    }
+
+    private void OnDisable()
+    {
+        hasDetectedPlayer = false;
+
+        StopMovement();
     }
 
     private void OnDrawGizmosSelected()
     {
+        // Raio de detecção.
         Gizmos.color = Color.cyan;
+
         Gizmos.DrawWireSphere(
             transform.position,
             detectionRange
+        );
+
+        // Raio de ataque.
+        Gizmos.color = Color.red;
+
+        Gizmos.DrawWireSphere(
+            transform.position,
+            attackRange
         );
     }
 }
