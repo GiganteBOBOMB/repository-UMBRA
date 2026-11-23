@@ -81,6 +81,7 @@ public class FlashlightController : MonoBehaviour
     private LightPlatform[] allPlatforms;
     private LightButton[] allButtons;
     private GhostVisual[] allGhosts;
+    private LightWall[] allWalls;
 
     public bool IsFocusing { get; private set; }
 
@@ -151,6 +152,7 @@ public class FlashlightController : MonoBehaviour
         allPlatforms = FindObjectsOfType<LightPlatform>();
         allButtons = FindObjectsOfType<LightButton>();
         allGhosts = FindObjectsOfType<GhostVisual>();
+        allWalls = FindObjectsOfType<LightWall>();
 
         if (debugPlatforms)
         {
@@ -202,6 +204,7 @@ public class FlashlightController : MonoBehaviour
 
         // Interações com objetos iluminados.
         UpdateLightPlatforms();
+        UpdateLightWalls();
         UpdateLightButtons();
         UpdateGhosts();
     }
@@ -571,9 +574,38 @@ public class FlashlightController : MonoBehaviour
         }
     }
 
+    private void UpdateLightWalls()
+    {
+        if (allWalls == null)
+            allWalls = FindObjectsOfType<LightWall>();
+
+        float angle = IsFocusing && platformUsesFocusAngle
+            ? focusAngle : lightAngle;
+
+        foreach (LightWall wall in allWalls)
+        {
+            if (wall == null || !wall.isActiveAndEnabled)
+                continue;
+
+            bool lit = IsInBeam(wall.transform.position,
+                platformLightRange, angle);
+
+            wall.SetIlluminated(lit);
+        }
+    }
+
     private void OnDisable()
     {
         IsFocusing = false;
+
+        if (allWalls != null)
+        {
+            foreach (LightWall wall in allWalls)
+            {
+                if (wall != null && wall.isActiveAndEnabled)
+                    wall.SetIlluminated(false);
+            }
+        }
 
         // Limpa o sistema de atordoamento.
         stunnedEnemies.Clear();
